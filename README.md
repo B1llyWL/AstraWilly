@@ -33,7 +33,7 @@ A full‑featured multi‑language website for an internet service provider. Use
   </div>
   <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <strong>📞 Contact methods</strong><br>
-    Telegram, Email, Phone call, WhatsApp – async notifications via Celery
+    Telegram, Email, Phone call, WhatsApp
   </div>
   <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <strong>💱 Currency support</strong><br>

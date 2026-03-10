@@ -2,7 +2,7 @@
   <h1>AstraWilly</h1>
   <h3>This pet project simulates a real ISP website built with Django, mirroring the scale and functionality of a major telecom operator.</h3>
   <p>
-    <a href="[https://youtu.be/nhNkSwzJSXE](https://youtu.be/-UHFMVFRRRc?si=Wq4-B5mhTV_aBMgu)" target="_blank">
+    <a href="https://www.youtube.com/watch?v=-UHFMVFRRRc" target="_blank">
       <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube">
     </a>
   </p>
@@ -78,7 +78,7 @@ A full‑featured multi‑language website for an internet service provider. Use
 📺 Demo Video
 
 <p align="center">
-  <a href="[https://youtu.be/nhNkSwzJSXE](https://youtu.be/-UHFMVFRRRc?si=Wq4-B5mhTV_aBMgu)" target="_blank">
+  <a href="https://www.youtube.com/watch?v=-UHFMVFRRRc" target="_blank">
     <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube">
   </a>
 </p>

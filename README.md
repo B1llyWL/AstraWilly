@@ -2,7 +2,7 @@
 <h3>ISP Website</h3>
 A full-featured multi-language website for an internet service provider, built as a pet project with Django. Users can browse tariffs, services, vacancies, and news; submit applications; manage their profile; and choose preferred contact methods. The admin panel provides full control over content and requests.
 
-Features
+<h3>Features</h3>
 1. Multi-language support: German, English, Russian, Dutch, Ukrainian (i18n with locale middleware).
 2. User accounts: Sign up, sign in, logout, change password, password reset via email, etc.
 3. Personal cabinet: View selected tariffs, services, packages; track application history.
@@ -18,7 +18,7 @@ Features
 10. Database: PostgreSQL.
 11. Responsive design (screenshots below).
 
-Tech Stack
+<h3>Tech Stack</h3>
 Backend: Python, Django, Django ORM
 Database: PostgreSQL
 Task queue: Celery + Redis (broker & cache)
@@ -26,9 +26,8 @@ Frontend: Django templates, Bootstrap (implied)
 Internationalization: Django i18n
 Geolocation: Custom IP-based detector + manual country list
 Currency rates: Frankfurter.app API (requests library)
-Notifications: Email, Telegram bot, WhatsApp API (via third-party services)
 
-📺 Watch Video:
+<h3>📺 Watch Video:</h3>
 [https://youtu.be/nhNkSwzJSXE?si=1bGr3bhyiNNM_1ij](https://youtu.be/-UHFMVFRRRc)
 
 <img width="1920" height="1020" alt="Home" src="https://github.com/user-attachments/assets/30a6774b-eede-41d8-b920-05d74c09c9b6" />

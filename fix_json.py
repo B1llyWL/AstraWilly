@@ -2,12 +2,12 @@ import json
 
 # Список полей, которые нужно проверить (все переводимые поля из ваших моделей)
 fields_to_fix = [
-    'name_de', 'name_nl',           # для Country, City, Place
-    'address_de', 'address_nl',     # для Place
-    'title_de', 'title_nl',         # для Category, Tariff, Separately, Packets, News, Stocks
-    'description_de', 'description_nl',  # для многих моделей
-    'details_html_de', 'details_html_nl',  # для Vacancy
-    'features_text_de', 'features_text_nl',  # для Tariff, Separately, Packets, Vacancy
+    'name_de', 'name_nl',           
+    'address_de', 'address_nl',     
+    'title_de', 'title_nl',      
+    'description_de', 'description_nl',  
+    'details_html_de', 'details_html_nl',  
+    'features_text_de', 'features_text_nl',  
 ]
 
 # Загружаем дамп

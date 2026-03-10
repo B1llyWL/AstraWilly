@@ -1,86 +1,202 @@
-<h1>AstraWilly</h1>
-<h3>ISP Website</h3>
-A full-featured multi-language website for an internet service provider, built as a pet project with Django. Users can browse tariffs, services, vacancies, and news; submit applications; manage their profile; and choose preferred contact methods. The admin panel provides full control over content and requests.
+<div align="center">
+  <h1>AstraWilly</h1>
+  <h3>This pet project simulates a real ISP website built with Django, mirroring the scale and functionality of a major telecom operator.</h3>
+  <p>
+    <a href="https://youtu.be/nhNkSwzJSXE" target="_blank">
+      <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube">
+    </a>
+  </p>
+</div>
 
-<h3>Features</h3>
-1. Multi-language support: German, English, Russian, Dutch, Ukrainian (i18n with locale middleware).
-2. User accounts: Sign up, sign in, logout, change password, password reset via email, etc.
-3. Personal cabinet: View selected tariffs, services, packages; track application history.
-4. Applications:
--For vacancies
--For tariffs, individual services, and service packages (selected by user, stored in profile)
--For support requests
-5. Contact methods: Users can choose preferred communication channel for their applications: Telegram, Email, Phone call, WhatsApp (notifications sent asynchronously).
-6. Currency support: Automatic daily exchange rate updates via external API (Frankfurter.app); rates manageable in admin panel. Tariffs and service prices can be displayed in multiple currencies based on user location or selection.
-7.Location detection: Custom geolocator with manually added countries; determines user's country by IP or manual selection.
-8. Admin panel: Manage tariffs, vacancies, services, news, applications, countries, currency rates, etc.
-9. Background tasks: Celery with Redis for sending notifications and emails (including periodic currency update tasks).
-10. Database: PostgreSQL.
-11. Responsive design (screenshots below).
+✨ Overview
 
-<h3>Tech Stack</h3>
-Backend: Python, Django, Django ORM
-Database: PostgreSQL
-Task queue: Celery + Redis (broker & cache)
-Frontend: Django templates, Bootstrap (implied)
-Internationalization: Django i18n
-Geolocation: Custom IP-based detector + manual country list
-Currency rates: Frankfurter.app API (requests library)
+A full‑featured multi‑language website for an internet service provider. Users can explore tariffs, services, vacancies, and news; submit applications; manage their profile; and choose how they want to be contacted. The admin panel gives full control over all content and requests.
 
-<h3>📺 Watch Video:</h3>
-[https://youtu.be/nhNkSwzJSXE?si=1bGr3bhyiNNM_1ij](https://youtu.be/-UHFMVFRRRc)
+🎯 Features
 
-<img width="1920" height="1020" alt="Home" src="https://github.com/user-attachments/assets/30a6774b-eede-41d8-b920-05d74c09c9b6" />
-<img width="1920" height="1027" alt="Home1" src="https://github.com/user-attachments/assets/3d3389fb-efbf-43c4-8229-d00c6f1ea761" />
-<img width="1920" height="1025" alt="Homefooter" src="https://github.com/user-attachments/assets/1ccff392-33a3-4dd8-9736-4434fcd413ac" />
-<img width="1920" height="1026" alt="Languages" src="https://github.com/user-attachments/assets/ca5b1438-fe93-4dbb-9d4f-83a45c3b4f38" />
-<img width="1920" height="1080" alt="Countries" src="https://github.com/user-attachments/assets/80db1122-2bfd-4669-bd44-5a10e5f1ee81" />
-<img width="1920" height="1030" alt="Tariffs" src="https://github.com/user-attachments/assets/07c09936-7a38-4637-9e15-f946ded51034" />
-<img width="1920" height="1030" alt="Tariffs_1" src="https://github.com/user-attachments/assets/5763e57a-3abc-43e7-a2e7-5b0ea761b13f" />
-<img width="1920" height="1030" alt="Tariffs_3" src="https://github.com/user-attachments/assets/2255bdf1-8502-4432-b839-14360f05cf41" />
-<img width="1920" height="1030" alt="Tariffs_4" src="https://github.com/user-attachments/assets/3859a429-a059-443c-b23b-d7839d83fbd5" />
-<img width="1920" height="1030" alt="Services" src="https://github.com/user-attachments/assets/854e0ae1-10ea-4eb6-bd47-d85a6cab1977" />
-<img width="1920" height="1030" alt="Services_2" src="https://github.com/user-attachments/assets/8ddc0dc5-8ddd-4d95-9a19-61927f5e7037" />
-<img width="1920" height="1030" alt="Services_3" src="https://github.com/user-attachments/assets/8297607e-e986-46e5-8123-80617e8c45f6" />
-<img width="1920" height="1030" alt="Services_4" src="https://github.com/user-attachments/assets/d2972f92-3ac1-4ad0-938c-0b8a9ad1a50c" />
-<img width="1920" height="1030" alt="Services_5" src="https://github.com/user-attachments/assets/32c09472-7d45-452d-be4e-ee479cef68cb" />
-<img width="1920" height="1030" alt="Stocks_Global" src="https://github.com/user-attachments/assets/2c1019a2-e69d-4410-8a0b-9dd9e1551f71" />
-<img width="1920" height="1030" alt="Stocks_Germany_Berlin" src="https://github.com/user-attachments/assets/84fd6490-05c7-4848-8be5-84166153e25b" />
-<img width="1920" height="1030" alt="Stocks_Germany_Berlin_details" src="https://github.com/user-attachments/assets/34804411-2058-437c-8767-2fb934974586" />
-<img width="1920" height="1030" alt="Support" src="https://github.com/user-attachments/assets/695b4f21-c251-48c5-bb91-c7e5cd421481" />
-<img width="1920" height="1030" alt="Support_2" src="https://github.com/user-attachments/assets/ffcae780-b527-4697-9ff5-6ee284c3a6fd" />
-<img width="1920" height="1030" alt="Support_3" src="https://github.com/user-attachments/assets/bd0e6bae-8e41-4b80-b2a4-5a6fae0832a8" />
-<img width="1920" height="1030" alt="Vacancies_1" src="https://github.com/user-attachments/assets/b0cf42fd-ec90-4fd1-aa0b-2d9d76bc1d24" />
-<img width="1920" height="1030" alt="Vacancies" src="https://github.com/user-attachments/assets/ef81a976-a804-4024-87e4-c732d81d3a1c" />
-<img width="1920" height="1030" alt="Vacancies_3" src="https://github.com/user-attachments/assets/9f577934-e42c-45d5-9ee6-b11408cb7ac8" />
-<img width="1920" height="1030" alt="Vacancies_4" src="https://github.com/user-attachments/assets/8af011d8-9f34-4b80-9d22-bb732a1ab1c9" />
-<img width="1920" height="1030" alt="News_Global_details" src="https://github.com/user-attachments/assets/1b457078-f09f-4646-a8b8-8c51a0bae367" />
-<img width="1920" height="1030" alt="Signup" src="https://github.com/user-attachments/assets/df7d8e3f-08c9-4f36-9160-82c7c7a5b3bd" />
-<img width="1920" height="1030" alt="Signin" src="https://github.com/user-attachments/assets/92df1cbb-17e1-440e-a976-54a7404fa2f9" />
-<img width="1920" height="1030" alt="My Cabinet" src="https://github.com/user-attachments/assets/bc9362e9-0c8e-4a15-81f9-3dde683cc081" />
-<img width="1920" height="1030" alt="MyCab" src="https://github.com/user-attachments/assets/0bb885a8-191d-412d-a6f8-532ca150276e" />
-<img width="1920" height="1030" alt="myreq" src="https://github.com/user-attachments/assets/d6ad335e-a093-421f-b29b-18e2ba769391" />
-<img width="1920" height="1030" alt="myreqcancel" src="https://github.com/user-attachments/assets/89cb1117-fc4d-43bb-8b68-828fc113fd5c" />
-<img width="1920" height="1030" alt="edit_profile" src="https://github.com/user-attachments/assets/e14955da-c18f-49c2-8592-3aabcc082ca4" />
-<img width="1920" height="1030" alt="Forgot password" src="https://github.com/user-attachments/assets/f7ac7180-e963-43cd-a307-80ed5f88a45c" />
-<img width="1920" height="1030" alt="discover" src="https://github.com/user-attachments/assets/a803f2c3-7b93-440d-b324-8da3d3927f02" />
-<img width="1920" height="1030" alt="diners" src="https://github.com/user-attachments/assets/05765ee7-a949-402e-9c84-4ffb10de0d32" />
-<img width="1920" height="1030" alt="Amex" src="https://github.com/user-attachments/assets/f964aad7-0110-42b2-8add-1a41bfef2b1a" />
-<img width="1920" height="1030" alt="visa" src="https://github.com/user-attachments/assets/6863d073-d1fb-47ec-b3e3-b50fc26a2e56" />
-<img width="1920" height="1030" alt="jcb" src="https://github.com/user-attachments/assets/65989789-f89e-4c55-a53c-42ecbd9ed2a8" />
-<img width="1920" height="1030" alt="Top_up_mastercard" src="https://github.com/user-attachments/assets/2b7bcad3-49e4-43ce-9f41-5c703c1de440" />
-<img width="1920" height="1030" alt="Top_up_union_pay" src="https://github.com/user-attachments/assets/2f717f4b-bc2e-4663-b7d7-f5db9fa77a87" />
-<img width="1920" height="1030" alt="Topupmir" src="https://github.com/user-attachments/assets/20e30dea-9e54-4f8a-9f7a-3e375c714bfb" />
-<img width="1920" height="1030" alt="signout" src="https://github.com/user-attachments/assets/0c1e92f0-a94f-4ddf-9213-8afad8495139" />
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>🌍 Multi‑language</strong><br>
+    German, English, Russian, Dutch, Ukrainian (i18n + locale middleware)
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>🔐 User accounts</strong><br>
+    Sign up, sign in, logout, change password, password reset via email
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>👤 Personal cabinet</strong><br>
+    View selected tariffs, services, packages; track application history
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>📋 Applications</strong><br>
+    For vacancies, tariffs, individual services, packages, and support
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>📞 Contact methods</strong><br>
+    Telegram, Email, Phone call, WhatsApp – async notifications via Celery
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>💱 Currency support</strong><br>
+    Auto‑updated exchange rates (Frankfurter.app); show prices in multiple currencies
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>📍 Location detection</strong><br>
+    IP‑based country detection + manually added countries (editable in admin)
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>⚙️ Admin panel</strong><br>
+    Full control over tariffs, services, vacancies, news, applications, countries, currencies
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>⏱️ Background tasks</strong><br>
+    Celery + Redis for notifications, emails, and periodic currency updates
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>🐘 PostgreSQL</strong><br>
+    Robust and scalable database
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>📱 Responsive design</strong><br>
+    Works perfectly on desktop and mobile
+  </div>
+</div>
 
 
-Installation
-git clone <repo>
-cd <project>
-pip install -r requirements.txt
-# configure .env, database, redis
-python manage.py migrate
-python manage.py runserver
-# start celery worker
-celery -A your_project worker -l info
-# optionally set up cron or celery beat to periodically update currency rates
+🛠 Tech Stack
+
+| Area          | Technologies                                                                 |
+|---------------|------------------------------------------------------------------------------|
+| **Backend**   | Python, Django, Django ORM                                                   |
+| **Database**  | PostgreSQL                                                                   |
+| **Task Queue**| Celery, Redis (broker & cache)                                               |
+| **Frontend**  | Django templates, Bootstrap                                                  |
+| **i18n**      | Django internationalization (locale middleware)                              |
+| **Geolocation**| Custom IP‑based detector + manual country list                              |
+| **Currency**  | Frankfurter.app API, `requests` library                                      |
+
+
+📺 Demo Video
+
+<p align="center">
+  <a href="https://youtu.be/nhNkSwzJSXE" target="_blank">
+    <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube">
+  </a>
+</p>
+
+
+📸 Screenshots
+<details>
+<summary>🏠 Home Page</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/30a6774b-eede-41d8-b920-05d74c09c9b6" alt="Home">
+  <img width="48%" src="https://github.com/user-attachments/assets/3d3389fb-efbf-43c4-8229-d00c6f1ea761" alt="Home1">
+  <img width="48%" src="https://github.com/user-attachments/assets/1ccff392-33a3-4dd8-9736-4434fcd413ac" alt="Homefooter">
+</div>
+</details>
+
+<details>
+<summary>🌐 Languages & Location</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/ca5b1438-fe93-4dbb-9d4f-83a45c3b4f38" alt="Languages">
+  <img width="48%" src="https://github.com/user-attachments/assets/80db1122-2bfd-4669-bd44-5a10e5f1ee81" alt="Countries">
+</div>
+</details>
+
+<details>
+<summary>📶 Tariffs</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/07c09936-7a38-4637-9e15-f946ded51034" alt="Tariffs">
+  <img width="48%" src="https://github.com/user-attachments/assets/5763e57a-3abc-43e7-a2e7-5b0ea761b13f" alt="Tariffs_1">
+  <img width="48%" src="https://github.com/user-attachments/assets/2255bdf1-8502-4432-b839-14360f05cf41" alt="Tariffs_3">
+  <img width="48%" src="https://github.com/user-attachments/assets/3859a429-a059-443c-b23b-d7839d83fbd5" alt="Tariffs_4">
+</div>
+</details>
+
+<details>
+<summary>🛠 Services</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/854e0ae1-10ea-4eb6-bd47-d85a6cab1977" alt="Services">
+  <img width="48%" src="https://github.com/user-attachments/assets/8ddc0dc5-8ddd-4d95-9a19-61927f5e7037" alt="Services_2">
+  <img width="48%" src="https://github.com/user-attachments/assets/8297607e-e986-46e5-8123-80617e8c45f6" alt="Services_3">
+  <img width="48%" src="https://github.com/user-attachments/assets/d2972f92-3ac1-4ad0-938c-0b8a9ad1a50c" alt="Services_4">
+  <img width="48%" src="https://github.com/user-attachments/assets/32c09472-7d45-452d-be4e-ee479cef68cb" alt="Services_5">
+</div>
+</details>
+
+<details>
+<summary>🎁 Stocks & Promotions</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/2c1019a2-e69d-4410-8a0b-9dd9e1551f71" alt="Stocks_Global">
+  <img width="48%" src="https://github.com/user-attachments/assets/84fd6490-05c7-4848-8be5-84166153e25b" alt="Stocks_Germany_Berlin">
+  <img width="48%" src="https://github.com/user-attachments/assets/34804411-2058-437c-8767-2fb934974586" alt="Stocks_Germany_Berlin_details">
+</div>
+</details>
+
+<details>
+<summary>💬 Support</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/695b4f21-c251-48c5-bb91-c7e5cd421481" alt="Support">
+  <img width="48%" src="https://github.com/user-attachments/assets/ffcae780-b527-4697-9ff5-6ee284c3a6fd" alt="Support_2">
+  <img width="48%" src="https://github.com/user-attachments/assets/bd0e6bae-8e41-4b80-b2a4-5a6fae0832a8" alt="Support_3">
+</div>
+</details>
+
+<details>
+<summary>👔 Vacancies</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/b0cf42fd-ec90-4fd1-aa0b-2d9d76bc1d24" alt="Vacancies_1">
+  <img width="48%" src="https://github.com/user-attachments/assets/ef81a976-a804-4024-87e4-c732d81d3a1c" alt="Vacancies">
+  <img width="48%" src="https://github.com/user-attachments/assets/9f577934-e42c-45d5-9ee6-b11408cb7ac8" alt="Vacancies_3">
+  <img width="48%" src="https://github.com/user-attachments/assets/8af011d8-9f34-4b80-9d22-bb732a1ab1c9" alt="Vacancies_4">
+</div>
+</details>
+
+<details>
+<summary>📰 News</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/1b457078-f09f-4646-a8b8-8c51a0bae367" alt="News_Global_details">
+</div>
+</details>
+
+<details>
+<summary>🔐 Authentication</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/df7d8e3f-08c9-4f36-9160-82c7c7a5b3bd" alt="Signup">
+  <img width="48%" src="https://github.com/user-attachments/assets/92df1cbb-17e1-440e-a976-54a7404fa2f9" alt="Signin">
+  <img width="48%" src="https://github.com/user-attachments/assets/f7ac7180-e963-43cd-a307-80ed5f88a45c" alt="Forgot password">
+  <img width="48%" src="https://github.com/user-attachments/assets/0c1e92f0-a94f-4ddf-9213-8afad8495139" alt="signout">
+</div>
+</details>
+
+<details>
+<summary>👤 User Cabinet</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/bc9362e9-0c8e-4a15-81f9-3dde683cc081" alt="My Cabinet">
+  <img width="48%" src="https://github.com/user-attachments/assets/0bb885a8-191d-412d-a6f8-532ca150276e" alt="MyCab">
+  <img width="48%" src="https://github.com/user-attachments/assets/d6ad335e-a093-421f-b29b-18e2ba769391" alt="myreq">
+  <img width="48%" src="https://github.com/user-attachments/assets/89cb1117-fc4d-43bb-8b68-828fc113fd5c" alt="myreqcancel">
+  <img width="48%" src="https://github.com/user-attachments/assets/e14955da-c18f-49c2-8592-3aabcc082ca4" alt="edit_profile">
+</div>
+</details>
+
+<details>
+<summary>💳 Payment Methods</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img width="48%" src="https://github.com/user-attachments/assets/a803f2c3-7b93-440d-b324-8da3d3927f02" alt="discover">
+  <img width="48%" src="https://github.com/user-attachments/assets/05765ee7-a949-402e-9c84-4ffb10de0d32" alt="diners">
+  <img width="48%" src="https://github.com/user-attachments/assets/f964aad7-0110-42b2-8add-1a41bfef2b1a" alt="Amex">
+  <img width="48%" src="https://github.com/user-attachments/assets/6863d073-d1fb-47ec-b3e3-b50fc26a2e56" alt="visa">
+  <img width="48%" src="https://github.com/user-attachments/assets/65989789-f89e-4c55-a53c-42ecbd9ed2a8" alt="jcb">
+  <img width="48%" src="https://github.com/user-attachments/assets/2b7bcad3-49e4-43ce-9f41-5c703c1de440" alt="Top_up_mastercard">
+  <img width="48%" src="https://github.com/user-attachments/assets/2f717f4b-bc2e-4663-b7d7-f5db9fa77a87" alt="Top_up_union_pay">
+  <img width="48%" src="https://github.com/user-attachments/assets/20e30dea-9e54-4f8a-9f7a-3e375c714bfb" alt="Topupmir">
+</div>
+</details>
+
+
+## 🚀 Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/astrawilly.git
+cd astrawilly

@@ -74,3 +74,13 @@ Currency rates: Frankfurter.app API (requests library)
 <img width="1920" height="1030" alt="signout" src="https://github.com/user-attachments/assets/0c1e92f0-a94f-4ddf-9213-8afad8495139" />
 
 
+Installation
+git clone <repo>
+cd <project>
+pip install -r requirements.txt
+# configure .env, database, redis
+python manage.py migrate
+python manage.py runserver
+# start celery worker
+celery -A your_project worker -l info
+# optionally set up cron or celery beat to periodically update currency rates

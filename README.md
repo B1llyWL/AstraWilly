@@ -23,6 +23,7 @@
 <img width="1920" height="1030" alt="Vacancies_3" src="https://github.com/user-attachments/assets/9f577934-e42c-45d5-9ee6-b11408cb7ac8" />
 <img width="1920" height="1030" alt="Vacancies_4" src="https://github.com/user-attachments/assets/8af011d8-9f34-4b80-9d22-bb732a1ab1c9" />
 <img width="1920" height="1030" alt="News_Global_details" src="https://github.com/user-attachments/assets/1b457078-f09f-4646-a8b8-8c51a0bae367" />
+<img width="1920" height="1030" alt="Signup" src="https://github.com/user-attachments/assets/df7d8e3f-08c9-4f36-9160-82c7c7a5b3bd" />
 <img width="1920" height="1030" alt="Signin" src="https://github.com/user-attachments/assets/92df1cbb-17e1-440e-a976-54a7404fa2f9" />
 <img width="1920" height="1030" alt="My Cabinet" src="https://github.com/user-attachments/assets/bc9362e9-0c8e-4a15-81f9-3dde683cc081" />
 <img width="1920" height="1030" alt="MyCab" src="https://github.com/user-attachments/assets/0bb885a8-191d-412d-a6f8-532ca150276e" />
@@ -33,6 +34,7 @@
 <img width="1920" height="1030" alt="discover" src="https://github.com/user-attachments/assets/a803f2c3-7b93-440d-b324-8da3d3927f02" />
 <img width="1920" height="1030" alt="diners" src="https://github.com/user-attachments/assets/05765ee7-a949-402e-9c84-4ffb10de0d32" />
 <img width="1920" height="1030" alt="Amex" src="https://github.com/user-attachments/assets/f964aad7-0110-42b2-8add-1a41bfef2b1a" />
+<img width="1920" height="1030" alt="visa" src="https://github.com/user-attachments/assets/6863d073-d1fb-47ec-b3e3-b50fc26a2e56" />
 <img width="1920" height="1030" alt="jcb" src="https://github.com/user-attachments/assets/65989789-f89e-4c55-a53c-42ecbd9ed2a8" />
 <img width="1920" height="1030" alt="Top_up_mastercard" src="https://github.com/user-attachments/assets/2b7bcad3-49e4-43ce-9f41-5c703c1de440" />
 <img width="1920" height="1030" alt="Top_up_union_pay" src="https://github.com/user-attachments/assets/2f717f4b-bc2e-4663-b7d7-f5db9fa77a87" />

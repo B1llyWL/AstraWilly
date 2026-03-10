@@ -1,0 +1,67 @@
+# Dutch translation for AstraWilly project.
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-05 10:25+0300\n"
+"PO-Revision-Date: 2026-03-05 14:45+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\iprovider\static\iprovider\js\payment.js:98
+msgid "Enter valid amount"
+msgstr "Voer een geldig bedrag in"
+
+#: .\iprovider\static\iprovider\js\payment.js:102
+msgid "Invalid card number"
+msgstr "Ongeldig kaartnummer"
+
+#: .\iprovider\static\iprovider\js\payment.js:106
+msgid "Invalid expiry date"
+msgstr "Ongeldige vervaldatum"
+
+#: .\iprovider\static\iprovider\js\payment.js:110
+msgid "Invalid CVV"
+msgstr "Ongeldige CVV"
+
+#: .\iprovider\static\iprovider\js\payment.js:141
+#: .\iprovider\static\iprovider\js\payment.js:183
+msgid "Server error"
+msgstr "Serverfout"
+
+#: .\iprovider\static\iprovider\js\payment.js:154
+msgid "Enter 6-digit code"
+msgstr "Voer 6-cijferige code in"
+
+#: .\iprovider\static\iprovider\js\tariffs.js:70
+msgid "Speed Calculator"
+msgstr "Snelheidscalculator"
+
+#: .\iprovider\static\iprovider\js\tariffs.js:72
+msgid "Select Tariff Speed (Mbps):"
+msgstr "Selecteer tariefsnelheid (Mbps):"
+
+#: .\iprovider\static\iprovider\js\tariffs.js:83
+msgid "File Size to Download (GB):"
+msgstr "Bestandsgrootte om te downloaden (GB):"
+
+#: .\iprovider\static\iprovider\js\tariffs.js:86
+msgid "Calculate Download Time"
+msgstr "Downloadtijd berekenen"
+
+#: .\iprovider\static\iprovider\js\tariffs.js:89
+msgid "Download time:"
+msgstr "Downloadtijd:"
+
+#: .\iprovider\static\iprovider\js\tariffs.js:89
+msgid "minutes"
+msgstr "minuten"

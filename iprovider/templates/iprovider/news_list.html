@@ -1,0 +1,120 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div class="news-header">
+    <h1>{% trans "News Archive" %}</h1>
+    <p class="text-muted">{% trans "Total news:" %} {{ news_count }}</p>
+</div>
+
+<div class="news-list">
+    {% for news in news_list %}
+    <div class="news-item card mb-4">
+        <div class="card-body position-relative">
+            <!-- Views в правом верхнем углу -->
+            <div class="news-views-top">
+                <span class="badge bg-secondary views-badge">
+                    <i class="bi bi-eye"></i> {{ news.watched }} {% trans "views" %}
+                </span>
+            </div>
+
+            <div class="row">
+                {% if news.photo %}
+                <div class="col-md-3">
+                    <img src="{{ news.photo.url }}" alt="{{ news.title }}" class="img-fluid rounded">
+                </div>
+                {% endif %}
+                <div class="{% if news.photo %}col-md-9{% else %}col-12{% endif %}">
+                    <h3 class="news-title">
+                        <a href="{{ news.get_absolute_url }}" class="text-decoration-none">
+                            {{ news.title }}
+                        </a>
+                    </h3>
+
+                    <div class="news-meta-top mb-2">
+                        <span class="news-date">
+                            <i class="bi bi-calendar"></i> {{ news.created_at|date:"F d, Y" }}
+                        </span>
+                        {% if news.category %}
+                        <span class="news-category ms-3">
+                            <i class="bi bi-tag"></i> {{ news.category.title }}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <p class="news-content">
+                        {{ news.description|truncatewords:30 }}
+                    </p>
+
+                    <!-- Кнопка и Updated в одной строке -->
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <a href="{{ news.get_absolute_url }}" class="btn btn-outline-primary btn-sm">
+                            {% trans "Read Full Story" %} <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <!-- Updated в правом нижнем углу -->
+                        {% if news.updated_at != news.created_at %}
+                        <div class="news-updated-bottom text-muted">
+                            <small>
+                                <i class="bi bi-pencil"></i> {% trans "Updated:" %} {{ news.updated_at|date:"F d, Y" }}
+                            </small>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="alert alert-info">
+        <h4>No News Available</h4>
+        <p>Stay tuned for updates! Fresh news will be coming soon!</p>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Пагинация -->
+{% if is_paginated %}
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page=1" aria-label="First">
+                <span aria-hidden="true">««</span>
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+            </a>
+        </li>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+            <li class="page-item active">
+                <span class="page-link">{{ num }}</span>
+            </li>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                <span aria-hidden="true">»</span>
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}" aria-label="Last">
+                <span aria-hidden="true">»»</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'iprovider/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <div class="page-section">
+            <div class="section-header">
+                <h1 class="soft-blue">{% trans "Add Phone Number" %}</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <form method="post" action="{% url 'phone_add' %}">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                {% if form.errors %}
+                                    <div class="alert alert-danger">
+                                        {{ form.errors }}
+                                    </div>
+                                {% endif %}
+                                <button type="submit" class="btn btn-outline-dark w-100">{% trans "Send Code" %}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+<script src="{% static 'iprovider/js/country_number_phone.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,13 @@
+.btn.apply-btn {
+  background-color: #007BFF !important;
+  color: white;
+  cursor:pointer;
+}
+
+.btn.apply-btn:active{
+  background-color: #9800ff;
+}
+
+.btn.apply-btn:hover {
+    background-color: #9800ff !important;
+}

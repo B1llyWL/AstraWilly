@@ -1,0 +1,68 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<article class="stock-detail">
+    <!-- Хлебные крошки -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'stocks' %}">{% trans "Stocks" %}</a></li>
+            <li class="breadcrumb-item active">{{ stock.title|truncatewords:5 }}</li>
+        </ol>
+    </nav>
+
+    <!-- Заголовок и мета-информация -->
+    <header class="stock-header mb-4">
+        <h1 class="stock-title">{{ stock.title }}</h1>
+        <div class="stock-meta">
+            <small>
+                <span class="stock-date">{% trans "Published:" %} {{ stock.created_at|date:"F d, Y" }}</span>
+                {% if stock.updated_at != stock.created_at %}
+                <span class="stock-updated">{% trans "Updated:" %} {{ stock.updated_at|date:"F d, Y" }}</span>
+                {% endif %}
+                <span class="stock-views">{% trans "Views:" %} {{ stock.watched }}</span>
+                {% if stock.category %}
+                <span class="stock-category">{% trans "Category:" %} {{ stock.category.title }}</span>
+                {% endif %}
+            </small>
+        </div>
+    </header>
+
+    {% if stock.photo %}
+    <div class="stock-image mb-4">
+        <img src="{{ stock.photo.url }}" alt="{{ stock.title }}" class="img-fluid">
+    </div>
+    {% endif %}
+
+    <div class="stock-content">
+        {{ stock.description|linebreaks }}
+    </div>
+
+    <div class="stock-navigation mt-5 pt-4">
+        <div class="row">
+            <div class="col-md-6">
+                {% if prev_stock %}
+                <a href="{{ prev_stock.get_absolute_url }}" class="btn btn-outline-primary">
+                    ← {% trans "Previous: "%} {{ prev_stock.title|truncatewords:8 }}
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                {% if next_stock %}
+                <a href="{{ next_stock.get_absolute_url }}" class="btn btn-outline-primary">
+                    {% trans "Next:" %} {{ next_stock.title|truncatewords:8 }} →
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка возврата -->
+    <div class="text-center mt-5">
+        <a href="{% url 'stocks' %}" class="btn btn-primary">
+            ← {% trans "Back to All Stocks" %}
+        </a>
+    </div>
+</article>
+{% endblock %}

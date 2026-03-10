@@ -1,0 +1,209 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <!-- Форма выбора локации -->
+        <div class="location-selector mb-4">
+            <form method="post" action="{% url 'set_location' %}" id="location-form">
+                {% csrf_token %}
+                <div class="row g-3">
+                    <div class="col-md-5">
+                        <label for="country-select" class="form-label">{% trans "Country" %}</label>
+                        <select name="country" id="country-select" class="form-select">
+                            <option value="">{% trans "Select a country" %}</option>
+                            {% for country in countries %}
+                            {% if selected_country and selected_country.id == country.id %}
+                            <option value="{{ country.id }}" selected>{{ country.name }}</option>
+                            {% else %}
+                            <option value="{{ country.id }}">{{ country.name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="city-select" class="form-label">{% trans "City" %}</label>
+                        <select name="city" id="city-select" class="form-select" {% if not selected_country %}disabled{% endif %}>
+                            {% if selected_country or selected_city %}
+                            <option value="">{% trans "Select a city" %}</option>
+                            {% else %}
+                            <option value="">{% trans "Please select your country first" %}</option>
+                            {% endif %}
+                            {% for city in cities %}
+                            {% if selected_city and selected_city.id == city.id %}
+                            <option value="{{ city.id }}" selected>{{ city.name }}</option>
+                            {% else %}
+                            <option value="{{ city.id }}">{{ city.name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn apply-btn w-100">{% trans "Apply" %}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Separately Section -->
+        <div class="page-section">
+            <div class="section-header">
+                <h1>{% trans "Services" %}</h1>
+                <h2 class="lead fw-normal mb-0">{% trans "Separately" %}</h2>
+                <div style="height: 2rem;"></div>
+
+                {% if selected_country or selected_city %}
+                <div class="alert alert-info">
+                    <strong>{% trans "Current location:" %}</strong>
+                    {% if selected_city %}
+                        {{ selected_city.name }}, {{ selected_city.country.name }}
+                    {% elif selected_country %}
+                        {{ selected_country.name }}
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                {% for service in separately_services %}
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-left">
+                                <h5 class="card-title fw-bolder" style="color: #8338ec;">{{ service.title }}</h5>
+
+
+                                {% if service.details_html %}
+                                    <div class="card-text">{{ service.details_html|safe }}</div>
+                                {% else %}
+                                    {% with features=service.get_features_list %}
+                                        {% if features %}
+                                            <div class="features-list">
+                                                {% for feature in features %}
+                                                    <div class="feature-item">{{ feature }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            <p class="card-text">{{ service.description }}</p>
+                                        {% endif %}
+                                    {% endwith %}
+                                {% endif %}
+
+                                <div class="card-price mt-3">
+                                    <h4 class="text-primary">${{ service.current_price|floatformat:2 }}</h4>
+                                    {% if service.price != service.current_price %}
+                                        <small class="text-muted text-decoration-line-through">${{ service.price|floatformat:2 }}</small>
+                                    {% endif %}
+                                </div>
+
+                                <!-- Кнопка запроса для Separately -->
+                                {% if user.is_authenticated %}
+                                    {% if service.id in active_separately_requests %}
+                                        <div class="alert alert-success py-2 mb-3">
+                                            <small>✅ {% trans "Request sent" %}</small>
+                                        </div>
+                                    {% else %}
+                                        <form method="post" action="{% url 'create_request' 'separately' service.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-outline-dark w-100">
+                                                {% trans "Request" %}
+                                            </button>
+                                        </form>
+                                    {% endif %}
+                                {% else %}
+                                    <a href="{% url 'account_login' %}?next={{ request.path }}" class="btn btn-outline-primary w-100 mt-3">
+                                        {% trans "Login to request" %}
+                                    </a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-warning text-center">{% trans "No separate services available" %}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Packets Section -->
+        <div class="page-section">
+            <div class="section-header">
+                <h2 class="lead fw-normal mb-0">{% trans "Packages" %}</h2>
+            </div>
+
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                {% for service in packets_services %}
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-left">
+                                <h5 class="card-title fw-bolder" style="color: #8338ec;">{{ service.title }}</h5>
+
+
+                                {% if service.details_html %}
+                                    <div class="card-text">{{ service.details_html|safe }}</div>
+                                {% else %}
+                                    {% with features=service.get_features_list %}
+                                        {% if features %}
+                                            <div class="features-list">
+                                                {% for feature in features %}
+                                                    <div class="feature-item">{{ feature }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            <p class="card-text">{{ service.description }}</p>
+                                        {% endif %}
+                                    {% endwith %}
+                                {% endif %}
+
+                                <div class="card-price mt-3">
+                                    <h4 class="text-primary">${{ service.current_price|floatformat:2 }}</h4>
+                                    {% if service.price != service.current_price %}
+                                        <small class="text-muted text-decoration-line-through">${{ service.price|floatformat:2 }}</small>
+                                    {% endif %}
+                                </div>
+
+                                <!-- Кнопка запроса для Packets -->
+                                {% if user.is_authenticated %}
+                                    {% if service.id in active_packet_requests %}
+                                        <div class="alert alert-success py-2 mb-3">
+                                            <small>✅ {% trans "Request sent" %}</small>
+                                        </div>
+                                    {% else %}
+                                        <form method="post" action="{% url 'create_request' 'packet' service.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-outline-dark w-100">
+                                                {% trans "Request" %}
+                                            </button>
+                                        </form>
+                                    {% endif %}
+                                {% else %}
+                                    <a href="{% url 'account_login' %}?next={{ request.path }}" class="btn btn-outline-primary w-100 mt-3">
+                                        {% trans "Login to request" %}
+                                    </a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-warning text-center">{% trans "No packages available" %}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'iprovider/js/services.js' %}"></script>
+{% endblock %}

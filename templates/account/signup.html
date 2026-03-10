@@ -1,0 +1,100 @@
+
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load account %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'iprovider/css/alert_signup.css' %}">
+{% endblock %}
+
+{% block head_title %}
+    {% trans "Sign Up" %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <div class="page-section">
+            <div class="section-header">
+                <h1 class="soft-blue">{% trans "Sign Up" %}</h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body p-4">
+                                <p class="auth-message">
+                                    {% blocktranslate %}Already have an account? Then please
+                                    <a href="{{ login_url }}" class="soft-blue">sign in</a>. {% endblocktranslate %}
+                                </p>
+
+                                <form method="post" action="{% url 'account_signup' %}">
+                                    {% csrf_token %}
+
+                                    {% if form.non_field_errors %}
+                                        <div class="alert-danger">
+                                            {{ form.non_field_errors }}
+                                        </div>
+                                    {% endif %}
+
+                                     <div class="mb-3">
+                                        <label for="id_username" style="color: #8A2BE2;">{% trans "Username" %}</label>
+                                        <input type="text" name="username" placeholder="{% trans 'username' %}"
+                                               class="form-control bg-dark text-light border-secondary"
+                                               id="id_username" required>
+                                         {% if form.username.errors %}
+                                         <div class="alert-text-danger">{{ form.username.errors }}</div>
+                                         {% endif %}
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="id_email" style="color: #8A2BE2;">{% trans "Email" %}</label>
+                                        <input type="text" name="email" placeholder="{% trans 'email' %}"
+                                               class="form-control bg-dark text-light border-secondary"
+                                               id="id_email" required>
+                                        {% if form.email.errors %}
+                                            <div class="alert-text-danger">{{ form.email.errors }}</div>
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="id_password1" style="color: #8A2BE2;">{% trans "Password" %}</label>
+                                        <input type="password" name="password1" placeholder="{% trans 'Password' %}"
+                                               class="form-control bg-dark text-light border-secondary"
+                                               id="id_password1" required>
+
+                                        {% if form.password1.errors %}
+                                            <div class="alert-text-danger">{{ form.password1.errors }}</div>
+                                        {% endif %}
+
+                                        <!-- Подсказка о требованиях к паролю -->
+                                        <small class="auth-message">
+                                            {% trans "Your password must be at least 8 characters long, cannot be entirely numeric, and cannot be too simular to your other personal information." %}
+                                        </small>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="id_password2" style="color: #8A2BE2;">{% trans "Password (again)" %}</label>
+                                        <input type="password" name="password2" placeholder="{% trans 'Confirm password' %}"
+                                               class="form-control bg-dark text-light border-secondary"
+                                               id="id_password2" required>
+                                        {% if form.password2.errors %}
+                                        <div class="alert-text-danger">{{ form.password2.errors }}</div>
+                                        {% endif %}
+                                    </div>
+
+                                    {{ redirect_field }}
+
+                                    <button type="submit" class="btn btn-outline-dark w-100">
+                                        {% trans "Sign Up" %}
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

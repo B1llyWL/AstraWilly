@@ -1,0 +1,22 @@
+
+    /* Фиолетовые бейджи */
+    .badge-purple {
+        background-color: #6f42c1 !important;
+        color: white !important;
+        border: none;
+        font-weight: 500;
+    }
+
+    .vacancy-languages .badge {
+        background-color: #6f42c1 !important;
+        color: white !important;
+        border: none;
+        font-weight: 500;
+        padding: 0.5em 0.9em;
+        font-size: 0.8em;
+    }
+
+    /* Пурпурный цвет для views и иконок */
+    .vacancy-views {
+        color: #8338ec !important;
+    }

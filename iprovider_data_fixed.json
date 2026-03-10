@@ -1,0 +1,1328 @@
+[
+  {
+    "model": "iprovider.country",
+    "pk": 2,
+    "fields": {
+      "name": "Germany",
+      "name_en": "Germany",
+      "name_de": "Deutschland",
+      "name_nl": "Duitsland",
+      "code": "+49"
+    }
+  },
+  {
+    "model": "iprovider.country",
+    "pk": 3,
+    "fields": {
+      "name": "Russia",
+      "name_en": "Russia",
+      "name_de": "Russland",
+      "name_nl": "Rusland",
+      "code": "+7"
+    }
+  },
+  {
+    "model": "iprovider.country",
+    "pk": 4,
+    "fields": {
+      "name": "USA",
+      "name_en": "USA",
+      "name_de": "USA",
+      "name_nl": "VS",
+      "code": "+1"
+    }
+  },
+  {
+    "model": "iprovider.country",
+    "pk": 5,
+    "fields": {
+      "name": "South Korea",
+      "name_en": "South Korea",
+      "name_de": "Südkorea",
+      "name_nl": "Zuid-Korea",
+      "code": "+82"
+    }
+  },
+  {
+    "model": "iprovider.country",
+    "pk": 6,
+    "fields": {
+      "name": "Netherlands",
+      "name_en": "Netherlands",
+      "name_de": "Niederlande",
+      "name_nl": "Nederland",
+      "code": "+599"
+    }
+  },
+  {
+    "model": "iprovider.country",
+    "pk": 7,
+    "fields": {
+      "name": "Japan",
+      "name_en": "Japan",
+      "name_de": "Japan",
+      "name_nl": "Japan",
+      "code": "+81"
+    }
+  },
+  {
+    "model": "iprovider.country",
+    "pk": 8,
+    "fields": {
+      "name": "Maldives",
+      "name_en": "Maldives",
+      "name_de": "Malediven",
+      "name_nl": "Maldiven",
+      "code": "+960"
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 1,
+    "fields": {
+      "name": "Berlin",
+      "name_en": "Berlin",
+      "name_de": "Berlin",
+      "name_nl": "Berlijn",
+      "country": 2
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 2,
+    "fields": {
+      "name": "Saint Petersburg",
+      "name_en": "Saint Petersburg",
+      "name_de": "Sankt Petersburg",
+      "name_nl": "Sint-Petersburg",
+      "country": 3
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 4,
+    "fields": {
+      "name": "Cologne",
+      "name_en": "Cologne",
+      "name_de": "Köln",
+      "name_nl": "Keulen",
+      "country": 2
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 5,
+    "fields": {
+      "name": "Kaliningrad",
+      "name_en": "Kaliningrad",
+      "name_de": "Kaliningrad",
+      "name_nl": "Kaliningrad",
+      "country": 3
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 7,
+    "fields": {
+      "name": "New York",
+      "name_en": "New York",
+      "name_de": "New York",
+      "name_nl": "New York",
+      "country": 4
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 8,
+    "fields": {
+      "name": "Frankfurt am Main",
+      "name_en": "Frankfurt am Main",
+      "name_de": "Frankfurt am Main",
+      "name_nl": "Frankfurt am Main",
+      "country": 2
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 9,
+    "fields": {
+      "name": "Colorado",
+      "name_en": "Colorado",
+      "name_de": "Colorado",
+      "name_nl": "Colorado",
+      "country": 4
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 10,
+    "fields": {
+      "name": "Seoul",
+      "name_en": "Seoul",
+      "name_de": "Seoul",
+      "name_nl": "Seoul",
+      "country": 5
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 11,
+    "fields": {
+      "name": "Rotterdam",
+      "name_en": "Rotterdam",
+      "name_de": "Rotterdam",
+      "name_nl": "Rotterdam",
+      "country": 6
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 12,
+    "fields": {
+      "name": "Tokyo",
+      "name_en": "Tokyo",
+      "name_de": "Tokio",
+      "name_nl": "Tokio",
+      "country": 7
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 14,
+    "fields": {
+      "name": "Amsterdam",
+      "name_en": "Amsterdam",
+      "name_de": "Amsterdam",
+      "name_nl": "Amsterdam",
+      "country": 6
+    }
+  },
+  {
+    "model": "iprovider.city",
+    "pk": 15,
+    "fields": {
+      "name": "Malé",
+      "name_en": "Malé",
+      "name_de": "Malé",
+      "name_nl": "Malé",
+      "country": 8
+    }
+  },
+  {
+    "model": "iprovider.category",
+    "pk": 1,
+    "fields": {
+      "title": "Vacancy",
+      "title_en": "Vacancy",
+      "title_de": "Vakanz",
+      "title_nl": "Vacature",
+      "slug": "vacancy",
+      "parent": 1
+    }
+  },
+  {
+    "model": "iprovider.category",
+    "pk": 2,
+    "fields": {
+      "title": "Services",
+      "title_en": "Services",
+      "title_de": "Dienstleistungen",
+      "title_nl": "Diensten",
+      "slug": "services",
+      "parent": 2
+    }
+  },
+  {
+    "model": "iprovider.category",
+    "pk": 4,
+    "fields": {
+      "title": "Wi-Fi",
+      "title_en": "Wi-Fi",
+      "title_de": "W-Lan",
+      "title_nl": "Wifi",
+      "slug": "wi-fi",
+      "parent": 4
+    }
+  },
+  {
+    "model": "iprovider.category",
+    "pk": 5,
+    "fields": {
+      "title": "Mobile Internet",
+      "title_en": "Mobile Internet",
+      "title_de": "Mobiles Internet",
+      "title_nl": "Mobiel internet",
+      "slug": "mobile-internet",
+      "parent": 5
+    }
+  },
+  {
+    "model": "iprovider.category",
+    "pk": 6,
+    "fields": {
+      "title": "News",
+      "title_en": "News",
+      "title_de": "Nachricht",
+      "title_nl": "Nieuws",
+      "slug": "news",
+      "parent": 6
+    }
+  },
+  {
+    "model": "iprovider.category",
+    "pk": 7,
+    "fields": {
+      "title": "Stocks",
+      "title_en": "Stocks",
+      "title_de": "Aktien",
+      "title_nl": "Andelen",
+      "slug": "stocks",
+      "parent": 7
+    }
+  },
+  {
+    "model": "iprovider.language",
+    "pk": 1,
+    "fields": {
+      "name": "Dutch",
+      "name_en": "Dutch",
+      "name_de": "Niederländisch",
+      "name_nl": "Nederlands"
+    }
+  },
+  {
+    "model": "iprovider.language",
+    "pk": 2,
+    "fields": {
+      "name": "Russian",
+      "name_en": "Russian",
+      "name_de": "Russisch",
+      "name_nl": "Russisch"
+    }
+  },
+  {
+    "model": "iprovider.language",
+    "pk": 3,
+    "fields": {
+      "name": "German",
+      "name_en": "German",
+      "name_de": "Deutsch",
+      "name_nl": "Duits"
+    }
+  },
+  {
+    "model": "iprovider.language",
+    "pk": 4,
+    "fields": {
+      "name": "English",
+      "name_en": "English",
+      "name_de": "Englisch",
+      "name_nl": "Engels"
+    }
+  },
+  {
+    "model": "iprovider.place",
+    "pk": 1,
+    "fields": {
+      "name": "One Liberty Plaza, 165 Broadway, New York, NY 10006",
+      "name_en": "One Liberty Plaza, 165 Broadway, New York, NY 10006",
+      "name_de": "",
+      "name_nl": "",
+      "address": "One Liberty Plaza, 165 Broadway, New York, NY 10006",
+      "address_en": "One Liberty Plaza, 165 Broadway, New York, NY 10006",
+      "address_de": "One Liberty Plaza, 165 Broadway, New York, NY 10006",
+      "address_nl": "One Liberty Plaza, 165 Broadway, New York, NY 10006",
+      "country": 4,
+      "city": 7
+    }
+  },
+  {
+    "model": "iprovider.place",
+    "pk": 2,
+    "fields": {
+      "name": "Taunusanlage 12, 60325 Frankfurt am Main",
+      "name_en": "Taunusanlage 12, 60325 Frankfurt am Main",
+      "name_de": "",
+      "name_nl": "",
+      "address": "Taunusanlage 12, 60325 Frankfurt am Main",
+      "address_en": "Taunusanlage 12, 60325 Frankfurt am Main",
+      "address_de": "Taunusanlage 12, 60325 Frankfurt am Main",
+      "address_nl": "Taunusanlage 12, 60325 Frankfurt am Main",
+      "country": 2,
+      "city": 8
+    }
+  },
+  {
+    "model": "iprovider.place",
+    "pk": 3,
+    "fields": {
+      "name": "De Rotterdam, Wilhelminakade 123, 3072 AP Rotterdam",
+      "name_en": "De Rotterdam, Wilhelminakade 123, 3072 AP Rotterdam",
+      "name_de": "",
+      "name_nl": "",
+      "address": "De Rotterdam, Wilhelminakade 123, 3072 AP Rotterdam",
+      "address_en": "De Rotterdam, Wilhelminakade 123, 3072 AP Rotterdam",
+      "address_de": "De Rotterdam, Wilhelminakade 123, 3072 AP Rotterdam",
+      "address_nl": "De Rotterdam, Wilhelminakade 123, 3072 AP Rotterdam",
+      "country": 6,
+      "city": 11
+    }
+  },
+  {
+    "model": "iprovider.place",
+    "pk": 4,
+    "fields": {
+      "name": "Shinjuku Mitsui Building, 2-1-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0409",
+      "name_en": "Shinjuku Mitsui Building, 2-1-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0409",
+      "name_de": "",
+      "name_nl": "",
+      "address": "Shinjuku Mitsui Building, 2-1-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0409",
+      "address_en": "Shinjuku Mitsui Building, 2-1-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0409",
+      "address_de": "Shinjuku Mitsui Building, 2-1-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0409",
+      "address_nl": "Shinjuku Mitsui Building, 2-1-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0409",
+      "country": 7,
+      "city": 12
+    }
+  },
+  {
+    "model": "iprovider.vacancylocation",
+    "pk": 1,
+    "fields": {
+      "vacancy": 2,
+      "place": 1,
+      "languages": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "iprovider.vacancylocation",
+    "pk": 2,
+    "fields": {
+      "vacancy": 2,
+      "place": 2,
+      "languages": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "iprovider.vacancylocation",
+    "pk": 3,
+    "fields": {
+      "vacancy": 1,
+      "place": 3,
+      "languages": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "iprovider.vacancy",
+    "pk": 1,
+    "fields": {
+      "title": "Technical Support Specialist",
+      "title_en": "Technical Support Specialist",
+      "title_de": "Technischer Supportspezialist",
+      "title_nl": "Technisch ondersteuningsspecialist",
+      "price": 3750.0,
+      "created_at": "2025-11-16T16:39:20.512Z",
+      "updated_at": "2026-02-21T15:17:58.793Z",
+      "description": "Experience: 1+ year in customer technical support (ISP experience is a big plus).\r\nNetworking Basics:\r\nStrong understanding of \"last mile\" technologies (Ethernet, Wi-Fi, GPON).\r\nAbility to explain how DHCP, DNS, and IP addresses work.\r\nKnowledge of Wi-Fi standards and troubleshooting interference.\r\nEquipment: Experience configuring home routers (MikroTik, Keenetic, TP-Link, Xiaomi).\r\nDiagnostics: Ability to use ping, traceroute, and understand modem statistics (SNR, attenuation).\r\nOperating Systems: Confident user of Windows and macOS for troubleshooting.\r\nCRM & Billing: Experience with ticketing systems and billing platforms (like FreeSWITCH or custom ISP billing software).\r\nDocumentation: Ability to create simple instructions for clients.\r\nSoft Skills & Other:\r\nLanguage: Fluent English or Dutch (B2/C1) — to communicate with English-speaking clients.\r\nCommunication: Patience, politeness, and ability to explain technical things simply.\r\nSchedule: Willingness to work in shifts (including evenings/weekends if required).",
+      "description_en": "Experience: 1+ year in customer technical support (ISP experience is a big plus).\r\nNetworking Basics:\r\nStrong understanding of \"last mile\" technologies (Ethernet, Wi-Fi, GPON).\r\nAbility to explain how DHCP, DNS, and IP addresses work.\r\nKnowledge of Wi-Fi standards and troubleshooting interference.\r\nEquipment: Experience configuring home routers (MikroTik, Keenetic, TP-Link, Xiaomi).\r\nDiagnostics: Ability to use ping, traceroute, and understand modem statistics (SNR, attenuation).\r\nOperating Systems: Confident user of Windows and macOS for troubleshooting.\r\nCRM & Billing: Experience with ticketing systems and billing platforms (like FreeSWITCH or custom ISP billing software).\r\nDocumentation: Ability to create simple instructions for clients.\r\nSoft Skills & Other:\r\nLanguage: Fluent English or Dutch (B2/C1) — to communicate with English-speaking clients.\r\nCommunication: Patience, politeness, and ability to explain technical things simply.\r\nSchedule: Willingness to work in shifts (including evenings/weekends if required).",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "photo": "photos/Technical_Support.jpg",
+      "watched": 0,
+      "is_published": true,
+      "category": 1,
+      "slug": "technical-support-specialist",
+      "features_text": "",
+      "features_text_en": "",
+      "features_text_de": "Erfahrung: Mindestens 1 Jahr Erfahrung im technischen Kundensupport (Erfahrung bei Internetdienstanbietern ist von Vorteil).\r\nNetzwerkgrundlagen: Fundierte Kenntnisse von Netzwerktechnologien (Ethernet, WLAN, GPON). Fähigkeit, die Funktionsweise von DHCP, DNS und IP-Adressen zu erklären. Kenntnisse der WLAN-Standards und der Fehlerbehebung bei Störungen.\r\nGeräte: Erfahrung in der Konfiguration von Heimroutern (MikroTik, Keenetic, TP-Link, Xiaomi).\r\nDiagnose: Fähigkeit zur Nutzung von Ping und Traceroute sowie zum Verständnis von Modemstatistiken (SNR, Dämpfung).\r\nBetriebssysteme: Sicherer Umgang mit Windows und macOS zur Fehlerbehebung.\r\nCRM & Abrechnung: Erfahrung mit Ticketsystemen und Abrechnungsplattformen (z. B. FreeSWITCH oder kundenspezifischer Abrechnungssoftware von Internetdienstanbietern).\r\nDokumentation: Fähigkeit, einfache Anleitungen für Kunden zu erstellen.\r\nSoziale Kompetenzen & Sonstiges:\r\nSprachen: Fließende Englisch- oder Niederländischkenntnisse (B2/C1) – zur Kommunikation mit englischsprachigen Kunden.\r\n\r\nKommunikation: Geduld, Höflichkeit und die Fähigkeit, technische Sachverhalte verständlich zu erklären.\r\nArbeitszeiten: Bereitschaft zur Schichtarbeit (bei Bedarf auch abends und am Wochenende).",
+      "features_text_nl": "Ervaring: 1+ jaar ervaring in technische klantondersteuning (ervaring bij een internetprovider is een grote plus).\r\n\r\nBasiskennis netwerken:\r\nSterke kennis van \"last mile\"-technologieën (Ethernet, Wi-Fi, GPON).\r\n\r\nHet vermogen om uit te leggen hoe DHCP, DNS en IP-adressen werken.\r\n\r\nKennis van Wi-Fi-standaarden en het oplossen van interferentieproblemen.\r\n\r\nApparatuur: Ervaring met het configureren van thuisrouters (MikroTik, Keenetic, TP-Link, Xiaomi).\r\n\r\nDiagnostiek: Het vermogen om ping en traceroute te gebruiken en modemstatistieken te begrijpen (SNR, demping).\r\n\r\nBesturingssystemen: Vloeiend gebruik van Windows en macOS voor het oplossen van problemen.\r\n\r\nCRM & Facturering: Ervaring met ticketsystemen en factureringsplatformen (zoals FreeSWITCH of aangepaste factureringssoftware van de internetprovider).\r\n\r\nDocumentatie: Het vermogen om eenvoudige instructies voor klanten te maken.\r\n\r\nSoft skills & Overig:\r\nTaal: Vloeiend Engels of Nederlands (B2/C1) – om te communiceren met Engelstalige klanten.\r\n\r\nCommunicatie: Geduld, beleefdheid en het vermogen om technische zaken eenvoudig uit te leggen. Rooster: Bereidheid om in ploegendiensten te werken (inclusief avonden/weekenden indien nodig).",
+      "details_html": "<p><strong>Experience:</strong> 1+ year in customer technical support (ISP experience is a big plus).</p>\r\n\r\n<p><strong>Networking Basics:</strong></p>\r\n<ul>\r\n  <li>Strong understanding of \"last mile\" technologies (Ethernet, Wi-Fi, GPON).</li>\r\n  <li>Ability to explain how DHCP, DNS, and IP addresses work.</li>\r\n  <li>Knowledge of Wi-Fi standards and troubleshooting interference.</li>\r\n  <li><strong>Equipment:</strong> Experience configuring home routers (MikroTik, Keenetic, TP-Link, Xiaomi).</li>\r\n  <li><strong>Diagnostics:</strong> Ability to use ping, traceroute, and understand modem statistics (SNR, attenuation).</li>\r\n</ul>\r\n\r\n<p><strong>Operating Systems:</strong> Confident user of Windows and macOS for troubleshooting.</p>\r\n\r\n<p><strong>CRM & Billing:</strong> Experience with ticketing systems and billing platforms (like FreeSWITCH or custom ISP billing software).</p>\r\n\r\n<p><strong>Documentation:</strong> Ability to create simple instructions for clients.</p>\r\n\r\n<p><strong>Soft Skills & Other:</strong></p>\r\n<ul>\r\n  <li><strong>Language:</strong> Fluent English or Dutch (B2/C1) — to communicate with English-speaking clients.</li>\r\n  <li><strong>Communication:</strong> Patience, politeness, and ability to explain technical things simply.</li>\r\n  <li><strong>Schedule:</strong> Willingness to work in shifts (including evenings/weekends if required).</li>\r\n</ul>",
+      "details_html_en": "<p><strong>Experience:</strong> 1+ year in customer technical support (ISP experience is a big plus).</p>\r\n\r\n<p><strong>Networking Basics:</strong></p>\r\n<ul>\r\n  <li>Strong understanding of \"last mile\" technologies (Ethernet, Wi-Fi, GPON).</li>\r\n  <li>Ability to explain how DHCP, DNS, and IP addresses work.</li>\r\n  <li>Knowledge of Wi-Fi standards and troubleshooting interference.</li>\r\n  <li><strong>Equipment:</strong> Experience configuring home routers (MikroTik, Keenetic, TP-Link, Xiaomi).</li>\r\n  <li><strong>Diagnostics:</strong> Ability to use ping, traceroute, and understand modem statistics (SNR, attenuation).</li>\r\n</ul>\r\n\r\n<p><strong>Operating Systems:</strong> Confident user of Windows and macOS for troubleshooting.</p>\r\n\r\n<p><strong>CRM & Billing:</strong> Experience with ticketing systems and billing platforms (like FreeSWITCH or custom ISP billing software).</p>\r\n\r\n<p><strong>Documentation:</strong> Ability to create simple instructions for clients.</p>\r\n\r\n<p><strong>Soft Skills & Other:</strong></p>\r\n<ul>\r\n  <li><strong>Language:</strong> Fluent English or Dutch (B2/C1) — to communicate with English-speaking clients.</li>\r\n  <li><strong>Communication:</strong> Patience, politeness, and ability to explain technical things simply.</li>\r\n  <li><strong>Schedule:</strong> Willingness to work in shifts (including evenings/weekends if required).</li>\r\n</ul>",
+      "details_html_de": "<p><strong>Erfahrung:</strong> Mindestens 1 Jahr Erfahrung im technischen Kundensupport (Erfahrung bei Internetdienstanbietern ist von Vorteil).</p>\r\n\r\n<p><strong>Netzwerkgrundlagen:</strong></p>\r\n<ul>\r\n  <li>Fundierte Kenntnisse der „Last-Mile“-Technologien (Ethernet, WLAN, GPON).</li>\r\n  <li>Fähigkeit, die Funktionsweise von DHCP, DNS und IP-Adressen zu erklären.</li>\r\n  <li>Kenntnisse der WLAN-Standards und der Fehlerbehebung bei Störungen.</li>\r\n  <li><strong>Geräte:</strong> Erfahrung in der Konfiguration von Heimroutern (MikroTik, Keenetic, TP-Link, Xiaomi).</li>\r\n  <li><strong>Diagnose:</strong> Fähigkeit zur Nutzung von Ping und Traceroute sowie zum Verständnis von Modemstatistiken (SNR, Dämpfung).</li>\r\n</ul>\r\n\r\n<p><strong>Betriebssysteme:</strong> Sicherer Umgang mit Windows und macOS zur Fehlerbehebung.</p>\r\n\r\n<p><strong>CRM & Abrechnung:</strong> Erfahrung mit Ticketsystemen und Abrechnungsplattformen (z. B. FreeSWITCH oder kundenspezifische Abrechnungssoftware von Internetdienstanbietern).</p>\r\n\r\n<p><strong>Dokumentation:</strong> Fähigkeit, einfache Anleitungen für Kunden zu erstellen.</p>\r\n\r\n<p><strong>Soft Skills & Sonstiges:</strong></p>\r\n<ul>\r\n  <li><strong>Sprache:</strong> Fließende Englisch- oder Niederländischkenntnisse (B2/C1) – zur Kommunikation mit englischsprachigen Kunden.</li>\r\n  <li><strong>Kommunikation:</strong> Geduld, Höflichkeit und die Fähigkeit, technische Sachverhalte verständlich zu erklären.</li>\r\n  <li><strong>Arbeitszeiten:</strong> Bereitschaft zur Schichtarbeit (bei Bedarf auch abends und am Wochenende).</li>\r\n</ul>",
+      "details_html_nl": "<p><strong>Ervaring:</strong> 1+ jaar ervaring in technische klantondersteuning (ervaring bij een internetprovider is een grote plus).</p>\r\n\r\n<p><strong>Basiskennis netwerken:</strong></p>\r\n<ul>\r\n  <li>Sterke kennis van \"last mile\"-technologieën (Ethernet, Wi-Fi, GPON).</li>\r\n  <li>Het vermogen om uit te leggen hoe DHCP, DNS en IP-adressen werken.</li>\r\n  <li>Kennis van Wi-Fi-standaarden en het oplossen van interferentieproblemen.</li>\r\n  <li><strong>Apparatuur:</strong> Ervaring met het configureren van thuisrouters (MikroTik, Keenetic, TP-Link, Xiaomi).</li>\r\n  <li><strong>Diagnostiek:</strong> Het vermogen om ping en traceroute te gebruiken en modemstatistieken te begrijpen (SNR, demping).</li>\r\n</ul>\r\n\r\n<p><strong>Besturingssystemen:</strong> Vloeiend gebruik van Windows en macOS voor het oplossen van problemen.</p>\r\n\r\n<p><strong>CRM & Facturering:</strong> Ervaring met ticketsystemen en factureringsplatformen (zoals FreeSWITCH of aangepaste factureringssoftware van internetproviders).</p>\r\n\r\n<p><strong>Documentatie:</strong> Het vermogen om eenvoudige instructies voor klanten te maken.</p>\r\n\r\n<p><strong>Soft skills & overige:</strong></p>\r\n<ul>\r\n  <li><strong>Taal:</strong> Vloeiend Engels of Nederlands (B2/C1) – om te communiceren met Engelstalige klanten.</li>\r\n  <li><strong>Communicatie:</strong> Geduld, beleefdheid en het vermogen om technische zaken eenvoudig uit te leggen.</li>\r\n  <li><strong>Rooster:</strong> Bereidheid om in ploegendiensten te werken (inclusief avonden/weekenden indien nodig).</li>\r\n</ul>",
+      "countries": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "iprovider.vacancy",
+    "pk": 2,
+    "fields": {
+      "title": "System Administrator",
+      "title_en": "System Administrator",
+      "title_de": "Systemadministrator",
+      "title_nl": "Systeembeheerder",
+      "price": 3230.0,
+      "created_at": "2025-11-16T16:52:33.727Z",
+      "updated_at": "2026-02-21T16:04:46.487Z",
+      "description": "Technical Requirements:\r\nEducation: Higher education in Computer Science, Telecommunications, or related field (or equivalent experience).\r\nExperience: 2+ years of experience in system administration, preferably in an ISP or telecom environment.\r\nNetworking:\r\nDeep understanding of TCP/IP stack, subnetting, VLANs, NAT, and firewalling (iptables, PF).\r\nExperience with BGP, OSPF, and MPLS.\r\nHands-on experience with routers and switches (MikroTik, Cisco, Ubiquiti, or Juniper).\r\nOperating Systems: Advanced knowledge of Linux (Ubuntu/CentOS/Debian) and Windows Server.\r\nCore Services: Administration of DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS), and web servers (Nginx/Apache).\r\nVirtualization & Containers: Experience with Proxmox, VMware, or Docker.\r\nMonitoring: Experience with Zabbix, Prometheus, or Grafana.\r\nScripting: Ability to automate tasks using Bash or Python.\r\nBackup: Knowledge of backup strategies and tools (Bacula, Veeam, rsync).\r\nHardware: Familiarity with GPON, xDSL, or Ethernet technologies is a strong plus.\r\nSoft Skills & Other:\r\nAbility to work in a 24/7 environment and respond to emergencies.\r\nStrong analytical and problem-solving skills.\r\nEnglish: B1 (Intermediate) — enough to read technical documentation.",
+      "description_en": "Technical Requirements:\r\nEducation: Higher education in Computer Science, Telecommunications, or related field (or equivalent experience).\r\nExperience: 2+ years of experience in system administration, preferably in an ISP or telecom environment.\r\nNetworking:\r\nDeep understanding of TCP/IP stack, subnetting, VLANs, NAT, and firewalling (iptables, PF).\r\nExperience with BGP, OSPF, and MPLS.\r\nHands-on experience with routers and switches (MikroTik, Cisco, Ubiquiti, or Juniper).\r\nOperating Systems: Advanced knowledge of Linux (Ubuntu/CentOS/Debian) and Windows Server.\r\nCore Services: Administration of DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS), and web servers (Nginx/Apache).\r\nVirtualization & Containers: Experience with Proxmox, VMware, or Docker.\r\nMonitoring: Experience with Zabbix, Prometheus, or Grafana.\r\nScripting: Ability to automate tasks using Bash or Python.\r\nBackup: Knowledge of backup strategies and tools (Bacula, Veeam, rsync).\r\nHardware: Familiarity with GPON, xDSL, or Ethernet technologies is a strong plus.\r\nSoft Skills & Other:\r\nAbility to work in a 24/7 environment and respond to emergencies.\r\nStrong analytical and problem-solving skills.\r\nEnglish: B1 (Intermediate) — enough to read technical documentation.",
+      "description_de": "Technische Anforderungen:\r\nAusbildung: Hochschulabschluss in Informatik, Telekommunikation oder einem verwandten Bereich (oder vergleichbare Qualifikation).\r\nBerufserfahrung: Mindestens 2 Jahre Erfahrung in der Systemadministration, idealerweise in einem ISP- oder Telekommunikationsumfeld.\r\nNetzwerkkenntnisse: Fundierte Kenntnisse des TCP/IP-Stacks, Subnetting, VLANs, NAT und Firewalling (iptables, PF).\r\nErfahrung mit BGP, OSPF und MPLS.\r\nPraktische Erfahrung mit Routern und Switches (MikroTik, Cisco, Ubiquiti oder Juniper).\r\nBetriebssysteme: Fortgeschrittene Kenntnisse in Linux (Ubuntu/CentOS/Debian) und Windows Server.\r\nKernservices: Administration von DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS) und Webservern (Nginx/Apache).\r\nVirtualisierung & Container: Erfahrung mit Proxmox, VMware oder Docker.\r\nMonitoring: Erfahrung mit Zabbix, Prometheus oder Grafana.\r\n\r\nSkripting: Fähigkeit zur Automatisierung von Aufgaben mit Bash oder Python.\r\nDatensicherung: Kenntnisse in Datensicherungsstrategien und -tools (Bacula, Veeam, rsync).\r\nHardware: Erfahrung mit GPON-, xDSL- oder Ethernet-Technologien ist von Vorteil.\r\nSoziale Kompetenzen: Bereitschaft zum Schichtdienst (24/7) und zur Reaktion auf Notfälle. Ausgeprägte analytische und problemlösende Fähigkeiten.\r\nEnglisch: B1 (Mittelstufe) – ausreichend zum Lesen technischer Dokumentationen.",
+      "description_nl": "Technische Anforderungen:\r\nAusbildung: Hochschulabschluss in Informatik, Telekommunikation oder einem verwandten Bereich (oder vergleichbare Qualifikation).\r\nBerufserfahrung: Mindestens 2 Jahre Erfahrung in der Systemadministration, idealerweise in einem ISP- oder Telekommunikationsumfeld.\r\nNetzwerkkenntnisse: Fundierte Kenntnisse des TCP/IP-Stacks, Subnetting, VLANs, NAT und Firewalling (iptables, PF).\r\nErfahrung mit BGP, OSPF und MPLS.\r\nPraktische Erfahrung mit Routern und Switches (MikroTik, Cisco, Ubiquiti oder Juniper).\r\nBetriebssysteme: Fortgeschrittene Kenntnisse in Linux (Ubuntu/CentOS/Debian) und Windows Server.\r\nKernservices: Administration von DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS) und Webservern (Nginx/Apache).\r\nVirtualisierung & Container: Erfahrung mit Proxmox, VMware oder Docker.\r\nMonitoring: Erfahrung mit Zabbix, Prometheus oder Grafana.\r\n\r\nSkripting: Fähigkeit zur Automatisierung von Aufgaben mit Bash oder Python.\r\nDatensicherung: Kenntnisse in Datensicherungsstrategien und -tools (Bacula, Veeam, rsync).\r\nHardware: Erfahrung mit GPON-, xDSL- oder Ethernet-Technologien ist von Vorteil.\r\nSoziale Kompetenzen: Bereitschaft zum Schichtdienst (24/7) und zur Reaktion auf Notfälle. Ausgeprägte analytische und problemlösende Fähigkeiten.\r\nEnglisch: B1 (Mittelstufe) – ausreichend zum Lesen technischer Dokumentationen.",
+      "photo": "",
+      "watched": 0,
+      "is_published": true,
+      "category": 1,
+      "slug": "system-administrator",
+      "features_text": "",
+      "features_text_en": "",
+      "features_text_de": "",
+      "features_text_nl": "",
+      "details_html": "<p><strong>Technical Requirements:</strong></p>\r\n  <ul type=\"square\">\r\n   <li><strong>Education:</strong> Higher education in Computer Science, Telecommunications, or related field (or equivalent experience).</li>\r\n   <li><strong>Experience:</strong> 2+ years of experience in system administration, preferably in an ISP or telecom environment.</li>\r\n</ul>\r\n<p><strong>Networking:</strong></p>\r\n<ul type = \"square\">\r\n<li>Deep understanding of TCP/IP stack, subnetting, VLANs, NAT, and firewalling (iptables, PF).</li>\r\n<li>Experience with BGP, OSPF, and MPLS.\r\nHands-on experience with routers and switches (MikroTik, Cisco, Ubiquiti, or Juniper). </li>\r\n<li><strong>Operating Systems: </strong>Advanced knowledge of Linux (Ubuntu/CentOS/Debian) and Windows Server.</li>\r\n<li><strong>Core Services: </strong>Administration of DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS), and web servers (Nginx/Apache).</li>\r\n<li><strong>Virtualization & Containers: </strong>Experience with Proxmox, VMware, or Docker.</li>\r\n<li><strong>Monitoring: </strong>Experience with Zabbix, Prometheus, or Grafana.</li>\r\n<li>\r\n<strong>Scripting:</strong>Ability to automate tasks using Bash or Python.</li>\r\n<li>\r\n<strong>Backup:</strong> Knowledge of backup strategies and tools (Bacula, Veeam, rsync).</li>\r\n<li>\r\n<strong>Hardware:</strong> Familiarity with GPON, xDSL, or Ethernet technologies is a strong plus.</li>\r\n  </ul>\r\n<p><strong>Soft Skills & Other:</strong></p>\r\n<ul type = \"square\">\r\n<li>\r\nAbility to work in a 24/7 environment and respond to emergencies.</li>\r\n<li>Strong analytical and problem-solving skills.</li>\r\n<li><strong>English: </strong>B1 (Intermediate) — enough to read technical documentation.</li>\r\n</ul>",
+      "details_html_en": "<p><strong>Technical Requirements:</strong></p>\r\n  <ul type=\"square\">\r\n   <li><strong>Education:</strong> Higher education in Computer Science, Telecommunications, or related field (or equivalent experience).</li>\r\n   <li><strong>Experience:</strong> 2+ years of experience in system administration, preferably in an ISP or telecom environment.</li>\r\n</ul>\r\n<p><strong>Networking:</strong></p>\r\n<ul type = \"square\">\r\n<li>Deep understanding of TCP/IP stack, subnetting, VLANs, NAT, and firewalling (iptables, PF).</li>\r\n<li>Experience with BGP, OSPF, and MPLS.\r\nHands-on experience with routers and switches (MikroTik, Cisco, Ubiquiti, or Juniper). </li>\r\n<li><strong>Operating Systems: </strong>Advanced knowledge of Linux (Ubuntu/CentOS/Debian) and Windows Server.</li>\r\n<li><strong>Core Services: </strong>Administration of DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS), and web servers (Nginx/Apache).</li>\r\n<li><strong>Virtualization & Containers: </strong>Experience with Proxmox, VMware, or Docker.</li>\r\n<li><strong>Monitoring: </strong>Experience with Zabbix, Prometheus, or Grafana.</li>\r\n<li>\r\n<strong>Scripting:</strong>Ability to automate tasks using Bash or Python.</li>\r\n<li>\r\n<strong>Backup:</strong> Knowledge of backup strategies and tools (Bacula, Veeam, rsync).</li>\r\n<li>\r\n<strong>Hardware:</strong> Familiarity with GPON, xDSL, or Ethernet technologies is a strong plus.</li>\r\n  </ul>\r\n<p><strong>Soft Skills & Other:</strong></p>\r\n<ul type = \"square\">\r\n<li>\r\nAbility to work in a 24/7 environment and respond to emergencies.</li>\r\n<li>Strong analytical and problem-solving skills.</li>\r\n<li><strong>English: </strong>B1 (Intermediate) — enough to read technical documentation.</li>\r\n</ul>",
+      "details_html_de": "<p><strong>Technische Anforderungen:</strong></p>\r\n<ul type=\"square\">\r\n  <li><strong>Ausbildung:</strong> Hochschulabschluss in Informatik, Telekommunikation oder einem verwandten Bereich (oder gleichwertige Erfahrung).</li>\r\n  <li><strong>Erfahrung:</strong> Mindestens 2 Jahre Erfahrung in der Systemadministration, idealerweise in einem ISP- oder Telekommunikationsumfeld.</li>\r\n</ul>\r\n\r\n<p><strong>Netzwerk:</strong></p>\r\n<ul type=\"square\">\r\n  <li>Fundierte Kenntnisse des TCP/IP-Stacks, Subnetting, VLANs, NAT und Firewalling (iptables, PF).</li>\r\n  <li>Erfahrung mit BGP, OSPF und MPLS. Praktische Erfahrung mit Routern und Switches (MikroTik, Cisco, Ubiquiti oder Juniper).</li>\r\n  <li><strong>Betriebssysteme:</strong> Fortgeschrittene Kenntnisse in Linux (Ubuntu/CentOS/Debian) und Windows Server.</li>\r\n  <li><strong>Kernservices:</strong> Administration von DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS) und Webservern (Nginx/Apache).</li>\r\n  <li><strong>Virtualisierung & Container:</strong> Erfahrung mit Proxmox, VMware oder Docker.</li>\r\n  <li><strong>Monitoring:</strong> Erfahrung mit Zabbix, Prometheus oder Grafana.</li>\r\n  <li><strong>Skripting:</strong> Fähigkeit, Aufgaben mit Bash oder Python zu automatisieren.</li>\r\n  <li><strong>Datensicherung:</strong> Kenntnisse in Backup-Strategien und -Tools (Bacula, Veeam, rsync).</li>\r\n  <li><strong>Hardware:</strong> Erfahrung mit GPON-, xDSL- oder Ethernet-Technologien ist von großem Vorteil.</li>\r\n</ul>\r\n\r\n<p><strong>Soft Skills & Sonstiges:</strong></p>\r\n<ul type=\"square\">\r\n  <li>Bereitschaft zur Arbeit im 24/7-Umfeld und Reaktion auf Notfälle.</li>\r\n  <li>Ausgeprägte analytische Fähigkeiten und Problemlösungskompetenz.</li>\r\n  <li><strong>Englisch:</strong> B1 (Mittelstufe) – ausreichend zum Lesen technischer Dokumentationen.</li>\r\n</ul>",
+      "details_html_nl": "<p><strong>Technische vereisten:</strong></p>\r\n<ul type=\"square\">\r\n  <li><strong>Opleiding:</strong> Hoger onderwijs in informatica, telecommunicatie of een gerelateerd vakgebied (of gelijkwaardige ervaring).</li>\r\n  <li><strong>Ervaring:</strong> Minimaal 2 jaar ervaring in systeembeheer, bij voorkeur in een ISP- of telecomomgeving.</li>\r\n</ul>\r\n\r\n<p><strong>Netwerken:</strong></p>\r\n<ul type=\"square\">\r\n  <li>Diepgaande kennis van de TCP/IP-stack, subnetting, VLAN's, NAT en firewalls (iptables, PF).</li>\r\n  <li>Ervaring met BGP, OSPF en MPLS. Praktische ervaring met routers en switches (MikroTik, Cisco, Ubiquiti of Juniper).</li>\r\n  <li><strong>Besturingssystemen:</strong> Geavanceerde kennis van Linux (Ubuntu/CentOS/Debian) en Windows Server.</li>\r\n  <li><strong>Kernservices:</strong> Beheer van DNS (Bind, PowerDNS), DHCP (ISC-DHCP, Kea), RADIUS (FreeRADIUS) en webservers (Nginx/Apache).</li>\r\n  <li><strong>Virtualisatie en containers:</strong> Ervaring met Proxmox, VMware of Docker.</li>\r\n  <li><strong>Monitoring:</strong> Ervaring met Zabbix, Prometheus of Grafana.</li>\r\n  <li><strong>Scripting:</strong> Mogelijkheid om taken te automatiseren met Bash of Python.</li>\r\n  <li><strong>Back-up:</strong> Kennis van back-upstrategieën en -tools (Bacula, Veeam, rsync).</li>\r\n  <li><strong>Hardware:</strong> Bekendheid met GPON-, xDSL- of Ethernet-technologieën is een grote pré.</li>\r\n</ul>\r\n\r\n<p><strong>Soft skills & overige:</strong></p>\r\n<ul type=\"square\">\r\n  <li>Vermogen om in een 24/7-omgeving te werken en te reageren op noodsituaties.</li>\r\n  <li>Sterke analytische en probleemoplossende vaardigheden.</li>\r\n  <li><strong>Engels:</strong> B1 (gemiddeld) — voldoende om technische documentatie te lezen.</li>\r\n</ul>",
+      "countries": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 2,
+    "fields": {
+      "title": "Venus",
+      "title_en": "Venus",
+      "title_de": "",
+      "title_nl": "",
+      "price": 6.25,
+      "created_at": "2025-11-16T16:35:58.060Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "venus_sun",
+      "order": 2,
+      "features_text": "Speed: 200 Mbps\r\nMonthly Traffic: 30 GB\r\nMinutes: 400\r\nSMS: 100",
+      "features_text_en": "Speed: 200 Mbps\r\nMonthly Traffic: 30 GB\r\nMinutes: 400\r\nSMS: 100",
+      "features_text_de": "Geschwindigkeit: 200 Mbit/s\r\nMonatliches Datenvolumen: 30 GB\r\nMinuten: 400\r\nSMS: 100",
+      "features_text_nl": "Snelheid: 200 Mbps\r\nMaandelijks dataverkeer: 30 GB\r\nBelminuten: 400\r\nSms: 100"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 4,
+    "fields": {
+      "title": "Venus",
+      "title_en": "Venus",
+      "title_de": "",
+      "title_nl": "",
+      "price": 8.25,
+      "created_at": "2025-12-23T21:47:05.586Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "venus_moon",
+      "order": 2,
+      "features_text": "Speed: 200 Mbps\r\nDownload: up to 1.5 GB in 1 minute",
+      "features_text_en": "Speed: 200 Mbps\r\nDownload: up to 1.5 GB in 1 minute",
+      "features_text_de": "Geschwindigkeit: 200 Mbit/s\r\nDownload: bis zu 1,5 GB in 1 Minute",
+      "features_text_nl": "Snelheid: 200 Mbps\r\nDownloaden: tot 1,5 GB in 1 minuut"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 5,
+    "fields": {
+      "title": "Mercury",
+      "title_en": "Mercury",
+      "title_de": "",
+      "title_nl": "",
+      "price": 5.1,
+      "created_at": "2025-12-23T21:49:37.257Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "mercury_sun",
+      "order": 1,
+      "features_text": "Speed: 100 Mbps\r\nMonthly Traffic: 15 GB\r\nMinutes: 200\r\nSMS: 50",
+      "features_text_en": "Speed: 100 Mbps\r\nMonthly Traffic: 15 GB\r\nMinutes: 200\r\nSMS: 50",
+      "features_text_de": "Geschwindigkeit: 100 Mbit/s\r\nMonatliches Datenvolumen: 15 GB\r\nMinuten: 200\r\nSMS: 50",
+      "features_text_nl": "Snelheid: 100 Mbps\r\nMaandelijks dataverkeer: 15 GB\r\nBelminuten: 200\r\nSms: 50"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 6,
+    "fields": {
+      "title": "Earth",
+      "title_en": "Earth",
+      "title_de": "",
+      "title_nl": "",
+      "price": 11.0,
+      "created_at": "2025-12-23T22:47:06.810Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "earth_moon",
+      "order": 3,
+      "features_text": "Speed: 300 Mbps\r\nDownload: up tp 2.25 GB in 1 minute",
+      "features_text_en": "Speed: 300 Mbps\r\nDownload: up tp 2.25 GB in 1 minute",
+      "features_text_de": "Geschwindigkeit: 300 Mbit/s\r\nDownload: bis zu 2,25 GB in 1 Minute",
+      "features_text_nl": "Snelheid: 300 Mbps\r\nDownloaden: tot 2,25 GB in 1 minuut"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 7,
+    "fields": {
+      "title": "Earth",
+      "title_en": "Earth",
+      "title_de": "",
+      "title_nl": "",
+      "price": 9.6,
+      "created_at": "2025-12-23T22:47:23.031Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "earth_sun",
+      "order": 3,
+      "features_text": "Speed: 300 Mbps\r\nMonthly Traffic: 50 GB\r\nMinutes: 600\r\nSMS: 150",
+      "features_text_en": "Speed: 300 Mbps\r\nMonthly Traffic: 50 GB\r\nMinutes: 600\r\nSMS: 150",
+      "features_text_de": "Geschwindigkeit: 300 Mbit/s\r\nMonatliches Datenvolumen: 50 GB\r\nMinuten: 600\r\nSMS: 150",
+      "features_text_nl": "Snelheid: 300 Mbps\r\nMaandelijks dataverkeer: 50 GB\r\nBellen: 600 minuten\r\nSms: 150"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 8,
+    "fields": {
+      "title": "Mars",
+      "title_en": "Mars",
+      "title_de": "",
+      "title_nl": "",
+      "price": 13.75,
+      "created_at": "2025-12-23T22:47:48.209Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "mars_moon",
+      "order": 4,
+      "features_text": "Speed: 400 Mbps\r\nDownload: up to 3 GB in 1 minute",
+      "features_text_en": "Speed: 400 Mbps\r\nDownload: up to 3 GB in 1 minute",
+      "features_text_de": "Geschwindigkeit: 400 Mbit/s\r\nDownload: bis zu 3 GB in 1 Minute",
+      "features_text_nl": "Snelheid: 400 Mbps\r\nDownloaden: tot 3 GB in 1 minuut"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 9,
+    "fields": {
+      "title": "Mars",
+      "title_en": "Mars",
+      "title_de": "",
+      "title_nl": "",
+      "price": 12.35,
+      "created_at": "2025-12-23T22:48:06.363Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "mars_sun",
+      "order": 4,
+      "features_text": "Speed: 400 Mbps\r\nMonthly Traffic: 75 GB\r\nMinutes: 800\r\nSMS: 200",
+      "features_text_en": "Speed: 400 Mbps\r\nMonthly Traffic: 75 GB\r\nMinutes: 800\r\nSMS: 200",
+      "features_text_de": "Geschwindigkeit: 400 Mbit/s\r\nMonatliches Datenvolumen: 75 GB\r\nMinuten: 800\r\nSMS: 200",
+      "features_text_nl": "Snelheid: 400 Mbps\r\nMaandelijks dataverkeer: 75 GB\r\nBelminuten: 800\r\nSms: 200"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 10,
+    "fields": {
+      "title": "Jupiter",
+      "title_en": "Jupiter",
+      "title_de": "",
+      "title_nl": "",
+      "price": 15.1,
+      "created_at": "2025-12-23T22:48:26.432Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "jupiter_moon",
+      "order": 5,
+      "features_text": "Speed: 500 Mbps\r\nDownload: up to 3.75 GB in 1 minute",
+      "features_text_en": "Speed: 500 Mbps\r\nDownload: up to 3.75 GB in 1 minute",
+      "features_text_de": "Geschwindigkeit: 500 Mbit/s\r\nDownload: bis zu 3,75 GB in 1 Minute",
+      "features_text_nl": "Snelheid: 500 Mbps\r\nDownloaden: tot 3,75 GB in 1 minuut"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 11,
+    "fields": {
+      "title": "Jupiter",
+      "title_en": "Jupiter",
+      "title_de": "",
+      "title_nl": "",
+      "price": 15.1,
+      "created_at": "2025-12-23T22:49:05.921Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "jupiter_sun",
+      "order": 5,
+      "features_text": "Speed: 500 Mbps\r\nMonthly Traffic: 100 GB\r\nMinutes: 1000\r\nSMS: 300",
+      "features_text_en": "Speed: 500 Mbps\r\nMonthly Traffic: 100 GB\r\nMinutes: 1000\r\nSMS: 300",
+      "features_text_de": "Geschwindigkeit: 500 Mbit/s\r\nMonatliches Datenvolumen: 100 GB\r\nMinuten: 1000\r\nSMS: 300",
+      "features_text_nl": "Snelheid: 500 Mbps\r\nMaandelijks dataverkeer: 100 GB\r\nBelminuten: 1000\r\nSms: 300"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 12,
+    "fields": {
+      "title": "Saturn",
+      "title_en": "Saturn",
+      "title_de": "",
+      "title_nl": "",
+      "price": 19.25,
+      "created_at": "2025-12-23T22:49:42.344Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "saturn_moon",
+      "order": 6,
+      "features_text": "Speed:600 Mbps\r\nDownload: up to 4.5 GB in 1 minute",
+      "features_text_en": "Speed:600 Mbps\r\nDownload: up to 4.5 GB in 1 minute",
+      "features_text_de": "Geschwindigkeit: 600 Mbit/s\r\nDownload: bis zu 4,5 GB in 1 Minute",
+      "features_text_nl": "Snelheid: 600 Mbps\r\nDownloaden: tot 4,5 GB in 1 minuut"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 13,
+    "fields": {
+      "title": "Saturn",
+      "title_en": "Saturn",
+      "title_de": "",
+      "title_nl": "",
+      "price": 17.85,
+      "created_at": "2025-12-23T22:50:00.852Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "saturn_sun",
+      "order": 6,
+      "features_text": "Speed: 600 Mbps\r\nMonthly Traffic: 150 GB\r\nMinutes: Unlimited on the SunWilly network\r\nSMS: 500",
+      "features_text_en": "Speed: 600 Mbps\r\nMonthly Traffic: 150 GB\r\nMinutes: Unlimited on the SunWilly network\r\nSMS: 500",
+      "features_text_de": "Geschwindigkeit: 600 Mbit/s\r\nMonatliches Datenvolumen: 150 GB\r\nMinuten: Unbegrenzt im SunWilly-Netz\r\nSMS: 500",
+      "features_text_nl": "Snelheid: 600 Mbps\r\nMaandelijks dataverkeer: 150 GB\r\nBellen: Onbeperkt op het SunWilly-netwerk\r\nSms: 500"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 14,
+    "fields": {
+      "title": "Individual Tariff Space Station",
+      "title_en": "Individual Tariff Space Station",
+      "title_de": "",
+      "title_nl": "",
+      "price": 0.0,
+      "created_at": "2025-12-23T22:50:50.650Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 5,
+      "slug": "individual-tariff-space-station",
+      "order": 7,
+      "features_text": "Speed: Configurable upon request\r\nMonthly Traffic: Configurable upon request\r\nMinutes/SMS: Individual package",
+      "features_text_en": "Speed: Configurable upon request\r\nMonthly Traffic: Configurable upon request\r\nMinutes/SMS: Individual package",
+      "features_text_de": "Geschwindigkeit: Auf Anfrage konfigurierbar\r\nMonatliches Datenvolumen: Auf Anfrage konfigurierbar\r\nMinuten/SMS: Individuelles Paket",
+      "features_text_nl": "Snelheid: Aanpasbaar op aanvraag\r\nMaandelijks dataverkeer: Aanpasbaar op aanvraag\r\nMinuten/sms: Per pakket afzonderlijk"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 15,
+    "fields": {
+      "title": "Individual Tariff Cosmic Comet",
+      "title_en": "Individual Tariff Cosmic Comet",
+      "title_de": "",
+      "title_nl": "",
+      "price": 0.0,
+      "created_at": "2025-12-23T22:52:11.910Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "individual-tariff-cosmic-comet",
+      "order": 7,
+      "features_text": "Speed: Configurable on request\r\nDownload: Configure on reguest",
+      "features_text_en": "Speed: Configurable on request\r\nDownload: Configure on reguest",
+      "features_text_de": "Geschwindigkeit: Auf Anfrage konfigurierbar\r\nDownload: Auf Anfrage konfigurierbar",
+      "features_text_nl": "Snelheid: op aanvraag configureerbaar\r\nDownload: op aanvraag configureerbaar"
+    }
+  },
+  {
+    "model": "iprovider.tariff",
+    "pk": 16,
+    "fields": {
+      "title": "Mercury",
+      "title_en": "Mercury",
+      "title_de": "",
+      "title_nl": "",
+      "price": 5.6,
+      "created_at": "2025-12-23T22:55:42.143Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 4,
+      "slug": "mercury_moon",
+      "order": 1,
+      "features_text": "Speed: 100 Mbps\r\nDownload: up to 0.75 GB in 1 minutes",
+      "features_text_en": "Speed: 100 Mbps\r\nDownload: up to 0.75 GB in 1 minutes",
+      "features_text_de": "Geschwindigkeit: 100 Mbit/s\r\nDownload: bis zu 0,75 GB in 1 Minute",
+      "features_text_nl": "Snelheid: 100 Mbps\r\nDownloaden: tot 0,75 GB in 1 minuut"
+    }
+  },
+  {
+    "model": "iprovider.tariffprice",
+    "pk": 5,
+    "fields": {
+      "tariff": 16,
+      "country": null,
+      "city": 5,
+      "price": 4.0,
+      "created_at": "2025-12-24T00:29:20.777Z",
+      "updated_at": "2025-12-24T00:29:20.777Z"
+    }
+  },
+  {
+    "model": "iprovider.tariffprice",
+    "pk": 6,
+    "fields": {
+      "tariff": 5,
+      "country": null,
+      "city": 5,
+      "price": 3.0,
+      "created_at": "2025-12-24T00:29:50.146Z",
+      "updated_at": "2026-02-20T09:00:27.435Z"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 1,
+    "fields": {
+      "title": "VPN",
+      "title_en": "VPN",
+      "title_de": "",
+      "title_nl": "",
+      "price": 3.0,
+      "created_at": "2025-12-25T20:23:16.526Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "vpn",
+      "order": 1,
+      "features_text": "3 simultaneous connections\r\nServers in 10 countries\r\nLeak protection (DNS/IPv6), Kill Switch\r\nSupport for main protocols (WireGuard, IKEv2)\r\nBlocking ads and trackers at the network level (optional)\r\n24/7 technical support",
+      "features_text_en": "3 simultaneous connections\r\nServers in 10 countries\r\nLeak protection (DNS/IPv6), Kill Switch\r\nSupport for main protocols (WireGuard, IKEv2)\r\nBlocking ads and trackers at the network level (optional)\r\n24/7 technical support",
+      "features_text_de": "3 gleichzeitige Verbindungen\r\nServer in 10 Ländern\r\nSchutz vor Datenlecks (DNS/IPv6), Kill-Switch\r\nUnterstützung gängiger Protokolle (WireGuard, IKEv2)\r\nBlockierung von Werbung und Trackern auf Netzwerkebene (optional)\r\nTechnischer Support rund um die Uhr",
+      "features_text_nl": "3 gelijktijdige verbindingen\r\nServers in 10 landen\r\nLekbeveiliging (DNS/IPv6), kill switch\r\nOndersteuning voor de belangrijkste protocollen (WireGuard, IKEv2)\r\nBlokkeren van advertenties en trackers op netwerkniveau (optioneel)\r\n24/7 technische ondersteuning"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 2,
+    "fields": {
+      "title": "VPN 2",
+      "title_en": "VPN 2",
+      "title_de": "",
+      "title_nl": "",
+      "price": 6.0,
+      "created_at": "2026-01-01T20:25:58.819Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "vpn2",
+      "order": 2,
+      "features_text": "5 simultaneous connections\r\nServers in 15 countries\r\nLeak protection (DNS/IPv6), Kill Switch\r\nSupport for main protocols (WireGuard, IKEv2)\r\nBlocking ads and trackers at the network level (optional)\r\n24/7 tecnical support",
+      "features_text_en": "5 simultaneous connections\r\nServers in 15 countries\r\nLeak protection (DNS/IPv6), Kill Switch\r\nSupport for main protocols (WireGuard, IKEv2)\r\nBlocking ads and trackers at the network level (optional)\r\n24/7 tecnical support",
+      "features_text_de": "5 gleichzeitige Verbindungen\r\nServer in 15 Ländern\r\nSchutz vor Datenlecks (DNS/IPv6), Kill-Switch\r\nUnterstützung gängiger Protokolle (WireGuard, IKEv2)\r\nBlockierung von Werbung und Trackern auf Netzwerkebene (optional)\r\nTechnischer Support rund um die Uhr",
+      "features_text_nl": "5 gelijktijdige verbindingen\r\nServers in 15 landen\r\nLekbeveiliging (DNS/IPv6), Kill Switch\r\nOndersteuning voor de belangrijkste protocollen (WireGuard, IKEv2)\r\nBlokkeren van advertenties en trackers op netwerkniveau (optioneel)\r\n24/7 technische ondersteuning"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 3,
+    "fields": {
+      "title": "VPN Custom",
+      "title_en": "VPN Custom",
+      "title_de": "VPN-Benutzerdefiniert",
+      "title_nl": "VPN-aanpassing",
+      "price": 0.0,
+      "created_at": "2026-01-01T20:28:05.399Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "vpn-custom",
+      "order": 3,
+      "features_text": "We do not offer you a ready-made tariff. Instead, our engineer will audit your tasks and assemble a VPN solution specifically for your requirements: from dedicated servers in a specific country to custom encryption protocols.",
+      "features_text_en": "We do not offer you a ready-made tariff. Instead, our engineer will audit your tasks and assemble a VPN solution specifically for your requirements: from dedicated servers in a specific country to custom encryption protocols.",
+      "features_text_de": "Wir bieten Ihnen keinen Standardtarif an. Stattdessen analysiert unser Techniker Ihre Anforderungen und entwickelt eine VPN-Lösung, die genau auf Ihre Bedürfnisse zugeschnitten ist: von dedizierten Servern in einem bestimmten Land bis hin zu individuellen Verschlüsselungsprotokollen.",
+      "features_text_nl": "Wij bieden geen standaardtarief aan. In plaats daarvan analyseert onze engineer uw situatie en stelt een VPN-oplossing samen die specifiek is afgestemd op uw behoeften: van dedicated servers in een bepaald land tot aangepaste encryptieprotocollen."
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 4,
+    "fields": {
+      "title": "Assistant",
+      "title_en": "Assistant",
+      "title_de": "Assistent",
+      "title_nl": "Assistent",
+      "price": 3.0,
+      "created_at": "2026-01-01T20:29:21.103Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "assistant",
+      "order": 4,
+      "features_text": "Voice bot responds to incoming messages according to preset scenario\r\nConversation recording, transcript, data transfer to CRM\r\nLibrary of 5 standard scenarios (bounce, write, redirect)\r\nSurcharge: Over the package of 500 minutes/month $0.05 per minute",
+      "features_text_en": "Voice bot responds to incoming messages according to preset scenario\r\nConversation recording, transcript, data transfer to CRM\r\nLibrary of 5 standard scenarios (bounce, write, redirect)\r\nSurcharge: Over the package of 500 minutes/month $0.05 per minute",
+      "features_text_de": "Der Sprachbot beantwortet eingehende Nachrichten gemäß vordefiniertem Szenario. Gesprächsaufzeichnung, Transkription, Datenübertragung an das CRM-System. Bibliothek mit 5 Standard-Szenarien (Abweisung, Schreiben, Weiterleitung). Zuschlag: Über das 500-Minuten-Paket/Monat hinaus 0,05 $ pro Minute.",
+      "features_text_nl": "Spraakbot reageert op inkomende berichten volgens een vooraf ingesteld scenario.\r\nGesprek opnemen, transcriptie, gegevensoverdracht naar CRM.\r\nBibliotheek met 5 standaardscenario's (bounce, schrijven, doorverwijzen).\r\nToeslag: Boven het pakket van 500 minuten/maand: $ 0,05 per minuut."
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 5,
+    "fields": {
+      "title": "Assistant 2",
+      "title_en": "Assistant 2",
+      "title_de": "Assistent 2",
+      "title_nl": "Assistent 2",
+      "price": 6.0,
+      "created_at": "2026-01-01T20:30:40.052Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "assistant2",
+      "order": 5,
+      "features_text": "Scheduled automatic calls (reminders, alerts)\r\nIntegration with calendar\r\nUp to 100 outgoing calls/month based on ready-made templates\r\nSurcharge: Over the package - $0.07 per call",
+      "features_text_en": "Scheduled automatic calls (reminders, alerts)\r\nIntegration with calendar\r\nUp to 100 outgoing calls/month based on ready-made templates\r\nSurcharge: Over the package - $0.07 per call",
+      "features_text_de": "Geplante automatische Anrufe (Erinnerungen, Benachrichtigungen)\r\nKalenderintegration\r\nBis zu 100 ausgehende Anrufe pro Monat basierend auf vorgefertigten Vorlagen\r\nZuschlag: Über das Paket hinaus – 0,07 $ pro Anruf",
+      "features_text_nl": "Geplande automatische oproepen (herinneringen, meldingen)\r\nIntegratie met agenda\r\nTot 100 uitgaande oproepen per maand op basis van kant-en-klare sjablonen\r\nToeslag: Bovenop het pakket - € 0,07 per oproep"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 6,
+    "fields": {
+      "title": "Assistant 3",
+      "title_en": "Assistant 3",
+      "title_de": "Assistent 3",
+      "title_nl": "Assistent 3",
+      "price": 9.0,
+      "created_at": "2026-01-01T20:32:39.562Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "assistant3",
+      "order": 6,
+      "features_text": "All two modules included\r\n1000 combined minutes/month\r\nUnlimited custom scenarios\r\nAdvanced analytics (emotion recognition, performance metrics)\r\nReal-time text dictation to the Assistant\r\nUnlimited number of sessions\r\nUp to 300 minutes per month in total with other modules",
+      "features_text_en": "All two modules included\r\n1000 combined minutes/month\r\nUnlimited custom scenarios\r\nAdvanced analytics (emotion recognition, performance metrics)\r\nReal-time text dictation to the Assistant\r\nUnlimited number of sessions\r\nUp to 300 minutes per month in total with other modules",
+      "features_text_de": "Beide Module enthalten\r\n1000 Minuten/Monat (insgesamt)\r\nUnbegrenzte benutzerdefinierte Szenarien\r\nErweiterte Analysen (Emotionserkennung, Leistungskennzahlen)\r\nEchtzeit-Textdiktat für den Assistenten\r\nUnbegrenzte Anzahl an Sitzungen\r\nBis zu 300 Minuten pro Monat insgesamt mit anderen Modulen",
+      "features_text_nl": "Beide modules inbegrepen\r\n1000 gecombineerde minuten/maand\r\nOnbeperkt aantal aangepaste scenario's\r\nGeavanceerde analyses (emotieherkenning, prestatiemetingen)\r\nRealtime tekstdictatie aan de assistent\r\nOnbeperkt aantal sessies\r\nTot 300 minuten per maand in totaal met andere modules"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 7,
+    "fields": {
+      "title": "Parental Control Basic",
+      "title_en": "Parental Control Basic",
+      "title_de": "Grundfunktionen der Kindersicherung",
+      "title_nl": "Basisprincipes van ouderlijk toezicht",
+      "price": 3.0,
+      "created_at": "2026-01-01T21:01:46.806Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "parental-control-basic",
+      "order": 7,
+      "features_text": "Content filtering by categories\r\nTime limits on devices (schedule)\r\nSimple activity report (top sites/applications)\r\nUp to 5 children's profiles",
+      "features_text_en": "Content filtering by categories\r\nTime limits on devices (schedule)\r\nSimple activity report (top sites/applications)\r\nUp to 5 children's profiles",
+      "features_text_de": "Inhaltsfilterung nach Kategorien\r\nZeitlimits für Geräte (Zeitplan)\r\nEinfacher Aktivitätsbericht (Top-Websites/Apps)\r\nBis zu 5 Kinderprofile",
+      "features_text_nl": "Inhoud filteren op categorieën\r\nTijdslimieten voor apparaten (planning)\r\nEenvoudig activiteitenrapport (meest bezochte sites/apps)\r\nTot 5 kinderprofielen"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 8,
+    "fields": {
+      "title": "Parental Control Extended",
+      "title_en": "Parental Control Extended",
+      "title_de": "Erweiterte elterliche Kontrolle",
+      "title_nl": "Uitgebreid ouderlijk toezicht",
+      "price": 6.0,
+      "created_at": "2026-01-03T03:12:59.747Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "parental-control-extended",
+      "order": 8,
+      "features_text": "Everything from Basic\r\nGeofences (entry/exit alerts)\r\nText monitoring in social networks and messengers (with consent)\r\nDetailed reports and activity schedules\r\nPriority support",
+      "features_text_en": "Everything from Basic\r\nGeofences (entry/exit alerts)\r\nText monitoring in social networks and messengers (with consent)\r\nDetailed reports and activity schedules\r\nPriority support",
+      "features_text_de": "Alles von den Grundlagen:\r\nGeofences (Eintritts-/Ausgangsbenachrichtigungen)\r\nTextüberwachung in sozialen Netzwerken und Messengern (mit Einwilligung)\r\nDetaillierte Berichte und Aktivitätsübersichten\r\nPrioritärer Support",
+      "features_text_nl": "Alles van basisfunctionaliteiten:\r\nGeofences (meldingen bij in- en uitgang)\r\nTekstmonitoring op sociale netwerken en in berichtenapps (met toestemming)\r\nGedetailleerde rapporten en activiteitenoverzichten\r\nPrioriteitsondersteuning"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 9,
+    "fields": {
+      "title": "Video Intercom Hardware",
+      "title_en": "Video Intercom Hardware",
+      "title_de": "Video-Gegensprechanlagen-Hardware",
+      "title_nl": "Video-intercomhardware",
+      "price": 6.0,
+      "created_at": "2026-01-03T03:13:47.162Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "video-intercom-hardware",
+      "order": 9,
+      "features_text": "Full HD camera with night vision\r\nMotion sensor\r\nWeather-resistant housing\r\nMounting kit included",
+      "features_text_en": "Full HD camera with night vision\r\nMotion sensor\r\nWeather-resistant housing\r\nMounting kit included",
+      "features_text_de": "Full-HD-Kamera mit Nachtsichtfunktion\r\nBewegungsmelder\r\nWetterfestes Gehäuse\r\nMontagesatz im Lieferumfang enthalten",
+      "features_text_nl": "Full HD-camera met nachtzicht\r\nBewegingssensor\r\nWeerbestendige behuizing\r\nMontageset inbegrepen"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 10,
+    "fields": {
+      "title": "Video Intercom Cloud Basic",
+      "title_en": "Video Intercom Cloud Basic",
+      "title_de": "Video-Gegensprechanlage Cloud Basic",
+      "title_nl": "Video-intercom in de cloud (basisversie)",
+      "price": 9.0,
+      "created_at": "2026-01-04T19:26:01.327Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "video-intercom-cloud-basic",
+      "order": 10,
+      "features_text": "Motion recording (7 days storage)\r\nLive viewing via app\r\nTemporary access codes\r\nPush notifications",
+      "features_text_en": "Motion recording (7 days storage)\r\nLive viewing via app\r\nTemporary access codes\r\nPush notifications",
+      "features_text_de": "Bewegungserkennung (7 Tage Speicherung)\r\nLive-Ansicht per App\r\nTemporäre Zugangscodes\r\nPush-Benachrichtigungen",
+      "features_text_nl": "Bewegingsregistratie (7 dagen opslag)\r\nLive weergave via app\r\nTijdelijke toegangscodes\r\nPushmeldingen"
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 11,
+    "fields": {
+      "title": "Video Intercom Cloud Advanced",
+      "title_en": "Video Intercom Cloud Advanced",
+      "title_de": "",
+      "title_nl": "",
+      "price": 12.0,
+      "created_at": "2026-01-04T19:26:52.234Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "video-intercom-cloud-advanced",
+      "order": 11,
+      "features_text": "24/7 recording or motion-based\r\n30-day storage\r\nFace recognition (up to 10 faces)\r\nIndividual notifications\r\nAdvanced detection zones",
+      "features_text_en": "24/7 recording or motion-based\r\n30-day storage\r\nFace recognition (up to 10 faces)\r\nIndividual notifications\r\nAdvanced detection zones",
+      "features_text_de": "",
+      "features_text_nl": ""
+    }
+  },
+  {
+    "model": "iprovider.separately",
+    "pk": 12,
+    "fields": {
+      "title": "Intercom Assistant Integration",
+      "title_en": "Intercom Assistant Integration",
+      "title_de": "",
+      "title_nl": "",
+      "price": 6.0,
+      "created_at": "2026-01-04T19:27:30.071Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "intercom-assistant-integration",
+      "order": 12,
+      "features_text": "Automated answering machine for intercom calls\r\nConversation transcript\r\nLive dictation to guest via Assistant app",
+      "features_text_en": "Automated answering machine for intercom calls\r\nConversation transcript\r\nLive dictation to guest via Assistant app",
+      "features_text_de": "",
+      "features_text_nl": ""
+    }
+  },
+  {
+    "model": "iprovider.packets",
+    "pk": 1,
+    "fields": {
+      "title": "AstraWilly Home",
+      "title_en": "AstraWilly Home",
+      "title_de": "AstraWilly  Zuhause",
+      "title_nl": "AstraWilly Thuis",
+      "price": 4.0,
+      "created_at": "2026-01-04T19:33:43.151Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "astrawilly-home",
+      "order": 1,
+      "features_text": "VPN (5 simultaneous connections)\r\nParental Control (Basic)\r\nServers in 30+ countries\r\nContent filtering\r\nTime scheduling\r\nContent filtering\r\nTime scheduling\r\nUp to 5 child profiles",
+      "features_text_en": "VPN (5 simultaneous connections)\r\nParental Control (Basic)\r\nServers in 30+ countries\r\nContent filtering\r\nTime scheduling\r\nContent filtering\r\nTime scheduling\r\nUp to 5 child profiles",
+      "features_text_de": "VPN (5 gleichzeitige Verbindungen)\r\nKindersicherung (Basis)\r\nServer in über 30 Ländern\r\nInhaltsfilterung\r\nZeitplanung\r\nInhaltsfilterung\r\nZeitplanung\r\nBis zu 5 Kinderprofile",
+      "features_text_nl": "VPN (5 gelijktijdige verbindingen)\r\nOuderlijk toezicht (basis)\r\nServers in meer dan 30 landen\r\nInhoudsfiltering\r\nTijdschema's\r\nInhoudsfiltering\r\nTijdschema's\r\nTot 5 kinderprofielen"
+    }
+  },
+  {
+    "model": "iprovider.packets",
+    "pk": 2,
+    "fields": {
+      "title": "AstraWilly Home+",
+      "title_en": "AstraWilly Home+",
+      "title_de": "AstraWilly Zuhause+",
+      "title_nl": "AstraWilly Thuis+",
+      "price": 8.0,
+      "created_at": "2026-01-04T19:34:31.163Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "astrawilly-home-plus",
+      "order": 2,
+      "features_text": "Everything from AstraWilly Home\r\n1 Video Surveillance PRO camera\r\n14-day cloud storage\r\nSmart motion detection\r\nLive viewing from 2 devices\r\nAdditional cameras: $9.99/month each",
+      "features_text_en": "Everything from AstraWilly Home\r\n1 Video Surveillance PRO camera\r\n14-day cloud storage\r\nSmart motion detection\r\nLive viewing from 2 devices\r\nAdditional cameras: $9.99/month each",
+      "features_text_de": "Alles von AstraWilly Zuhause\r\n1 Videoüberwachungskamera PRO\r\n14 Tage Cloud-Speicher\r\nIntelligente Bewegungserkennung\r\nLive-Ansicht auf 2 Geräten\r\nZusätzliche Kameras: je 9,99 €/Monat",
+      "features_text_nl": "Alles van AstraWilly Thuis\r\n1 Video Surveillance PRO-camera\r\n14 dagen cloudopslag\r\nSlimme bewegingsdetectie\r\nLive weergave op 2 apparaten\r\nExtra camera's: € 9,99 per stuk per maand"
+    }
+  },
+  {
+    "model": "iprovider.packets",
+    "pk": 3,
+    "fields": {
+      "title": "AstraWilly Assistant",
+      "title_en": "AstraWilly Assistant",
+      "title_de": "AstraWilly Assistent",
+      "title_nl": "AstraWilly Assistent",
+      "price": 12.0,
+      "created_at": "2026-01-04T19:35:27.389Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "astrawilly-assistant",
+      "order": 3,
+      "features_text": "Advanced Assistant (All-in-One)\r\nVPN (10 connections)\r\nIncoming/outgoing calls\r\nLive dictation\r\n500 combined minutes/month\r\n10+ ready scenarios",
+      "features_text_en": "Advanced Assistant (All-in-One)\r\nVPN (10 connections)\r\nIncoming/outgoing calls\r\nLive dictation\r\n500 combined minutes/month\r\n10+ ready scenarios",
+      "features_text_de": "Erweiterter Assistent (All-in-One)\r\nVPN (10 Verbindungen)\r\nEingehende/ausgehende Anrufe\r\nLive-Diktierfunktion\r\n500 Gesprächsminuten/Monat\r\nÜber 10 vorgefertigte Szenarien",
+      "features_text_nl": "Geavanceerde assistent (alles-in-één)\r\nVPN (10 verbindingen)\r\nInkomende/uitgaande gesprekken\r\nLive dicteren\r\n500 gecombineerde minuten/maand\r\nMeer dan 10 kant-en-klare scenario's"
+    }
+  },
+  {
+    "model": "iprovider.packets",
+    "pk": 4,
+    "fields": {
+      "title": "AstraWilly Business",
+      "title_en": "AstraWilly Business",
+      "title_de": "AstraWilly Business",
+      "title_nl": "AstraWilly Business",
+      "price": 15.0,
+      "created_at": "2026-01-04T19:36:36.663Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "astrawilly-business",
+      "order": 4,
+      "features_text": "Corporate Assistant\r\nMultiple Video PRO cameras\r\nBusiness VPN (20-30 connections)\r\nMulti-line support\r\n1000+ minutes/month\r\nCentralized management\r\nPersonal manager\r\nCustom configuration available",
+      "features_text_en": "Corporate Assistant\r\nMultiple Video PRO cameras\r\nBusiness VPN (20-30 connections)\r\nMulti-line support\r\n1000+ minutes/month\r\nCentralized management\r\nPersonal manager\r\nCustom configuration available",
+      "features_text_de": "Firmenassistent\r\nMehrere Video-PRO-Kameras\r\nBusiness-VPN (20–30 Verbindungen)\r\nMehrleitungs-Support\r\nÜber 1000 Minuten/Monat\r\nZentrale Verwaltung\r\nPersönlicher Manager\r\nIndividuelle Konfiguration möglich",
+      "features_text_nl": "Zakelijke assistent\r\nMeerdere Video PRO-camera's\r\nZakelijke VPN (20-30 verbindingen)\r\nOndersteuning voor meerdere lijnen\r\nMeer dan 1000 minuten per maand\r\nGecentraliseerd beheer\r\nPersoonlijke manager\r\nAangepaste configuratie mogelijk"
+    }
+  },
+  {
+    "model": "iprovider.packets",
+    "pk": 5,
+    "fields": {
+      "title": "Video Intercom Kit",
+      "title_en": "Video Intercom Kit",
+      "title_de": "Video-intercomset",
+      "title_nl": "Video-Gegensprechanlage",
+      "price": 20.0,
+      "created_at": "2026-01-04T19:37:06.646Z",
+      "watched": 0,
+      "description": "Description will be here soon",
+      "description_en": "Description will be here soon",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "category": 2,
+      "slug": "video-intercom-kit",
+      "order": 5,
+      "features_text": "Smart video intercom hardware\r\nAdvanced cloud service\r\nFace recognition\r\n30-day storage\r\nIndividual notifications\r\nTemporary access codes",
+      "features_text_en": "Smart video intercom hardware\r\nAdvanced cloud service\r\nFace recognition\r\n30-day storage\r\nIndividual notifications\r\nTemporary access codes",
+      "features_text_de": "Intelligente Video-Türsprechanlage\r\nErweiterter Cloud-Service\r\nGesichtserkennung\r\n30 Tage Speicherung\r\nIndividuelle Benachrichtigungen\r\nTemporäre Zugangscodes",
+      "features_text_nl": "Slimme video-intercomhardware\r\nGeavanceerde cloudservice\r\nGezichtsherkenning\r\n30 dagen opslag\r\nIndividuele meldingen\r\nTijdelijke toegangscodes"
+    }
+  },
+  {
+    "model": "iprovider.news",
+    "pk": 1,
+    "fields": {
+      "title": "AstraWilly Acquires Starlink Competitor \"SkyLink\", Expanding Orbital Infrastructure",
+      "title_en": "AstraWilly Acquires Starlink Competitor \"SkyLink\", Expanding Orbital Infrastructure",
+      "title_de": "AstraWilly übernimmt Starlink-Konkurrent „SkyLink“ und erweitert damit die orbitale Infrastruktur.",
+      "title_nl": "AstraWilly neemt Starlink-concurrent \"SkyLink\" over en breidt daarmee de infrastructuur in de ruimte uit.",
+      "description": "AstraWilly today announced the acquisition of SkyLink Technologies, a leading satellite internet provider with a fleet of 200 low-earth orbit satellites. This strategic move doubles our orbital capacity and accelerates our roadmap to provide global, gigabit-speed internet by 2027. The combined network will offer seamless coverage and enhanced reliability for maritime, aviation, and rural customers.",
+      "description_en": "AstraWilly today announced the acquisition of SkyLink Technologies, a leading satellite internet provider with a fleet of 200 low-earth orbit satellites. This strategic move doubles our orbital capacity and accelerates our roadmap to provide global, gigabit-speed internet by 2027. The combined network will offer seamless coverage and enhanced reliability for maritime, aviation, and rural customers.",
+      "description_de": "AstraWilly gab heute die Übernahme von SkyLink Technologies bekannt, einem führenden Anbieter von Satelliteninternet mit einer Flotte von 200 Satelliten in niedriger Erdumlaufbahn. Dieser strategische Schritt verdoppelt unsere orbitale Kapazität und beschleunigt unseren Plan, bis 2027 weltweit Gigabit-Internet anzubieten. Das kombinierte Netzwerk wird eine nahtlose Abdeckung und verbesserte Zuverlässigkeit für Kunden in der Schifffahrt, der Luftfahrt und im ländlichen Raum bieten.",
+      "description_nl": "AstraWilly heeft vandaag de overname aangekondigd van SkyLink Technologies, een toonaangevende aanbieder van satellietinternet met een vloot van 200 satellieten in een lage baan om de aarde. Deze strategische stap verdubbelt onze orbitale capaciteit en versnelt onze roadmap om tegen 2027 wereldwijd internet met gigabitsnelheden te leveren. Het gecombineerde netwerk zal naadloze dekking en verbeterde betrouwbaarheid bieden voor klanten in de maritieme sector, de luchtvaart en landelijke gebieden.",
+      "created_at": "2025-11-20T15:13:47.397Z",
+      "updated_at": "2026-02-21T06:27:35.167Z",
+      "photo": "",
+      "watched": 106,
+      "is_published": true,
+      "category": 6,
+      "slug": "expanding-the-geography-of-calls",
+      "countries": [],
+      "cities": []
+    }
+  },
+  {
+    "model": "iprovider.news",
+    "pk": 2,
+    "fields": {
+      "title": "Скоро на сайте AstraWilly: русский язык и спутниковый интернет!",
+      "title_en": "Скоро на сайте AstraWilly: русский язык и спутниковый интернет!",
+      "title_de": "",
+      "title_nl": "",
+      "description": "Уважаемые абоненты и гости!\r\n\r\nМы рады сообщить две важные новости, которые сделают наши услуги ещё доступнее и удобнее для вас.\r\n\r\nРусский язык на сайте\r\nМы активно работаем над локализацией нашего официального сайта. Уже в ближайшее время интерфейс и вся информация о тарифах, услугах и акциях будут доступны на русском языке. Это позволит вам ещё быстрее ориентироваться в предложениях компании и выбирать оптимальные решения без языкового барьера. Следите за обновлениями!\r\n\r\nСпутниковый интернет – скоро в AstraWilly\r\nМы постоянно расширяем горизонты и рады объявить о запуске нового направления – спутникового интернета! Уже в ближайшие месяцы вы сможете подключить высокоскоростной доступ в сеть даже в самых удалённых уголках, где традиционные каналы связи недоступны. Это отличная новость для владельцев загородных домов, дач и предприятий в отдалённых районах.\r\n\r\nМы уверены, что эти изменения помогут нам оставаться на связи с каждым из вас, где бы вы ни находились. Следите за новостями на нашем сайте и в социальных сетях, чтобы первыми узнать о запуске!\r\n\r\nС уважением,\r\nкоманда AstraWilly.",
+      "description_en": "Уважаемые абоненты и гости!\r\n\r\nМы рады сообщить две важные новости, которые сделают наши услуги ещё доступнее и удобнее для вас.\r\n\r\nРусский язык на сайте\r\nМы активно работаем над локализацией нашего официального сайта. Уже в ближайшее время интерфейс и вся информация о тарифах, услугах и акциях будут доступны на русском языке. Это позволит вам ещё быстрее ориентироваться в предложениях компании и выбирать оптимальные решения без языкового барьера. Следите за обновлениями!\r\n\r\nСпутниковый интернет – скоро в AstraWilly\r\nМы постоянно расширяем горизонты и рады объявить о запуске нового направления – спутникового интернета! Уже в ближайшие месяцы вы сможете подключить высокоскоростной доступ в сеть даже в самых удалённых уголках, где традиционные каналы связи недоступны. Это отличная новость для владельцев загородных домов, дач и предприятий в отдалённых районах.\r\n\r\nМы уверены, что эти изменения помогут нам оставаться на связи с каждым из вас, где бы вы ни находились. Следите за новостями на нашем сайте и в социальных сетях, чтобы первыми узнать о запуске!\r\n\r\nС уважением,\r\nкоманда AstraWilly.",
+      "description_de": "Здесь скоро будет описание",
+      "description_nl": "Здесь скоро будет описание",
+      "created_at": "2026-02-11T20:47:49.798Z",
+      "updated_at": "2026-02-20T07:15:00.827Z",
+      "photo": "",
+      "watched": 11,
+      "is_published": true,
+      "category": 6,
+      "slug": "russian",
+      "countries": [
+        3
+      ],
+      "cities": []
+    }
+  },
+  {
+    "model": "iprovider.stocks",
+    "pk": 1,
+    "fields": {
+      "title": "Welcome to AstraWilly Berlin – First Month 50% Off!",
+      "title_en": "Welcome to AstraWilly Berlin – First Month 50% Off!",
+      "title_de": "Willkommen bei AstraWilly Berlin – Im ersten Monat 50 % Rabatt!",
+      "title_nl": "",
+      "description": "Sign up today and get your first month at 50% off! (Use code: BERLINSTARS)",
+      "description_en": "Sign up today and get your first month at 50% off! (Use code: BERLINSTARS)",
+      "description_de": "Melde dich noch heute an und erhalte den ersten Monat zum halben Preis! (Code: BERLINSTARS)",
+      "description_nl": "Здесь скоро будет описание",
+      "created_at": "2026-02-12T18:51:20.435Z",
+      "updated_at": "2026-02-21T06:44:13.480Z",
+      "photo": "",
+      "watched": 0,
+      "is_published": true,
+      "category": 7,
+      "slug": "promo_code",
+      "countries": [],
+      "cities": [
+        1
+      ]
+    }
+  }
+]

@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-19 09:08+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\conf\settings.py:41
+msgid "English"
+msgstr "Engels"
+
+#: .\conf\settings.py:42
+msgid "German"
+msgstr "Duits"
+
+#: .\conf\settings.py:43
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: .\iprovider\templates\iprovider\home.html:7
+msgid "About our company"
+msgstr "Over ons bedrijf"
+
+#: .\iprovider\templates\iprovider\home.html:8
+msgid "Year of foundation:"
+msgstr "Oprichtingsjaar:"
+
+#: .\iprovider\templates\iprovider\home.html:9
+msgid "Founder:"
+msgstr "Oprichter"
+
+#: .\iprovider\templates\iprovider\home.html:15
+msgid "Our achievements"
+msgstr "Onze prestaties"
+
+#: .\iprovider\templates\iprovider\home.html:26
+msgid "Latest News"
+msgstr "Laatste nieuws"
+
+#: .\iprovider\templates\iprovider\home.html:28
+msgid "View All News"
+msgstr "Bekijk al het nieuws"
+
+#: .\iprovider\templates\iprovider\home.html:48
+msgid "Read More"
+msgstr "Lees meer"
+
+#: .\iprovider\templates\iprovider\home.html:54
+msgid "No news available. Please check back later!"
+msgstr "Geen nieuws beschikbaar. Kom later nog eens terug!"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:9
+msgid "Contact us:"
+msgstr "Neem contact met ons op:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:19
+msgid "Write a message"
+msgstr "Schrijf een bericht"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:25
+#, fuzzy
+#| msgid "Tariffs"
+msgid "Tariffs:"
+msgstr "Tarieven"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:36
+#, fuzzy
+#| msgid "Services"
+msgid "Services:"
+msgstr "Diensten"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:41
+msgid "Assistant"
+msgstr "Assistent"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:44
+msgid "Parental control"
+msgstr "Ouderlijk toezicht"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:47
+msgid "Video intercom with an app"
+msgstr "Video-intercom met een app"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:50
+msgid "Video surveillance"
+msgstr "Videobewaking"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:53
+#, fuzzy
+#| msgid "Services"
+msgid "All services"
+msgstr "Diensten"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:61
+#: .\iprovider\templates\iprovider\includes\navbar.html:26
+msgid "Cabinet"
+msgstr "Kastje"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:64
+#: .\iprovider\templates\iprovider\includes\navbar.html:18
+#: .\iprovider\templates\iprovider\news_detail.html:10
+#: .\iprovider\templates\iprovider\stocks_detail.html:9
+msgid "Home"
+msgstr "Thuis"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:67
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:111
+msgid "Support"
+msgstr "Steun"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:70
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:114
+#: .\iprovider\templates\iprovider\vacancy.html:53
+msgid "Vacancies"
+msgstr "Vacatures"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:73
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:108
+#: .\iprovider\templates\iprovider\stocks.html:6
+#: .\iprovider\templates\iprovider\stocks_detail.html:10
+msgid "Stocks"
+msgstr "Aandelen"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:76
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:117
+#: .\iprovider\templates\iprovider\news_detail.html:11
+msgid "News"
+msgstr "Nieuws"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:82
+msgid "Internet service provider «AstraWilly»"
+msgstr "Internetprovider "AstraWilly""
+
+#: .\iprovider\templates\iprovider\includes\footer.html:83
+msgid "Documents:"
+msgstr "Documenten:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:85
+msgid "User Agreement"
+msgstr "Gebruikersovereenkomst"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:88
+msgid "Privacy Policy"
+msgstr "Privacybeleid"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:91
+msgid "Terms of Service"
+msgstr "Gebruiksvoorwaarden"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:94
+msgid "License Agreement"
+msgstr "Licentieovereenkomst"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:7
+msgid "Languages"
+msgstr "Talen"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:46
+#: .\iprovider\templates\iprovider\services.html:62
+#: .\iprovider\templates\iprovider\tariffs.html:59
+#: .\iprovider\templates\iprovider\vacancy.html:61
+msgid "Current location:"
+msgstr "Huidige locatie:"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:62
+#: .\iprovider\templates\iprovider\services.html:14
+#: .\iprovider\templates\iprovider\tariffs.html:13
+#: .\iprovider\templates\iprovider\vacancy.html:14
+msgid "Country"
+msgstr "Land"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:64
+msgid "Select Country"
+msgstr "Land selecteren"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:75
+#: .\iprovider\templates\iprovider\services.html:27
+#: .\iprovider\templates\iprovider\tariffs.html:26
+#: .\iprovider\templates\iprovider\vacancy.html:27
+msgid "City"
+msgstr "Stad"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:77
+msgid "Select City (Optional)"
+msgstr "Selecteer een stad (optioneel)"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:81
+msgid "Apply Location"
+msgstr "Locatie toepassen"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:84
+msgid "Clear Location"
+msgstr "Locatie wissen"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:93
+msgid "Detect My Location"
+msgstr "Mijn locatie detecteren"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:95
+msgid "We'll use your location to show local prices"
+msgstr "We gebruiken uw locatie om lokale prijzen weer te geven."
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:102
+#: .\iprovider\templates\iprovider\tariffs.html:52
+msgid "Tariffs"
+msgstr "Tarieven"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:105
+#: .\iprovider\templates\iprovider\services.html:53
+msgid "Services"
+msgstr "Diensten"
+
+#: .\iprovider\templates\iprovider\news_detail.html:21
+#: .\iprovider\templates\iprovider\stocks_detail.html:20
+msgid "Published:"
+msgstr "Gepubliceerd:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:23
+#: .\iprovider\templates\iprovider\news_list.html:59
+#: .\iprovider\templates\iprovider\stocks.html:59
+#: .\iprovider\templates\iprovider\stocks_detail.html:22
+msgid "Updated:"
+msgstr "Bijgewerkt:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:25
+#: .\iprovider\templates\iprovider\stocks_detail.html:24
+msgid "Views:"
+msgstr "Weergaven:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:27
+#: .\iprovider\templates\iprovider\stocks_detail.html:26
+msgid "Category:"
+msgstr "Categorie:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:51
+msgid "Previous:"
+msgstr "Vorig:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:58
+#: .\iprovider\templates\iprovider\stocks_detail.html:54
+msgid "Next:"
+msgstr "Volgende:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:68
+#, fuzzy
+#| msgid "View All News"
+msgid "Back to All News"
+msgstr "Bekijk al het nieuws"
+
+#: .\iprovider\templates\iprovider\news_list.html:6
+msgid "News Archive"
+msgstr "Nieuwsarchief"
+
+#: .\iprovider\templates\iprovider\news_list.html:7
+msgid "Total news:"
+msgstr "Totaal nieuws:"
+
+#: .\iprovider\templates\iprovider\news_list.html:17
+#: .\iprovider\templates\iprovider\stocks.html:17
+#: .\iprovider\templates\iprovider\vacancy.html:162
+msgid "views"
+msgstr "uitzichten"
+
+#: .\iprovider\templates\iprovider\news_list.html:52
+#: .\iprovider\templates\iprovider\stocks.html:52
+msgid "Read Full Story"
+msgstr "Lees het volledige verhaal."
+
+#: .\iprovider\templates\iprovider\services.html:16
+#: .\iprovider\templates\iprovider\tariffs.html:15
+#: .\iprovider\templates\iprovider\vacancy.html:16
+#, fuzzy
+#| msgid "Select Country"
+msgid "Select a country"
+msgstr "Land selecteren"
+
+#: .\iprovider\templates\iprovider\services.html:30
+#: .\iprovider\templates\iprovider\tariffs.html:29
+#: .\iprovider\templates\iprovider\vacancy.html:30
+#, fuzzy
+#| msgid "Select Country"
+msgid "Select a city"
+msgstr "Land selecteren"
+
+#: .\iprovider\templates\iprovider\services.html:32
+#: .\iprovider\templates\iprovider\tariffs.html:31
+#: .\iprovider\templates\iprovider\vacancy.html:32
+msgid "Please select your country first"
+msgstr "Selecteer eerst uw land."
+
+#: .\iprovider\templates\iprovider\services.html:44
+#: .\iprovider\templates\iprovider\tariffs.html:43
+#: .\iprovider\templates\iprovider\vacancy.html:44
+msgid "Apply"
+msgstr "Toepassen"
+
+#: .\iprovider\templates\iprovider\services.html:54
+msgid "Separately"
+msgstr "Afzonderlijke"
+
+#: .\iprovider\templates\iprovider\services.html:83
+#: .\iprovider\templates\iprovider\services.html:146
+#: .\iprovider\templates\iprovider\tariffs.html:81
+#: .\iprovider\templates\iprovider\tariffs.html:139
+msgid "ratings"
+msgstr "beoordelingen"
+
+#: .\iprovider\templates\iprovider\services.html:116
+#: .\iprovider\templates\iprovider\services.html:179
+#: .\iprovider\templates\iprovider\tariffs.html:111
+#: .\iprovider\templates\iprovider\tariffs.html:172
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: .\iprovider\templates\iprovider\services.html:123
+msgid "No separate services available"
+msgstr "Geen aparte diensten beschikbaar"
+
+#: .\iprovider\templates\iprovider\services.html:132
+msgid "Packages"
+msgstr "Pakketten"
+
+#: .\iprovider\templates\iprovider\services.html:186
+msgid "No packages available"
+msgstr "Geen pakketten beschikbaar"
+
+#: .\iprovider\templates\iprovider\stocks.html:7
+msgid "Total stocks:"
+msgstr "Totale voorraad:"
+
+#: .\iprovider\templates\iprovider\stocks.html:70
+msgid "No Stocks Available"
+msgstr "Geen voorraad beschikbaar"
+
+#: .\iprovider\templates\iprovider\stocks.html:71
+msgid "Stay tuned for updates! Fresh stock will be coming soon!"
+msgstr "Blijf op de hoogte voor updates! Binnenkort komt er nieuwe voorraad binnen!"
+
+#: .\iprovider\templates\iprovider\stocks_detail.html:47
+msgid "Previous:"
+msgstr "Vorig:"
+
+#: .\iprovider\templates\iprovider\stocks_detail.html:64
+msgid "Back to All Stocks"
+msgstr "Terug naar alle aandelen"
+
+#: .\iprovider\templates\iprovider\tariffs.html:54
+msgid "Unlimited Wi-Fi, like the light of the night"
+msgstr "Onbeperkt wifi, als het licht van de nacht."
+
+#: .\iprovider\templates\iprovider\tariffs.html:124
+msgid "Mobile Internet, which is always with you, like the sun!"
+msgstr "Mobiel internet, altijd bij je, net als de zon!"
+
+#: .\iprovider\templates\iprovider\tariffs.html:134
+msgid "Mobile Internet"
+msgstr "Mobile Internet"
+
+#: .\iprovider\templates\iprovider\vacancy.html:116
+msgid "No language requirements"
+msgstr "Geen taalvereisten"
+
+#: .\iprovider\templates\iprovider\vacancy.html:122
+msgid "Location not specified"
+msgstr "Locatie niet gespecificeerd"
+
+#: .\iprovider\templates\iprovider\vacancy.html:146
+msgid "per month"
+msgstr "per maand"
+
+#: .\iprovider\templates\iprovider\vacancy.html:155
+msgid "Respond"
+msgstr "Antwoorden"
+
+#: .\iprovider\templates\iprovider\vacancy.html:174
+msgid "No vacancies found"
+msgstr "Geen vacatures gevonden"
+

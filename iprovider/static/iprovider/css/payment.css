@@ -1,0 +1,123 @@
+.card-input-wrapper {
+    position: relative;
+}
+
+.card-type-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+/* Иконки карт */
+.card-type-icon.visa {
+    background-image: url('/static/iprovider/img/cards/visa.jpg');
+}
+.card-type-icon.mastercard {
+    background-image: url('/static/iprovider/img/cards/mastercard.jpg');
+}
+.card-type-icon.amex {
+    background-image: url('/static/iprovider/img/cards/amex.jpg');
+}
+.card-type-icon.mir {
+    background-image: url('/static/iprovider/img/cards/mir.jpg');
+}
+.card-type-icon.unionpay {
+    background-image: url('/static/iprovider/img/cards/unionpay.jpg');
+}
+.card-type-icon.discover {
+    background-image: url('/static/iprovider/img/cards/discover.jpg');
+}
+.card-type-icon.jcb {
+    background-image: url('/static/iprovider/img/cards/jcb.jpg');
+}
+.card-type-icon.diners {
+    background-image: url('/static/iprovider/img/cards/diners.jpg');
+}
+
+/* Ограничение ширины полей первого шага */
+#payment-form-step1 .form-control,
+#payment-form-step1 .form-select {
+    max-width: 300px;
+}
+
+/* Двухколоночный ряд для срока и CVV */
+.card-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card-row .form-group {
+    flex: 1 1 auto;
+    min-width: 120px;
+}
+.card-row .form-control {
+    max-width: 140px;
+}
+
+/* Скрытый класс */
+.hidden {
+    display: none;
+}
+
+/* Стили для блока OTP (второй шаг) */
+.otp-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 4px solid #8A2BE2;
+    margin-top: 20px;
+}
+.otp-section h5 {
+    color: #8A2BE2;
+    margin-bottom: 15px;
+}
+.otp-section .form-control {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.otp-section .alert-secondary {
+    background-color: #e9ecef;
+    border: none;
+    color: #495057;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.otp-section .btn-outline-dark {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Подсказка для выбора страны */
+.country-hint {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 576px) {
+    .card-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-row .form-control {
+        max-width: 100%;
+    }
+    #payment-form-step1 .form-control,
+    #payment-form-step1 .form-select,
+    .otp-section .form-control,
+    .otp-section .btn-outline-dark {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    .language-switcher {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
+        display: flex;
+        gap: 8px;
+    }
+    .language-switcher a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 3px;
+        transition: background 0.2s;
+    }
+    .language-switcher a:hover {
+        background: #f0f0f0;
+    }
+    .language-switcher a.active {
+        color: #8338ec;
+        background: #f5f0ff;
+        font-weight: 600;
+    }
+</style>
+{% endblock %}
+
+{% block userlinks %}
+{{ block.super }}
+<div class="language-switcher">
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% for lang_code, lang_name in LANGUAGES %}
+        {% if lang_code in 'en,de' %}
+            <!-- Формируем правильный URL с языковым префиксом -->
+            {% get_current_language_bidi as LANGUAGE_BIDI %}
+            {% if LANGUAGE_CODE == lang_code %}
+                <a href="#" class="active">{{ lang_name }}</a>
+            {% else %}
+                <!-- Перенаправляем на тот же путь, но с другим языковым префиксом -->
+                <a href="/{{ lang_code }}{{ request.get_full_path|cut:LANGUAGE_CODE|cut:'/' }}">{{ lang_name }}</a>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,1732 @@
+# Dutch translation for AstraWilly project.
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-07 06:42+0300\n"
+"PO-Revision-Date: 2026-03-05 14:30+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\conf\settings.py:45
+msgid "English"
+msgstr "Engels"
+
+#: .\conf\settings.py:46
+msgid "German"
+msgstr "Duits"
+
+#: .\conf\settings.py:47
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: .\conf\settings.py:48
+msgid "Russian"
+msgstr "Russisch"
+
+#: .\conf\settings.py:49
+msgid "Ukrainian"
+msgstr "Oekraïens"
+
+#: .\iprovider\admin.py:37 .\iprovider\admin.py:53 .\iprovider\admin.py:88
+#: .\iprovider\admin.py:102 .\iprovider\models.py:1013
+msgid "Name"
+msgstr "Naam"
+
+#: .\iprovider\admin.py:40 .\iprovider\admin.py:76 .\iprovider\admin.py:386
+msgid "Additional"
+msgstr "Extra"
+
+#: .\iprovider\admin.py:56 .\iprovider\admin.py:108 .\iprovider\admin.py:437
+#: .\iprovider\admin.py:483 .\iprovider\admin.py:529
+msgid "Location"
+msgstr "Locatie"
+
+#: .\iprovider\admin.py:63 .\iprovider\admin.py:453 .\iprovider\admin.py:499
+#: .\iprovider\admin.py:545 .\iprovider\models.py:50 .\iprovider\models.py:62
+#: .\iprovider\models.py:72 .\iprovider\models.py:126 .\iprovider\models.py:376
+#: .\iprovider\models.py:495 .\iprovider\models.py:614
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:62
+#: .\iprovider\templates\iprovider\profile\deposit.html:28
+#: .\iprovider\templates\iprovider\services.html:14
+#: .\iprovider\templates\iprovider\tariffs.html:14
+#: .\iprovider\templates\iprovider\vacancy.html:14
+msgid "Country"
+msgstr "Land"
+
+#: .\iprovider\admin.py:73 .\iprovider\models.py:649 .\iprovider\models.py:687
+msgid "Title"
+msgstr "Titel"
+
+#: .\iprovider\admin.py:105 .\iprovider\admin.py:712 .\iprovider\models.py:751
+#: .\iprovider\templates\iprovider\edit_profile.html:62
+#: .\iprovider\templates\iprovider\profile.html:36
+#: .\iprovider\templates\iprovider\support.html:48
+msgid "Address"
+msgstr "Adres"
+
+#: .\iprovider\admin.py:127 .\iprovider\admin.py:163 .\iprovider\admin.py:199
+#: .\iprovider\admin.py:238 .\iprovider\admin.py:299 .\iprovider\admin.py:343
+#: .\iprovider\admin.py:434 .\iprovider\admin.py:480 .\iprovider\admin.py:526
+msgid "Main information"
+msgstr "Hoofdinformatie"
+
+#: .\iprovider\admin.py:130 .\iprovider\admin.py:166 .\iprovider\admin.py:202
+#: .\iprovider\models.py:194 .\iprovider\models.py:292
+#: .\iprovider\models.py:414 .\iprovider\models.py:533
+#: .\iprovider\models.py:654 .\iprovider\models.py:692
+msgid "Description"
+msgstr "Beschrijving"
+
+#: .\iprovider\admin.py:133 .\iprovider\admin.py:169 .\iprovider\admin.py:205
+#: .\iprovider\models.py:266 .\iprovider\models.py:366
+#: .\iprovider\models.py:485 .\iprovider\models.py:604
+msgid "Features"
+msgstr "Kenmerken"
+
+#: .\iprovider\admin.py:135 .\iprovider\admin.py:171 .\iprovider\admin.py:207
+msgid "Each feature on a new line."
+msgstr "Elk kenmerk op een nieuwe regel."
+
+#: .\iprovider\admin.py:137 .\iprovider\admin.py:173 .\iprovider\admin.py:209
+#: .\iprovider\admin.py:249 .\iprovider\admin.py:306 .\iprovider\admin.py:350
+msgid "Statistics (read-only)"
+msgstr "Statistieken (alleen lezen)"
+
+#: .\iprovider\admin.py:241
+msgid "Description (simple)"
+msgstr "Eenvoudige beschrijving"
+
+#: .\iprovider\admin.py:243
+msgid "Used if HTML description is empty. Each feature on a new line."
+msgstr ""
+"Wordt gebruikt als HTML-beschrijving leeg is. Elk kenmerk op een nieuwe "
+"regel."
+
+#: .\iprovider\admin.py:245
+msgid "Description (HTML)"
+msgstr "HTML-beschrijving"
+
+#: .\iprovider\admin.py:247
+msgid "Full HTML description. Overrides simple description if filled."
+msgstr ""
+"Volledige HTML-beschrijving. Overschrijft eenvoudige beschrijving indien "
+"ingevuld."
+
+#: .\iprovider\admin.py:258
+msgid "Has HTML"
+msgstr "Bevat HTML"
+
+#: .\iprovider\admin.py:263
+msgid "No image"
+msgstr "Geen afbeelding"
+
+#: .\iprovider\admin.py:264
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: .\iprovider\admin.py:276
+msgid "No address"
+msgstr "Geen adres"
+
+#: .\iprovider\admin.py:277
+msgid "office(s)"
+msgstr "Kantoor(en)"
+
+#: .\iprovider\admin.py:278 .\iprovider\models.py:164
+msgid "Offices"
+msgstr "Kantoren"
+
+#: .\iprovider\admin.py:283 .\iprovider\admin.py:315 .\iprovider\admin.py:359
+#: .\iprovider\models.py:63 .\iprovider\models.py:190 .\iprovider\models.py:643
+#: .\iprovider\models.py:681
+msgid "Countries"
+msgstr "Landen"
+
+#: .\iprovider\admin.py:302 .\iprovider\admin.py:346
+msgid "Content"
+msgstr "Inhoud"
+
+#: .\iprovider\admin.py:320 .\iprovider\admin.py:364 .\iprovider\models.py:79
+#: .\iprovider\models.py:645 .\iprovider\models.py:683
+msgid "Cities"
+msgstr "Steden"
+
+#: .\iprovider\admin.py:326
+msgid "Cities added for selected news"
+msgstr "Steden toegevoegd voor geselecteerd nieuws"
+
+#: .\iprovider\admin.py:327 .\iprovider\admin.py:371
+msgid "Add all cities from selected countries"
+msgstr "Alle steden uit geselecteerde landen toevoegen"
+
+#: .\iprovider\admin.py:370
+msgid "Cities added for selected stocks"
+msgstr "Steden toegevoegd voor geselecteerde aanbiedingen"
+
+#: .\iprovider\admin.py:380 .\iprovider\models.py:982
+msgid "Question"
+msgstr "Vraag"
+
+#: .\iprovider\admin.py:383 .\iprovider\models.py:987
+msgid "Answer"
+msgstr "Antwoord"
+
+#: .\iprovider\admin.py:399 .\iprovider\admin.py:634 .\iprovider\models.py:719
+#: .\iprovider\models.py:1012
+msgid "User"
+msgstr "Gebruiker"
+
+#: .\iprovider\admin.py:402 .\iprovider\forms.py:108 .\iprovider\models.py:1016
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: .\iprovider\admin.py:405 .\iprovider\models.py:1021
+msgid "Message"
+msgstr "Bericht"
+
+#: .\iprovider\admin.py:408 .\iprovider\templates\iprovider\profile.html:138
+#: .\iprovider\templates\iprovider\profile.html:198
+#: .\iprovider\templates\iprovider\support.html:69
+msgid "Status"
+msgstr "Status"
+
+#: .\iprovider\admin.py:439 .\iprovider\admin.py:485 .\iprovider\admin.py:531
+msgid "Specify either a country or a city. Do not fill both."
+msgstr "Geef een land of een stad aan. Vul niet beide in."
+
+#: .\iprovider\admin.py:441 .\iprovider\admin.py:487 .\iprovider\admin.py:533
+msgid "Dates (read-only)"
+msgstr "Datums (alleen lezen)"
+
+#: .\iprovider\admin.py:459 .\iprovider\admin.py:505 .\iprovider\admin.py:551
+#: .\iprovider\models.py:67 .\iprovider\models.py:78 .\iprovider\models.py:127
+#: .\iprovider\models.py:377 .\iprovider\models.py:496
+#: .\iprovider\models.py:615 .\iprovider\models.py:752
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:75
+#: .\iprovider\templates\iprovider\services.html:27
+#: .\iprovider\templates\iprovider\tariffs.html:27
+#: .\iprovider\templates\iprovider\vacancy.html:27
+msgid "City"
+msgstr "Stad"
+
+#: .\iprovider\admin.py:463 .\iprovider\admin.py:509 .\iprovider\admin.py:555
+#: .\iprovider\models.py:97 .\iprovider\models.py:202 .\iprovider\models.py:297
+#: .\iprovider\models.py:419 .\iprovider\models.py:538
+#: .\iprovider\models.py:664 .\iprovider\models.py:702
+msgid "Category"
+msgstr "Categorie"
+
+#: .\iprovider\admin.py:571 .\iprovider\models.py:726 .\iprovider\models.py:735
+msgid "Rating"
+msgstr "Beoordeling"
+
+#: .\iprovider\admin.py:574
+msgid "Rated object"
+msgstr "Beoordeeld object"
+
+#: .\iprovider\admin.py:576
+msgid "Select one of the objects to rate."
+msgstr "Selecteer een van de objecten om te beoordelen."
+
+#: .\iprovider\admin.py:578
+msgid "Creation date (read-only)"
+msgstr "Aanmaakdatum (alleen lezen)"
+
+#: .\iprovider\admin.py:607 .\iprovider\templates\iprovider\services.html:119
+#: .\iprovider\templates\iprovider\services.html:197
+#: .\iprovider\templates\iprovider\tariffs.html:117
+#: .\iprovider\templates\iprovider\tariffs.html:190
+msgid "Request"
+msgstr "Aanvraag"
+
+#: .\iprovider\admin.py:610 .\iprovider\admin.py:642
+#: .\iprovider\templates\iprovider\profile.html:196
+msgid "Item"
+msgstr "Item"
+
+#: .\iprovider\admin.py:613
+msgid "Contact Information"
+msgstr "Contactgegevens"
+
+#: .\iprovider\admin.py:616
+msgid "Full Contact Info"
+msgstr "Volledige contactgegevens"
+
+#: .\iprovider\admin.py:620 .\iprovider\admin.py:725
+msgid "Dates"
+msgstr "Datums"
+
+#: .\iprovider\admin.py:624
+msgid "Manager Notes"
+msgstr "Opmerkingen manager"
+
+#: .\iprovider\admin.py:651
+msgid "Contact"
+msgstr "Contact"
+
+#: .\iprovider\admin.py:657 .\iprovider\admin.py:722 .\iprovider\models.py:974
+msgid "Subscription"
+msgstr "Abonnement"
+
+#: .\iprovider\admin.py:661
+msgid "Anonymous user"
+msgstr "Anonieme gebruiker"
+
+#: .\iprovider\admin.py:675
+msgid "Full Contact Information"
+msgstr "Volledige contactgegevens"
+
+#: .\iprovider\admin.py:684
+msgid "Approve selected requests"
+msgstr "Geselecteerde aanvragen goedkeuren"
+
+#: .\iprovider\admin.py:693
+msgid "Reject selected requests"
+msgstr "Geselecteerde aanvragen afwijzen"
+
+#: .\iprovider\admin.py:697 .\iprovider\templates\iprovider\profile.html:197
+msgid "Type"
+msgstr "Type"
+
+#: .\iprovider\admin.py:702 .\iprovider\models.py:1014
+#: .\iprovider\templates\iprovider\edit_profile.html:37
+#: .\iprovider\templates\iprovider\profile.html:30
+#: .\iprovider\templates\iprovider\support.html:44
+#: .\templates\account\email.html:74 .\templates\account\password_reset.html:35
+#: .\templates\account\password_reset.html:36
+#: .\templates\account\signup.html:52
+msgid "Email"
+msgstr "E-mail"
+
+#: .\iprovider\admin.py:706 .\iprovider\templates\iprovider\profile.html:33
+#: .\iprovider\templates\iprovider\support.html:24
+msgid "Phone"
+msgstr "Telefoon"
+
+#: .\iprovider\forms.py:36
+msgid "This username is already taken."
+msgstr "Deze gebruikersnaam is al in gebruik."
+
+#: .\iprovider\forms.py:43
+msgid "Phone number must contain 5 to 15 digits."
+msgstr "Telefoonnummer moet 5 tot 15 cijfers bevatten."
+
+#: .\iprovider\forms.py:45
+msgid "Invalid phone number format."
+msgstr "Ongeldig telefoonnummerformaat."
+
+#: .\iprovider\forms.py:52 .\iprovider\templates\iprovider\edit_profile.html:22
+#: .\iprovider\templates\iprovider\profile.html:27
+#: .\templates\account\signup.html:42
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: .\iprovider\forms.py:65 .\iprovider\models.py:758
+msgid "Preferred contact methods"
+msgstr "Voorkeurscontactmethoden"
+
+#: .\iprovider\forms.py:98 .\iprovider\models.py:750 .\iprovider\models.py:917
+#: .\iprovider\models.py:927
+#: .\iprovider\templates\iprovider\edit_profile.html:49
+#: .\templates\account\phone_list.html:74
+msgid "Phone number"
+msgstr "Telefoonnummer"
+
+#: .\iprovider\forms.py:106
+msgid "Your name"
+msgstr "Uw naam"
+
+#: .\iprovider\forms.py:107
+msgid "Your email"
+msgstr "Uw e-mail"
+
+#: .\iprovider\forms.py:109
+msgid "Your message"
+msgstr "Uw bericht"
+
+#: .\iprovider\forms_custom.py:19 .\templates\account\login.html:53
+#: .\templates\account\login.html:54 .\templates\account\signup.html:62
+#: .\templates\account\signup.html:63
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: .\iprovider\forms_custom.py:24 .\templates\account\signup.html:78
+msgid "Password (again)"
+msgstr "Wachtwoord (opnieuw)"
+
+#: .\iprovider\forms_custom.py:37
+msgid "Passwords don't match."
+msgstr "Wachtwoorden komen niet overeen."
+
+#: .\iprovider\models.py:55
+msgid "Country code"
+msgstr "Landcode"
+
+#: .\iprovider\models.py:56
+msgid "Currency code"
+msgstr "Valutacode"
+
+#: .\iprovider\models.py:84
+msgid "Category name"
+msgstr "Categorienaam"
+
+#: .\iprovider\models.py:91
+msgid "Parent category"
+msgstr "Bovenliggende categorie"
+
+#: .\iprovider\models.py:98
+msgid "Categories"
+msgstr "Categorieën"
+
+#: .\iprovider\models.py:102 .\iprovider\models.py:111
+msgid "Language"
+msgstr "Taal"
+
+#: .\iprovider\models.py:112
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:7
+msgid "Languages"
+msgstr "Talen"
+
+#: .\iprovider\models.py:116
+msgid "Place name"
+msgstr "Plaatsnaam"
+
+#: .\iprovider\models.py:121
+msgid "Full address"
+msgstr "Volledig adres"
+
+#: .\iprovider\models.py:163 .\iprovider\models.py:171
+msgid "Office"
+msgstr "Kantoor"
+
+#: .\iprovider\models.py:169 .\iprovider\models.py:278
+msgid "Vacancy"
+msgstr "Vacature"
+
+#: .\iprovider\models.py:172
+msgid "Required languages"
+msgstr "Vereiste talen"
+
+#: .\iprovider\models.py:175
+msgid "Vacancy office"
+msgstr "Vacaturekantoor"
+
+#: .\iprovider\models.py:176
+msgid "Vacancy offices"
+msgstr "Vacaturekantoren"
+
+#: .\iprovider\models.py:184
+msgid "Vacancy title"
+msgstr "Vacaturetitel"
+
+#: .\iprovider\models.py:189 .\iprovider\models.py:288
+#: .\iprovider\models.py:410 .\iprovider\models.py:529
+msgid "Base price ($)"
+msgstr "Basisprijs ($)"
+
+#: .\iprovider\models.py:191 .\iprovider\models.py:289
+#: .\iprovider\models.py:379 .\iprovider\models.py:411
+#: .\iprovider\models.py:498 .\iprovider\models.py:530
+#: .\iprovider\models.py:617 .\iprovider\models.py:659
+#: .\iprovider\models.py:697
+msgid "Created at"
+msgstr "Aangemaakt op"
+
+#: .\iprovider\models.py:192 .\iprovider\models.py:380
+#: .\iprovider\models.py:499 .\iprovider\models.py:618
+#: .\iprovider\models.py:660 .\iprovider\models.py:698
+msgid "Updated at"
+msgstr "Bijgewerkt op"
+
+#: .\iprovider\models.py:200 .\iprovider\models.py:290
+#: .\iprovider\models.py:412 .\iprovider\models.py:531
+#: .\iprovider\models.py:662 .\iprovider\models.py:700
+msgid "Views"
+msgstr "Weergaven"
+
+#: .\iprovider\models.py:201 .\iprovider\models.py:663
+#: .\iprovider\models.py:701
+msgid "Published"
+msgstr "Gepubliceerd"
+
+#: .\iprovider\models.py:209 .\iprovider\models.py:304
+#: .\iprovider\models.py:426 .\iprovider\models.py:545
+msgid "Features (text)"
+msgstr "Kenmerken (tekst)"
+
+#: .\iprovider\models.py:210 .\iprovider\models.py:305
+#: .\iprovider\models.py:427 .\iprovider\models.py:546
+msgid "Each feature on a new line. Will be displayed as a list."
+msgstr "Elk kenmerk op een nieuwe regel. Wordt als lijst weergegeven."
+
+#: .\iprovider\models.py:218
+msgid "Detailed description(HTML)"
+msgstr "Gedetailleerde beschrijving (HTML)"
+
+#: .\iprovider\models.py:219
+msgid "Use HTML tags for formatting (e.g., <ul>, <li>, <strong>.)"
+msgstr "Gebruik HTML-tags voor opmaak (bijv. <ul>, <li>, <strong>)."
+
+#: .\iprovider\models.py:251 .\iprovider\models.py:351
+#: .\iprovider\models.py:471 .\iprovider\models.py:590
+msgid "No features"
+msgstr "Geen kenmerken"
+
+#: .\iprovider\models.py:279
+#: .\iprovider\templates\iprovider\includes\footer.html:70
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:114
+#: .\iprovider\templates\iprovider\vacancy.html:53
+msgid "Vacancies"
+msgstr "Vacatures"
+
+#: .\iprovider\models.py:283
+msgid "Tariff name"
+msgstr "Tariefnaam"
+
+#: .\iprovider\models.py:300 .\iprovider\models.py:422
+#: .\iprovider\models.py:541
+msgid "Display order"
+msgstr "Weergavevolgorde"
+
+#: .\iprovider\models.py:369 .\iprovider\models.py:967
+msgid "Tariff"
+msgstr "Tarief"
+
+#: .\iprovider\models.py:370
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:102
+#: .\iprovider\templates\iprovider\tariffs.html:53
+msgid "Tariffs"
+msgstr "Tarieven"
+
+#: .\iprovider\models.py:378 .\iprovider\models.py:497
+#: .\iprovider\models.py:616
+msgid "Price ($)"
+msgstr "Prijs ($)"
+
+#: .\iprovider\models.py:383
+msgid "Tariff price"
+msgstr "Tariefprijs"
+
+#: .\iprovider\models.py:384
+msgid "Tariff prices"
+msgstr "Tariefprijzen"
+
+#: .\iprovider\models.py:392 .\iprovider\models.py:511
+#: .\iprovider\models.py:630
+msgid "You must specify either a country or a city."
+msgstr "U moet een land of een stad opgeven."
+
+#: .\iprovider\models.py:394 .\iprovider\models.py:513
+#: .\iprovider\models.py:632
+msgid "Please indicate only the country OR only the city."
+msgstr "Geef alleen het land OF alleen de stad aan."
+
+#: .\iprovider\models.py:405
+msgid "Separate service name"
+msgstr "Aparte servicenaam"
+
+#: .\iprovider\models.py:488
+msgid "Separate service"
+msgstr "Aparte service"
+
+#: .\iprovider\models.py:489
+msgid "Separate services"
+msgstr "Aparte services"
+
+#: .\iprovider\models.py:502
+msgid "Separate service price"
+msgstr "Prijs aparte service"
+
+#: .\iprovider\models.py:503
+msgid "Separate service prices"
+msgstr "Prijzen aparte services"
+
+#: .\iprovider\models.py:524
+msgid "Packet name"
+msgstr "Pakketnaam"
+
+#: .\iprovider\models.py:607
+msgid "Packet"
+msgstr "Pakket"
+
+#: .\iprovider\models.py:608
+msgid "Packets"
+msgstr "Pakketten"
+
+#: .\iprovider\models.py:621
+msgid "Packet price"
+msgstr "Pakketprijs"
+
+#: .\iprovider\models.py:622
+msgid "Packet prices"
+msgstr "Pakketprijzen"
+
+#: .\iprovider\models.py:644
+msgid "News will be shown in all selected countries"
+msgstr "Nieuws wordt getoond in alle geselecteerde landen"
+
+#: .\iprovider\models.py:647
+msgid "News will be shown only in these cities (even if country is selected)"
+msgstr ""
+"Nieuws wordt alleen in deze steden getoond (zelfs als er een land is "
+"geselecteerd)."
+
+#: .\iprovider\models.py:675 .\iprovider\models.py:676
+#: .\iprovider\templates\iprovider\includes\footer.html:76
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:117
+#: .\iprovider\templates\iprovider\news_detail.html:11
+msgid "News"
+msgstr "Nieuws"
+
+#: .\iprovider\models.py:682
+msgid "Stock will be shown in all selected countries"
+msgstr "Aanbiedingen worden getoond in alle geselecteerde landen"
+
+#: .\iprovider\models.py:685
+msgid "Stock will be shown only in these cities (even if country is selected)"
+msgstr ""
+"Aanbiedingen worden alleen in deze steden getoond (zelfs als er een land is "
+"geselecteerd)."
+
+#: .\iprovider\models.py:713
+msgid "Stock"
+msgstr "Aanbieding"
+
+#: .\iprovider\models.py:714
+#: .\iprovider\templates\iprovider\includes\footer.html:73
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:108
+#: .\iprovider\templates\iprovider\stocks.html:6
+#: .\iprovider\templates\iprovider\stocks_detail.html:10
+msgid "Stocks"
+msgstr "Aanbiedingen"
+
+#: .\iprovider\models.py:736
+msgid "Ratings"
+msgstr "Beoordelingen"
+
+#: .\iprovider\models.py:754 .\iprovider\templates\iprovider\profile.html:39
+msgid "Balance"
+msgstr "Saldo"
+
+#: .\iprovider\models.py:755 .\templates\account\email.html:40
+#: .\templates\account\phone_list.html:37
+msgid "Verified"
+msgstr "Geverifieerd"
+
+#: .\iprovider\models.py:771 .\iprovider\templates\iprovider\profile.html:20
+msgid "Profile"
+msgstr "Profiel"
+
+#: .\iprovider\models.py:772
+msgid "Profiles"
+msgstr "Profielen"
+
+#: .\iprovider\models.py:779 .\iprovider\templates\iprovider\profile.html:163
+#: .\iprovider\templates\iprovider\profile.html:216
+msgid "Pending"
+msgstr "In afwachting"
+
+#: .\iprovider\models.py:780
+msgid "Succeeded"
+msgstr "Geslaagd"
+
+#: .\iprovider\models.py:781 .\iprovider\templates\iprovider\profile.html:165
+msgid "Failed"
+msgstr "Mislukt"
+
+#: .\iprovider\models.py:782
+msgid "Refunded"
+msgstr "Terugbetaald"
+
+#: .\iprovider\models.py:792
+msgid "Deposit"
+msgstr "Storting"
+
+#: .\iprovider\models.py:793 .\iprovider\models.py:809
+msgid "Payment"
+msgstr "Betaling"
+
+#: .\iprovider\models.py:794
+msgid "Refund"
+msgstr "Terugbetaling"
+
+#: .\iprovider\models.py:798 .\iprovider\templates\iprovider\profile.html:137
+#: .\iprovider\templates\iprovider\profile\deposit.html:44
+msgid "Amount"
+msgstr "Bedrag"
+
+#: .\iprovider\models.py:799
+#: .\iprovider\templates\iprovider\profile\deposit.html:54
+msgid "Currency"
+msgstr "Valuta"
+
+#: .\iprovider\models.py:802
+msgid "Transaction ID"
+msgstr "Transactie-ID"
+
+#: .\iprovider\models.py:804
+msgid "Payment data"
+msgstr "Betalingsgegevens"
+
+#: .\iprovider\models.py:810
+msgid "Payments"
+msgstr "Betalingen"
+
+#: .\iprovider\models.py:876
+msgid "Connection Request"
+msgstr "Aansluitingsaanvraag"
+
+#: .\iprovider\models.py:877
+msgid "Connection Requests"
+msgstr "Aansluitingsaanvragen"
+
+#: .\iprovider\models.py:928
+msgid "Phone numbers"
+msgstr "Telefoonnummers"
+
+#: .\iprovider\models.py:968
+msgid "Start date"
+msgstr "Startdatum"
+
+#: .\iprovider\models.py:969
+msgid "End date"
+msgstr "Einddatum"
+
+#: .\iprovider\models.py:970 .\iprovider\models.py:993
+#: .\iprovider\templates\iprovider\profile.html:97
+msgid "Active"
+msgstr "Actief"
+
+#: .\iprovider\models.py:971
+msgid "Auto renew"
+msgstr "Automatisch verlengen"
+
+#: .\iprovider\models.py:975
+msgid "Subscriptions"
+msgstr "Abonnementen"
+
+#: .\iprovider\models.py:992
+msgid "Order"
+msgstr "Bestelling"
+
+#: .\iprovider\models.py:997
+msgid "FAQ"
+msgstr "Veelgestelde vragen"
+
+#: .\iprovider\models.py:998
+msgid "FAQs"
+msgstr "Veelgestelde vragen"
+
+#: .\iprovider\models.py:1006
+msgid "New"
+msgstr "Nieuw"
+
+#: .\iprovider\models.py:1007
+msgid "In progress"
+msgstr "In behandeling"
+
+#: .\iprovider\models.py:1008
+msgid "Resolved"
+msgstr "Opgelost"
+
+#: .\iprovider\models.py:1009
+msgid "Closed"
+msgstr "Gesloten"
+
+#: .\iprovider\models.py:1032
+msgid "Support ticket"
+msgstr "Supportticket"
+
+#: .\iprovider\models.py:1033
+msgid "Support tickets"
+msgstr "Supporttickets"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:10
+msgid "Edit Profile"
+msgstr "Profiel bewerken"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:41
+#: .\templates\account\change_username.html:46
+msgid "Change"
+msgstr "Wijzigen"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:54
+msgid "Manage"
+msgstr "Beheren"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:104
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: .\iprovider\templates\iprovider\home.html:7
+msgid "About our company"
+msgstr "Over ons bedrijf"
+
+#: .\iprovider\templates\iprovider\home.html:8
+msgid "Year of foundation:"
+msgstr "Oprichtingsjaar:"
+
+#: .\iprovider\templates\iprovider\home.html:9
+msgid "Founder:"
+msgstr "Oprichter:"
+
+#: .\iprovider\templates\iprovider\home.html:15
+msgid "Our achievements"
+msgstr "Onze prestaties"
+
+#: .\iprovider\templates\iprovider\home.html:26
+msgid "Latest News"
+msgstr "Laatste nieuws"
+
+#: .\iprovider\templates\iprovider\home.html:28
+msgid "View All News"
+msgstr "Bekijk al het nieuws"
+
+#: .\iprovider\templates\iprovider\home.html:48
+msgid "Read More"
+msgstr "Lees meer"
+
+#: .\iprovider\templates\iprovider\home.html:54
+msgid "No news available. Please check back later!"
+msgstr "Geen nieuws beschikbaar. Probeer het later opnieuw!"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:9
+msgid "Contact us:"
+msgstr "Neem contact op:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:19
+msgid "Write a message"
+msgstr "Stuur een bericht"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:25
+msgid "Tariffs:"
+msgstr "Tarieven:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:36
+msgid "Services:"
+msgstr "Diensten:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:41
+msgid "Assistant"
+msgstr "Assistent"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:44
+msgid "Parental control"
+msgstr "Ouderlijk toezicht"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:47
+msgid "Video intercom with an app"
+msgstr "Video-intercom met app"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:50
+msgid "Video surveillance"
+msgstr "Videobewaking"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:53
+msgid "All services"
+msgstr "Alle diensten"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:61
+#: .\iprovider\templates\iprovider\includes\navbar.html:29
+msgid "Cabinet"
+msgstr "Klantenportaal"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:64
+#: .\iprovider\templates\iprovider\includes\navbar.html:18
+#: .\iprovider\templates\iprovider\news_detail.html:10
+#: .\iprovider\templates\iprovider\stocks_detail.html:9
+msgid "Home"
+msgstr "Home"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:67
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:111
+#: .\iprovider\templates\iprovider\support.html:14
+#: .\iprovider\templates\iprovider\support.html:52
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:82
+msgid "Internet service provider «AstraWilly»"
+msgstr "Internetprovider «AstraWilly»"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:83
+msgid "Documents:"
+msgstr "Documenten:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:85
+msgid "User Agreement"
+msgstr "Gebruikersovereenkomst"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:88
+msgid "Privacy Policy"
+msgstr "Privacybeleid"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:91
+msgid "Terms of Service"
+msgstr "Servicevoorwaarden"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:94
+msgid "License Agreement"
+msgstr "Licentieovereenkomst"
+
+#: .\iprovider\templates\iprovider\includes\navbar.html:32
+#: .\iprovider\templates\iprovider\profile.html:257
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: .\iprovider\templates\iprovider\includes\navbar.html:36
+msgid "Login"
+msgstr "Inloggen"
+
+#: .\iprovider\templates\iprovider\includes\navbar.html:39
+msgid "Register"
+msgstr "Registreren"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:46
+#: .\iprovider\templates\iprovider\services.html:59
+#: .\iprovider\templates\iprovider\tariffs.html:59
+#: .\iprovider\templates\iprovider\vacancy.html:58
+msgid "Current location:"
+msgstr "Huidige locatie:"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:64
+#: .\iprovider\templates\iprovider\profile\deposit.html:32
+#: .\iprovider\templates\iprovider\services.html:16
+#: .\iprovider\templates\iprovider\tariffs.html:16
+#: .\iprovider\templates\iprovider\vacancy.html:16
+msgid "Select a country"
+msgstr "Selecteer een land"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:77
+msgid "Select City (Optional)"
+msgstr "Selecteer stad (optioneel)"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:81
+msgid "Apply Location"
+msgstr "Locatie toepassen"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:84
+msgid "Clear Location"
+msgstr "Locatie wissen"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:93
+msgid "Detect My Location"
+msgstr "Mijn locatie detecteren"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:95
+msgid "We'll use your location to show local prices"
+msgstr "We gebruiken uw locatie om lokale prijzen te tonen"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:105
+#: .\iprovider\templates\iprovider\services.html:53
+msgid "Services"
+msgstr "Diensten"
+
+#: .\iprovider\templates\iprovider\news_detail.html:21
+#: .\iprovider\templates\iprovider\stocks_detail.html:20
+msgid "Published:"
+msgstr "Gepubliceerd:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:23
+#: .\iprovider\templates\iprovider\news_list.html:59
+#: .\iprovider\templates\iprovider\stocks.html:59
+#: .\iprovider\templates\iprovider\stocks_detail.html:22
+msgid "Updated:"
+msgstr "Bijgewerkt:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:25
+#: .\iprovider\templates\iprovider\stocks_detail.html:24
+msgid "Views:"
+msgstr "Weergaven:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:27
+#: .\iprovider\templates\iprovider\stocks_detail.html:26
+msgid "Category:"
+msgstr "Categorie:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:51
+msgid "Previous:"
+msgstr "Vorige:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:58
+#: .\iprovider\templates\iprovider\stocks_detail.html:54
+msgid "Next:"
+msgstr "Volgende:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:68
+msgid "Back to All News"
+msgstr "Terug naar al het nieuws"
+
+#: .\iprovider\templates\iprovider\news_list.html:6
+msgid "News Archive"
+msgstr "Nieuwsarchief"
+
+#: .\iprovider\templates\iprovider\news_list.html:7
+msgid "Total news:"
+msgstr "Totaal nieuws:"
+
+#: .\iprovider\templates\iprovider\news_list.html:17
+#: .\iprovider\templates\iprovider\stocks.html:17
+msgid "views"
+msgstr "weergaven"
+
+#: .\iprovider\templates\iprovider\news_list.html:52
+#: .\iprovider\templates\iprovider\stocks.html:52
+msgid "Read Full Story"
+msgstr "Lees het hele verhaal"
+
+#: .\iprovider\templates\iprovider\profile.html:10
+msgid "My Cabinet"
+msgstr "Mijn klantenportaal"
+
+#: .\iprovider\templates\iprovider\profile.html:22
+msgid "Edit"
+msgstr "Bewerken"
+
+#: .\iprovider\templates\iprovider\profile.html:41
+#: .\iprovider\templates\iprovider\profile\deposit.html:89
+msgid "Top up"
+msgstr "Opwaarderen"
+
+#: .\iprovider\templates\iprovider\profile.html:45
+msgid "Preferred contact:"
+msgstr "Voorkeurscontact:"
+
+#: .\iprovider\templates\iprovider\profile.html:60
+msgid "Active Subscriptions"
+msgstr "Actieve abonnementen"
+
+#: .\iprovider\templates\iprovider\profile.html:69
+msgid "Service"
+msgstr "Dienst"
+
+#: .\iprovider\templates\iprovider\profile.html:70
+msgid "Start"
+msgstr "Start"
+
+#: .\iprovider\templates\iprovider\profile.html:71
+msgid "End"
+msgstr "Einde"
+
+#: .\iprovider\templates\iprovider\profile.html:72
+#: .\iprovider\templates\iprovider\profile.html:200
+msgid "Action"
+msgstr "Actie"
+
+#: .\iprovider\templates\iprovider\profile.html:99
+msgid "Inactive"
+msgstr "Inactief"
+
+#: .\iprovider\templates\iprovider\profile.html:109
+msgid "No active subscriptions"
+msgstr "Geen actieve abonnementen"
+
+#: .\iprovider\templates\iprovider\profile.html:115
+msgid "View My Requests"
+msgstr "Bekijk mijn aanvragen"
+
+#: .\iprovider\templates\iprovider\profile.html:127
+msgid "Recent Payments"
+msgstr "Recente betalingen"
+
+#: .\iprovider\templates\iprovider\profile.html:136
+#: .\iprovider\templates\iprovider\profile.html:199
+msgid "Date"
+msgstr "Datum"
+
+#: .\iprovider\templates\iprovider\profile.html:161
+msgid "Success"
+msgstr "Succes"
+
+#: .\iprovider\templates\iprovider\profile.html:177
+msgid "No payments yet"
+msgstr "Nog geen betalingen"
+
+#: .\iprovider\templates\iprovider\profile.html:188
+msgid "My Requests"
+msgstr "Mijn aanvragen"
+
+#: .\iprovider\templates\iprovider\profile.html:218
+msgid "In Progress"
+msgstr "In behandeling"
+
+#: .\iprovider\templates\iprovider\profile.html:220
+msgid "Approved"
+msgstr "Goedgekeurd"
+
+#: .\iprovider\templates\iprovider\profile.html:222
+msgid "Converted"
+msgstr "Geconverteerd"
+
+#: .\iprovider\templates\iprovider\profile.html:224
+msgid "Rejected"
+msgstr "Afgewezen"
+
+#: .\iprovider\templates\iprovider\profile.html:235
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: .\iprovider\templates\iprovider\profile.html:249
+msgid "You have no requests."
+msgstr "U heeft geen aanvragen."
+
+#: .\iprovider\templates\iprovider\profile.html:264
+#: .\templates\account\password_change.html:77
+#: .\templates\account\password_reset_from_key.html:12
+msgid "Change Password"
+msgstr "Wachtwoord wijzigen"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:14
+msgid "Top up balance"
+msgstr "Saldo opwaarderen"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:37
+msgid "Currency will be set automatically based on country"
+msgstr "Valuta wordt automatisch ingesteld op basis van land"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:68
+msgid "Card number"
+msgstr "Kaartnummer"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:79
+msgid "Expiry (MM/YY)"
+msgstr "Vervaldatum (MM/JJ)"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:83
+msgid "CVV"
+msgstr "CVV"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:97
+msgid "Verification required"
+msgstr "Verificatie vereist"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:98
+msgid "A verification code has been sent to your console (Django terminal)."
+msgstr "Er is een verificatiecode naar uw console (Django-terminal) gestuurd."
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:102
+msgid "Verification code"
+msgstr "Verificatiecode"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:106
+msgid "In test mode, enter the code shown in the Django console."
+msgstr ""
+"Voer in testmodus de code in die in de Django-console wordt weergegeven."
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:109
+msgid "Confirm payment"
+msgstr "Betaling bevestigen"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:112
+msgid "Change card"
+msgstr "Kaart wijzigen"
+
+#: .\iprovider\templates\iprovider\services.html:30
+#: .\iprovider\templates\iprovider\tariffs.html:30
+#: .\iprovider\templates\iprovider\vacancy.html:30
+msgid "Select a city"
+msgstr "Selecteer een stad"
+
+#: .\iprovider\templates\iprovider\services.html:32
+#: .\iprovider\templates\iprovider\tariffs.html:32
+#: .\iprovider\templates\iprovider\vacancy.html:32
+msgid "Please select your country first"
+msgstr "Selecteer eerst uw land"
+
+#: .\iprovider\templates\iprovider\services.html:44
+#: .\iprovider\templates\iprovider\tariffs.html:44
+#: .\iprovider\templates\iprovider\vacancy.html:44
+msgid "Apply"
+msgstr "Toepassen"
+
+#: .\iprovider\templates\iprovider\services.html:54
+msgid "Separately"
+msgstr "Apart"
+
+#: .\iprovider\templates\iprovider\services.html:82
+#: .\iprovider\templates\iprovider\services.html:160
+#: .\iprovider\templates\iprovider\tariffs.html:83
+#: .\iprovider\templates\iprovider\tariffs.html:156
+msgid "ratings"
+msgstr "beoordelingen"
+
+#: .\iprovider\templates\iprovider\services.html:113
+#: .\iprovider\templates\iprovider\services.html:191
+#: .\iprovider\templates\iprovider\tariffs.html:111
+#: .\iprovider\templates\iprovider\tariffs.html:184
+#: .\iprovider\templates\iprovider\vacancy.html:144
+msgid "Request sent"
+msgstr "Aanvraag verzonden"
+
+#: .\iprovider\templates\iprovider\services.html:125
+#: .\iprovider\templates\iprovider\services.html:203
+#: .\iprovider\templates\iprovider\tariffs.html:123
+#: .\iprovider\templates\iprovider\tariffs.html:196
+msgid "Login to request"
+msgstr "Log in om aan te vragen"
+
+#: .\iprovider\templates\iprovider\services.html:135
+msgid "No separate services available"
+msgstr "Geen aparte services beschikbaar"
+
+#: .\iprovider\templates\iprovider\services.html:144
+msgid "Packages"
+msgstr "Pakketten"
+
+#: .\iprovider\templates\iprovider\services.html:213
+msgid "No packages available"
+msgstr "Geen pakketten beschikbaar"
+
+#: .\iprovider\templates\iprovider\stocks.html:7
+msgid "Total stocks:"
+msgstr "Totaal aanbiedingen:"
+
+#: .\iprovider\templates\iprovider\stocks.html:70
+msgid "No Stocks Available"
+msgstr "Geen aanbiedingen beschikbaar"
+
+#: .\iprovider\templates\iprovider\stocks.html:71
+msgid "Stay tuned for updates! Fresh stock will be coming soon!"
+msgstr "Blijf op de hoogte! Binnenkort nieuwe aanbiedingen!"
+
+#: .\iprovider\templates\iprovider\stocks_detail.html:47
+msgid "Previous: "
+msgstr "Vorige: "
+
+#: .\iprovider\templates\iprovider\stocks_detail.html:64
+msgid "Back to All Stocks"
+msgstr "Terug naar alle aanbiedingen"
+
+#: .\iprovider\templates\iprovider\support.html:28
+msgid "Number"
+msgstr "Nummer"
+
+#: .\iprovider\templates\iprovider\support.html:31
+msgid "Hours"
+msgstr "Uren"
+
+#: .\iprovider\templates\iprovider\support.html:32
+msgid "Mon-Fri, 9:00-18:00"
+msgstr "Ma-Vr, 9:00-18:00"
+
+#: .\iprovider\templates\iprovider\support.html:65
+msgid "Live Chat"
+msgstr "Live Chat"
+
+#: .\iprovider\templates\iprovider\support.html:70
+msgid "Online now"
+msgstr "Nu online"
+
+#: .\iprovider\templates\iprovider\support.html:73
+msgid "Start Chat"
+msgstr "Start Chat"
+
+#: .\iprovider\templates\iprovider\support.html:88
+msgid "Send us a message"
+msgstr "Stuur ons een bericht"
+
+#: .\iprovider\templates\iprovider\support.html:108
+msgid "Send message"
+msgstr "Bericht versturen"
+
+#: .\iprovider\templates\iprovider\support.html:122
+msgid "Frequently Asked Questions"
+msgstr "Veelgestelde vragen"
+
+#: .\iprovider\templates\iprovider\support.html:149
+msgid "No FAQs yet."
+msgstr "Nog geen veelgestelde vragen."
+
+#: .\iprovider\templates\iprovider\support.html:165
+msgid "Connect via messengers"
+msgstr "Verbinden via messengers"
+
+#: .\iprovider\templates\iprovider\support.html:184
+msgid "Your location:"
+msgstr "Uw locatie:"
+
+#: .\iprovider\templates\iprovider\tariffs.html:55
+msgid "Unlimited Wi-Fi, like the light of the night"
+msgstr "Onbeperkt Wi-Fi, als het licht van de nacht"
+
+#: .\iprovider\templates\iprovider\tariffs.html:139
+msgid "Mobile Internet, which is always with you, like the sun!"
+msgstr "Mobiel internet, altijd bij u, als de zon!"
+
+#: .\iprovider\templates\iprovider\tariffs.html:149
+msgid "Mobile Internet"
+msgstr "Mobiel internet"
+
+#: .\iprovider\templates\iprovider\vacancy.html:107
+msgid "No language requirements"
+msgstr "Geen taalvereisten"
+
+#: .\iprovider\templates\iprovider\vacancy.html:113
+msgid "Location not specified"
+msgstr "Locatie niet gespecificeerd"
+
+#: .\iprovider\templates\iprovider\vacancy.html:137
+msgid "per month"
+msgstr "per maand"
+
+#: .\iprovider\templates\iprovider\vacancy.html:150
+msgid "Apply Now"
+msgstr "Nu solliciteren"
+
+#: .\iprovider\templates\iprovider\vacancy.html:156
+msgid "Login to apply"
+msgstr "Log in om te solliciteren"
+
+#: .\iprovider\templates\iprovider\vacancy.html:168
+msgid " views"
+msgstr " weergaven"
+
+#: .\iprovider\templates\iprovider\vacancy.html:180
+msgid "No vacancies found"
+msgstr "Geen vacatures gevonden"
+
+#: .\iprovider\templates\iprovider\vacancy.html:181
+msgid ""
+"No vacancies available for your selected location. Check back later or try a "
+"different location."
+msgstr ""
+"Geen vacatures beschikbaar voor uw geselecteerde locatie. Probeer het later "
+"opnieuw of probeer een andere locatie."
+
+#: .\iprovider\views\api.py:33 .\iprovider\views\api.py:86
+msgid "Invalid item type"
+msgstr "Ongeldig itemtype"
+
+#: .\iprovider\views\api.py:40
+msgid "Object not found."
+msgstr "Object niet gevonden."
+
+#: .\iprovider\views\api.py:51
+msgid "You already have an active request for this item."
+msgstr "U heeft al een actieve aanvraag voor dit item."
+
+#: .\iprovider\views\api.py:66
+msgid "Request sent! A manager will contact you soon."
+msgstr "Aanvraag verzonden! Een manager neemt binnenkort contact met u op."
+
+#: .\iprovider\views\api.py:70
+msgid "Error creating request. Please try again."
+msgstr "Fout bij het maken van de aanvraag. Probeer het opnieuw."
+
+#: .\iprovider\views\api.py:99
+msgid "You already have a pending request for this item."
+msgstr "U heeft al een aanvraag in afwachting voor dit item."
+
+#: .\iprovider\views\api.py:108
+msgid "Profile error. Please update your profile."
+msgstr "Profiel fout. Werk uw profiel bij."
+
+#: .\iprovider\views\api.py:119
+msgid "Request sent! A manager will contact you via your preferred method."
+msgstr ""
+"Aanvraag verzonden! Een manager neemt contact op via uw voorkeursmethode."
+
+#: .\iprovider\views\api.py:122
+msgid "Error creating request."
+msgstr "Fout bij het maken van de aanvraag."
+
+#: .\iprovider\views\api.py:134
+msgid "Request cancelled."
+msgstr "Aanvraag geannuleerd."
+
+#: .\iprovider\views\api.py:136
+msgid "Cannot cancel processed request."
+msgstr "Kan verwerkte aanvraag niet annuleren."
+
+#: .\iprovider\views\api.py:152
+msgid "You already have this tariff."
+msgstr "U heeft dit tarief al."
+
+#: .\iprovider\views\api.py:180
+msgid "Tariff changed successfully."
+msgstr "Tarief succesvol gewijzigd."
+
+#: .\iprovider\views\api.py:183
+msgid "Error processing request."
+msgstr "Fout bij verwerken van aanvraag."
+
+#: .\iprovider\views\api.py:185 .\iprovider\views\api.py:220
+#: .\iprovider\views\api.py:255
+msgid "Insufficient balance."
+msgstr "Onvoldoende saldo."
+
+#: .\iprovider\views\api.py:215 .\iprovider\views\api.py:250
+msgid "Purchase successful."
+msgstr "Aankoop succesvol."
+
+#: .\iprovider\views\api.py:218 .\iprovider\views\api.py:253
+msgid "Error processing purchase."
+msgstr "Fout bij verwerken van aankoop."
+
+#: .\iprovider\views\main.py:77
+msgid ""
+"AstraWilly is the largest provider and the undisputed leader of the "
+"telecommunications services market with the largest subscriber base and "
+"technical network coverage. The official website with the details of the "
+"company: www.astrawilly.com . Every year, more than 4 million people become "
+"new customers."
+msgstr ""
+"AstraWilly is de grootste aanbieder en onbetwiste leider op de markt voor "
+"telecommunicatiediensten met het grootste klantenbestand en technische "
+"netwerkdekking. De officiële website met bedrijfsgegevens: "
+"www.astrawilly.com. Elk jaar worden meer dan 4 miljoen mensen nieuwe klanten."
+
+#: .\iprovider\views\main.py:80
+msgid "More than 50,000 satisfied customers"
+msgstr "Meer dan 50.000 tevreden klanten"
+
+#: .\iprovider\views\main.py:81
+msgid "Internet speed up to 1 Gbit/s"
+msgstr "Internetsnelheid tot 1 Gbit/s"
+
+#: .\iprovider\views\main.py:82
+msgid "The best provider of the Year 2024"
+msgstr "Beste provider van het jaar 2024"
+
+#: .\iprovider\views\main.py:83
+msgid "24/7 technical support"
+msgstr "24/7 technische ondersteuning"
+
+#: .\iprovider\views\news.py:222
+msgid "Stock not available in your location"
+msgstr "Aanbieding niet beschikbaar op uw locatie"
+
+#: .\iprovider\views\payment.py:39
+msgid "Amount must be greater than zero."
+msgstr "Bedrag moet groter zijn dan nul."
+
+#: .\iprovider\views\payment.py:41
+msgid "Invalid amount."
+msgstr "Ongeldig bedrag."
+
+#: .\iprovider\views\payment.py:44
+msgid "Invalid card number."
+msgstr "Ongeldig kaartnummer."
+
+#: .\iprovider\views\payment.py:76
+msgid "Payment session expired. Please start over."
+msgstr "Betalingssessie verlopen. Begin opnieuw."
+
+#: .\iprovider\views\payment.py:81 .\iprovider\views\phone.py:59
+msgid "Invalid verification code."
+msgstr "Ongeldige verificatiecode."
+
+#: .\iprovider\views\phone.py:24
+msgid "This number is already added."
+msgstr "Dit nummer is al toegevoegd."
+
+#: .\iprovider\views\phone.py:35
+msgid "Verification code sent to your phone."
+msgstr "Verificatiecode naar uw telefoon verzonden."
+
+#: .\iprovider\views\phone.py:39
+msgid "Please correct the error below."
+msgstr "Corrigeer de onderstaande fout."
+
+#: .\iprovider\views\phone.py:49
+msgid "This number is already verified."
+msgstr "Dit nummer is al geverifieerd."
+
+#: .\iprovider\views\phone.py:56
+msgid "Phone number verified successfully."
+msgstr "Telefoonnummer succesvol geverifieerd."
+
+#: .\iprovider\views\phone.py:68
+msgid "Cannot set unverified number as primary."
+msgstr "Kan niet-geverifieerd nummer niet als primair instellen."
+
+#: .\iprovider\views\phone.py:78
+msgid "Primary phone number updated."
+msgstr "Primair telefoonnummer bijgewerkt."
+
+#: .\iprovider\views\phone.py:87
+msgid "Cannot remove primary phone number."
+msgstr "Kan primair telefoonnummer niet verwijderen."
+
+#: .\iprovider\views\phone.py:90
+msgid "Phone number removed."
+msgstr "Telefoonnummer verwijderd."
+
+#: .\iprovider\views\phone.py:98
+msgid "Verification code resent."
+msgstr "Verificatiecode opnieuw verzonden."
+
+#: .\iprovider\views\profile.py:76
+msgid "Profile updated successfully."
+msgstr "Profiel succesvol bijgewerkt."
+
+#: .\iprovider\views\support.py:49
+msgid "Your message has been sent. We will contact you soon."
+msgstr "Uw bericht is verzonden. We nemen spoedig contact met u op."
+
+#: .\templates\account\change_username.html:12
+msgid "Change username"
+msgstr "Gebruikersnaam wijzigen"
+
+#: .\templates\account\change_username.html:20
+msgid "Change Username"
+msgstr "Gebruikersnaam wijzigen"
+
+#: .\templates\account\change_username.html:35
+msgid "New username"
+msgstr "Nieuwe gebruikersnaam"
+
+#: .\templates\account\change_username.html:36
+msgid "Enter new username"
+msgstr "Voer nieuwe gebruikersnaam in"
+
+#: .\templates\account\email.html:12
+msgid "Change email address"
+msgstr "E-mailadres wijzigen"
+
+#: .\templates\account\email.html:20
+msgid "Change email"
+msgstr "E-mail wijzigen"
+
+#: .\templates\account\email.html:29
+msgid "The following email addresses are associated with your account:"
+msgstr "De volgende e-mailadressen zijn gekoppeld aan uw account:"
+
+#: .\templates\account\email.html:42 .\templates\account\phone_list.html:39
+msgid "Unverified"
+msgstr "Niet geverifieerd"
+
+#: .\templates\account\email.html:45 .\templates\account\phone_list.html:42
+msgid "Primary"
+msgstr "Primair"
+
+#: .\templates\account\email.html:53 .\templates\account\phone_list.html:49
+msgid "Make Primary"
+msgstr "Als primair instellen"
+
+#: .\templates\account\email.html:56
+msgid "Re-send Verification"
+msgstr "Verificatie opnieuw verzenden"
+
+#: .\templates\account\email.html:59 .\templates\account\phone_list.html:55
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: .\templates\account\email.html:65
+msgid "You currently have no email address setup."
+msgstr "U heeft momenteel geen e-mailadres ingesteld."
+
+#: .\templates\account\email.html:69
+msgid "Add Email Address"
+msgstr "E-mailadres toevoegen"
+
+#: .\templates\account\email.html:76
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: .\templates\account\email.html:82
+msgid "Add Email"
+msgstr "E-mail toevoegen"
+
+#: .\templates\account\login.html:12 .\templates\account\login.html:20
+#: .\templates\account\login.html:76
+msgid "Sign In"
+msgstr "Inloggen"
+
+#: .\templates\account\login.html:29
+#, python-format
+msgid ""
+"If you have not created an account yet, please\n"
+"                                    <a href=\"%(signup_url)s\" class=\"soft-"
+"blue\">sign up</a> first."
+msgstr ""
+"Als u nog geen account heeft aangemaakt, kunt u zich eerst <a "
+"href=\"%(signup_url)s\" class=\"soft-blue\">registreren</a>."
+
+#: .\templates\account\login.html:43
+msgid "Username or Email"
+msgstr "Gebruikersnaam of e-mail"
+
+#: .\templates\account\login.html:44
+msgid "Username or email"
+msgstr "Gebruikersnaam of e-mail"
+
+#: .\templates\account\login.html:67
+msgid "Remember Me"
+msgstr "Onthoud mij"
+
+#: .\templates\account\login.html:70
+#: .\templates\account\password_change.html:78
+msgid "Forgot Password?"
+msgstr "Wachtwoord vergeten?"
+
+#: .\templates\account\login.html:86
+msgid "Sign in with a passkey"
+msgstr "Inloggen met een passkey"
+
+#: .\templates\account\login.html:91
+msgid "Send me a sign-in code"
+msgstr "Stuur mij een inlogcode"
+
+#: .\templates\account\logout.html:13 .\templates\account\logout.html:21
+#: .\templates\account\logout.html:38
+msgid "Sign Out"
+msgstr "Uitloggen"
+
+#: .\templates\account\logout.html:30
+msgid "Are you sure you want to sign out?"
+msgstr "Weet u zeker dat u wilt uitloggen?"
+
+#: .\templates\account\password_change.html:12
+#: .\templates\account\password_change.html:20
+msgid "Change password"
+msgstr "Wachtwoord wijzigen"
+
+#: .\templates\account\password_change.html:35
+#: .\templates\account\password_change.html:36
+msgid "Current Password"
+msgstr "Huidig wachtwoord"
+
+#: .\templates\account\password_change.html:47
+#: .\templates\account\password_change.html:48
+msgid "New Password"
+msgstr "Nieuw wachtwoord"
+
+#: .\templates\account\password_change.html:58
+#: .\templates\account\signup.html:73
+msgid ""
+"Your password must be at least 8 characters long, cannot be entirely "
+"numeric, and cannot be too simular to your other personal information."
+msgstr ""
+"Uw wachtwoord moet minimaal 8 tekens lang zijn, mag niet volledig uit "
+"cijfers bestaan en mag niet te veel lijken op uw andere persoonlijke "
+"gegevens."
+
+#: .\templates\account\password_change.html:64
+#: .\templates\account\password_change.html:65
+msgid "New Password (again)"
+msgstr "Nieuw wachtwoord (opnieuw)"
+
+#: .\templates\account\password_reset.html:12
+#: .\templates\account\password_reset.html:20
+#: .\templates\account\password_reset_done.html:12
+#: .\templates\account\password_reset_done.html:20
+msgid "Password reset"
+msgstr "Wachtwoord resetten"
+
+#: .\templates\account\password_reset.html:48
+msgid "Reset My Password"
+msgstr "Mijn wachtwoord resetten"
+
+#: .\templates\account\password_reset_done.html:28
+msgid ""
+"We have sent you an email. If you have not received it please check your "
+"spam folder. Otherwise contact us if you do not receive it in a few minutes."
+msgstr ""
+"We hebben u een e-mail gestuurd. Als u deze niet heeft ontvangen, controleer "
+"dan uw spammap. Neem anders contact met ons op als u hem na een paar minuten "
+"nog niet heeft ontvangen."
+
+#: .\templates\account\password_reset_done.html:31
+msgid "Return to login"
+msgstr "Terug naar inloggen"
+
+#: .\templates\account\password_reset_from_key.html:20
+msgid "Bad Tokens"
+msgstr "Ongeldige tokens"
+
+#: .\templates\account\password_reset_from_key.html:28
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a\n"
+"                                    <a href=\"%(passwd_reset_url)s\" "
+"class=\"soft-blue\">new password reset</a>."
+msgstr ""
+"De link om uw wachtwoord te resetten was ongeldig, mogelijk omdat deze al is "
+"gebruikt. Vraag een <a href=\"%(passwd_reset_url)s\" class=\"soft-"
+"blue\">nieuwe wachtwoordreset</a> aan."
+
+#: .\templates\account\phone_add.html:10 .\templates\account\phone_list.html:70
+msgid "Add Phone Number"
+msgstr "Telefoonnummer toevoegen"
+
+#: .\templates\account\phone_add.html:24
+msgid "Send Code"
+msgstr "Code verzenden"
+
+#: .\templates\account\phone_list.html:16
+#: .\templates\account\phone_list.html:23
+msgid "Phone Numbers"
+msgstr "Telefoonnummers"
+
+#: .\templates\account\phone_list.html:30
+msgid "The following phone numbers are associated with your account:"
+msgstr "De volgende telefoonnummers zijn gekoppeld aan uw account:"
+
+#: .\templates\account\phone_list.html:59
+#: .\templates\account\phone_verify.html:31
+msgid "Verify"
+msgstr "Verifiëren"
+
+#: .\templates\account\phone_list.html:66
+msgid "You currently have no phone numbers set up."
+msgstr "U heeft momenteel geen telefoonnummers ingesteld."
+
+#: .\templates\account\phone_list.html:76
+msgid "Add Phone"
+msgstr "Telefoon toevoegen"
+
+#: .\templates\account\phone_verify.html:9
+#: .\templates\account\phone_verify.html:16
+msgid "Verify Phone Number"
+msgstr "Telefoonnummer verifiëren"
+
+#: .\templates\account\phone_verify.html:22
+msgid "We have sent a verification code to"
+msgstr "We hebben een verificatiecode gestuurd naar"
+
+#: .\templates\account\phone_verify.html:28
+msgid "Verification Code"
+msgstr "Verificatiecode"
+
+#: .\templates\account\phone_verify.html:38
+msgid "Resend code"
+msgstr "Code opnieuw verzenden"
+
+#: .\templates\account\signup.html:12 .\templates\account\signup.html:20
+#: .\templates\account\signup.html:92
+msgid "Sign Up"
+msgstr "Registreren"
+
+#: .\templates\account\signup.html:28
+#, python-format
+msgid ""
+"Already have an account? Then please\n"
+"                                    <a href=\"%(login_url)s\" class=\"soft-"
+"blue\">sign in</a>. "
+msgstr ""
+"Heeft u al een account? <a href=\"%(login_url)s\" class=\"soft-blue\">Log "
+"dan in</a>."
+
+#: .\templates\account\signup.html:43
+msgid "username"
+msgstr "gebruikersnaam"
+
+#: .\templates\account\signup.html:53
+msgid "email"
+msgstr "e-mailadres"
+
+#: .\templates\account\signup.html:79
+msgid "Confirm password"
+msgstr "Bevestig wachtwoord"

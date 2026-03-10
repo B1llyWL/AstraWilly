@@ -1,0 +1,56 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load account %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'iprovider/css/alert_login.css' %}">
+    <link rel="stylesheet" href="{% static 'iprovider/css/signout.css' %}">
+{% endblock %}
+
+
+{% block head_title %}
+    {% trans "Sign Out" %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <div class="page-section">
+            <div class="signout-header">
+                <h1>{% trans "Sign Out" %}</h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="signout-card">
+                        <div class="signout-card-body p-4">
+                            {% if not SOCIALACCOUNT_ONLY %}
+                                <p class="signout-message">
+                                    {% trans "Are you sure you want to sign out?" %}
+                                </p>
+
+                                <form method="post" action="{% url 'account_logout' %}">
+                                    {% csrf_token %}
+                                    {{ redirect_field }}
+
+                                    <button type="submit" class="btn btn-outline-danger px-5 w-100 ">
+                                        {% trans "Sign Out" %}
+                                    </button>
+                                </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_body %}
+    {{ block.super }}
+    {% if PASSKEY_LOGIN_ENABLED %}
+        {% include "mfa/webauthn/snippets/login_script.html" with button_id="passkey_login" %}
+    {% endif %}
+{% endblock %}

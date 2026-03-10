@@ -1,0 +1,59 @@
+{% extends 'iprovider/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<!-- Биография компании -->
+<div class="section biography">
+    <h2>{% trans "About our company" %}</h2>
+    <p><strong>{% trans "Year of foundation:" %}</strong> {{ biography.year_founded }}</p>
+    <p><strong>{% trans "Founder:" %}</strong> {{ biography.founder }}</p>
+    <p>{{ biography.description }}</p>
+</div>
+
+<!-- Достижения -->
+<div class="section achievements">
+    <h2>{% trans "Our achievements" %}</h2>
+    <ul>
+        {% for achievement in achievements %}
+        <li>✅ {{ achievement }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Новости -->
+<div class="section news">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>{% trans "Latest News" %}</h2>
+        <a href="{% url 'news_list' %}" class="btn btn-outline-primary btn-sm">
+            {% trans "View All News" %} →
+        </a>
+    </div>
+
+    {% for item in news %}
+    <div class="news-item">
+        <div class="row">
+            {% if item.photo %}
+            <div class="col-md-3 mb-3">
+                <img src="{{ item.photo.url }}" alt="{{ item.title }}" class="img-fluid rounded">
+            </div>
+            <div class="col-md-9">
+            {% else %}
+            <div class="col-12">
+            {% endif %}
+                <h3 class="news-title">
+                    <a href="{{ item.url }}" class="text-decoration-none">{{ item.title }}</a>
+                </h3>
+                <p class="news-date">{{ item.date }}</p>
+                <p class="news-content">{{ item.content }}</p>
+                <a href="{{ item.url }}" class="btn btn-outline-primary btn-sm">{% trans "Read More" %}</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="alert alert-info">
+        <p>{% trans "No news available. Please check back later!" %}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+ </div>

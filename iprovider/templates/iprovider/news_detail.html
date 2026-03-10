@@ -1,0 +1,72 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+<article class="news-detail">
+    <!-- Хлебные крошки -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'news_list' %}">{% trans "News" %}</a></li>
+            <li class="breadcrumb-item active">{{ news.title|truncatewords:5 }}</li>
+        </ol>
+    </nav>
+
+    <!-- Заголовок и мета-информация -->
+    <header class="news-header mb-4">
+        <h1 class="news-title">{{ news.title }}</h1>
+        <div class="news-meta">
+            <small>
+                <span class="news-date">{% trans "Published:" %} {{ news.created_at|date:"F d, Y" }}</span>
+                {% if news.updated_at != news.created_at %}
+                <span class="news-updated">{% trans "Updated:" %} {{ news.updated_at|date:"F d, Y" }}</span>
+                {% endif %}
+                <span class="news-views">{% trans "Views:" %} {{ news.watched }}</span>
+                {% if news.category %}
+                <span class="news-category">{% trans "Category:" %} {{ news.category.title }}</span>
+                {% endif %}
+            </small>
+        </div>
+    </header>
+
+    <!-- Изображение новости -->
+    {% if news.photo %}
+    <div class="news-image mb-4">
+        <img src="{{ news.photo.url }}" alt="{{ news.title }}" class="img-fluid">
+    </div>
+    {% endif %}
+
+    <!-- Контент новости -->
+    <div class="news-content">
+        {{ news.description|linebreaks }}
+    </div>
+
+    <!-- Навигация между новостями -->
+    <div class="news-navigation mt-5 pt-4">
+        <div class="row">
+            <div class="col-md-6">
+                {% if prev_news %}
+                <a href="{{ prev_news.get_absolute_url }}" class="btn btn-outline-primary">
+                    ← {% trans "Previous:" %} {{ prev_news.title|truncatewords:8 }}
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                {% if next_news %}
+                <a href="{{ next_news.get_absolute_url }}" class="btn btn-outline-primary">
+                    {% trans "Next:" %} {{ next_news.title|truncatewords:8 }} →
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка возврата -->
+    <div class="text-center mt-5">
+        <a href="{% url 'news_list' %}" class="btn btn-primary">
+            ← {% trans "Back to All News" %}
+        </a>
+    </div>
+</article>
+{% endblock %}

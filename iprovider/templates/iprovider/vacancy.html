@@ -1,0 +1,194 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <!-- Форма выбора локации -->
+        <div class="location-selector mb-4">
+            <form method="post" action="{% url 'set_location' %}" id="location-form">
+                {% csrf_token %}
+                <div class="row g-3">
+                    <div class="col-md-5">
+                        <label for="country-select" class="form-label">{% trans "Country" %}</label>
+                        <select name="country" id="country-select" class="form-select">
+                            <option value="">{% trans "Select a country" %}</option>
+                            {% for country in countries %}
+                            {% if selected_country and selected_country.id == country.id %}
+                            <option value="{{ country.id }}" selected>{{ country.current_name }}</option>
+                            {% else %}
+                            <option value="{{ country.id }}">{{ country.current_name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="city-select" class="form-label">{% trans "City" %}</label>
+                        <select name="city" id="city-select" class="form-select">
+                            {% if selected_country or selected_city %}
+                            <option value="">{% trans "Select a city" %}</option>
+                            {% else %}
+                            <option value="">{% trans "Please select your country first" %}</option>
+                            {% endif %}
+                            {% for city in cities %}
+                            {% if selected_city and selected_city.id == city.id %}
+                            <option value="{{ city.id }}" selected>{{ city.current_name }}</option>
+                            {% else %}
+                            <option value="{{ city.id }}">{{ city.current_name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn apply-btn w-100">{% trans "Apply" %}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Vacancies Section -->
+        <div class="page-section">
+            <div class="section-header">
+                <h1>{% trans "Vacancies" %}</h1>
+                <div style="height: 2rem;"></div>
+
+                {% if selected_country or selected_city %}
+                <div class="alert alert-info">
+                    <strong>{% trans "Current location:" %}</strong>
+                    {% if selected_city %}
+                        {{ selected_city.current_name }}, {{ selected_city.country.current_name }}
+                    {% elif selected_country %}
+                        {{ selected_country.current_name }}
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                {% for vacancy in vacancies %}
+                <div class="col mb-5">
+                    <div class="card h-100 vacancy-card">
+                        <!-- Изображение -->
+                        <div class="card-img-container">
+                            {% if vacancy.photo %}
+                                <img src="{{ vacancy.photo.url }}" class="card-img-top vacancy-img" alt="{{ vacancy.current_title }}" style="height: 200px; object-fit: cover;">
+                            {% else %}
+                                <div class="default-vacancy-img" style="height: 200px; background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-briefcase" style="font-size: 3rem; color: white;"></i>
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="card-body p-4">
+                            <div class="text-left">
+                                <h5 class="card-title fw-bolder mb-2" style="color: #8338ec;">{{ vacancy.current_title }}</h5>
+
+                                <!-- Локации -->
+                                <div class="vacancy-locations mb-2">
+                                    <small class="local" style="color: #3a86ff;">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </small>
+                                    {% for location in vacancy.locations.all %}
+                                        <div class="location-item mb-1" style="margin-left:1.2rem;">
+                                            <small>
+                                                {% if location.place.current_address %}
+                                                    {{ location.place.current_address }}
+                                                {% elif location.place.current_name %}
+                                                    {{ location.place.current_name }}
+                                                {% endif %}
+                                                {% if location.place.city %}, {{ location.place.city.current_name }}{% endif %}
+                                                {% if location.place.country %}, {{ location.place.country.current_name }}{% endif %}
+                                                <br>
+                                                <span class="badge bg-danger" style="font-size: 0.75rem;">
+                                                    {% for lang in location.languages.all %}
+                                                        {{ lang.current_name }}{% if not forloop.last %}, {% endif %}
+                                                    {% empty %}
+                                                        {% trans "No language requirements" %}
+                                                    {% endfor %}
+                                                </span>
+                                            </small>
+                                        </div>
+                                    {% empty %}
+                                        <span class="location-item">{% trans "Location not specified" %}</span>
+                                    {% endfor %}
+                                </div>
+
+                                <!-- Описание -->
+                                {% if vacancy.details_html %}
+                                    <div class="card-text">{{ vacancy.current_details_html|safe }}</div>
+                                {% else %}
+                                    {% with features=vacancy.get_features_list %}
+                                        {% if features %}
+                                            <div class="features-list">
+                                                {% for feature in features %}
+                                                    <div class="feature-item">{{ feature }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            <p class="card-text">{{ vacancy.current_description|linebreaks }}</p>
+                                        {% endif %}
+                                    {% endwith %}
+                                {% endif %}
+
+                                <!-- Цена -->
+                                <div class="card-price mt-3">
+                                    <h4 class="text-primary mb-0">${{ vacancy.price|floatformat:2 }}</h4>
+                                    <small class="text-muted"><span style="color: #3a86ff;">{% trans "per month" %}</span></small>
+                                </div>
+
+                                <!-- Кнопка запроса -->
+                                {% if user.is_authenticated %}
+                                    {% if vacancy.id in active_vacancy_requests %}
+                                        <div class="alert alert-success py-2 mb-3">
+                                            <small>✅ {% trans "Request sent" %}</small>
+                                        </div>
+                                    {% else %}
+                                        <form method="post" action="{% url 'create_request' 'vacancy' vacancy.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-outline-dark w-100">
+                                                {% trans "Apply Now" %}
+                                            </button>
+                                        </form>
+                                    {% endif %}
+                                {% else %}
+                                    <a href="{% url 'account_login' %}?next={{ request.path }}" class="btn btn-outline-primary w-100 mt-3">
+                                        {% trans "Login to apply" %}
+                                    </a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="vacancy-views">
+                                    <small style="color: #8338ec;">
+                                        <i class="bi bi-eye"></i> {{ vacancy.watched }}{% trans " views" %}
+                                        <i class="bi bi-calendar ms-3"></i> {{ vacancy.created_at|date:"M d, Y" }}
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-warning text-center py-4">
+                        <i class="bi bi-exclamation-triangle fs-1"></i>
+                        <h4 class="mt-3">{% trans "No vacancies found" %}</h4>
+                        <p class="mb-0">{% trans "No vacancies available for your selected location. Check back later or try a different location." %}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'iprovider/js/vacancy.js' %}"></script>
+{% endblock %}

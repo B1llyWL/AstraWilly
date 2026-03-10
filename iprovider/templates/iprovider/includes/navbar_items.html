@@ -1,0 +1,119 @@
+{% load i18n %}
+<!-- Выпадающие меню и ссылки -->
+                    <!-- Выпадающий список Languages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                           {% trans "Languages" %}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background: var(--bg-card); border: 1px solid var(--border-color);">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                            <li>
+                                <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                                    {% csrf_token %}
+                                    <input name="next" type="hidden" value="{{request.path}}">
+                                    <input name="language" type="hidden" value="{{ language.code}}">
+                                    <button type="submit" class="dropdown-item" style="color: var(--text-primary);">
+                                       {% if language.code == 'en' %} 🇺🇸 {% elif language.code == 'de' %} 🇩🇪 {% elif language.code == 'nl' %} 🇳🇱 {% elif language.code == 'ru' %} 🇷🇺 {% elif language.code == 'uk' %} 🇺🇦 {% endif %}
+                                        {{ language.name_local }}
+                                    </button>
+                                </form>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    <!-- Выпадающий список Location -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="locationDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            🌍
+                            {% if selected_city %}
+                                {{ selected_city.name }}
+                            {% elif selected_country %}
+                                {{ selected_country.name }}
+                            {% else %}
+                                Location
+                            {% endif %}
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="locationDropdown" style="min-width: 280px;">
+                            <div class="p-3">
+                                {% if selected_country or selected_city %}
+                                <div class="mb-2">
+                                    <small class="text-primary d-block mt-1">{% trans "Current location:" %}</small><br>
+                                    <strong class="text-success">
+                                        {% if selected_city %}
+                                            {{ selected_city.name }}, {{ selected_city.country.name }}
+                                        {% elif selected_country %}
+                                            {{ selected_country.name }} (all cities)
+                                        {% endif %}
+                                    </strong>
+                                </div>
+                                <hr class="my-2">
+                                {% endif %}
+
+                                <!-- ФОРМА ВЫБОРА ЛОКАЦИИ -->
+                                <form method="post" action="{% url 'set_location' %}" id="navLocationForm">
+                                    {% csrf_token %}
+                                   <div class="mb-2">
+                                        <label for="navCountry" class="form-label small">{% trans "Country" %}</label>
+                                       <select name="country" id="navCountry" class="form-select form-select-sm">
+                                            <option value="">{% trans "Select a country" %}</option>
+                                            {% for country in countries %}
+                                                {% if selected_country and selected_country.id == country.id %}
+                                                    <option value="{{ country.id }}" selected>{{ country.name }}</option>
+                                                {% else %}
+                                                    <option value="{{ country.id }}">{{ country.name }}</option>
+                                                {% endif %}
+                                            {% endfor %}
+                                       </select>
+                                   </div>
+                                    <div class="mb-2">
+                                        <label for="navCity" class="form-label small">{% trans "City" %}</label>
+                                       <select name="city" id="navCity" class="form-select form-select-sm" disabled>
+                                            <option value="">{% trans "Select City (Optional)" %}</option>
+                                       </select>
+                                    </div>
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn btn-primary btn-sm">{% trans "Apply Location" %}</button>
+                                        {% if selected_country or selected_city %}
+                                        <button type="button" id="clearLocationBtn"  class="btn btn-outline-secondary btn-sm">
+                                          {% trans "Clear Location" %}
+                                        </button>
+                                        {% endif %}
+                                    </div>
+                                </form>
+
+                                <hr class="my-2">
+                                <div class="text-center">
+                                    📍<button type="button" id="detectLocationBtn" class="btn btn-outline-info btn-sm w-100" >
+                                        {% trans "Detect My Location" %}
+                                    </button>
+                                    <small class="text-primary d-block mt-1"> {% trans "We'll use your location to show local prices" %}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'tariffs' %}">{% trans "Tariffs" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">{% trans "Services" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'stocks' %}">{% trans "Stocks" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'support' %}">{% trans "Support" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'vacancy' %}">{% trans "Vacancies" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'news_list' %}">{% trans "News" %}</a>
+                    </li>
+

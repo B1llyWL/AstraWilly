@@ -1,0 +1,1729 @@
+# Russian translation for AstraWilly project.
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-07 06:41+0300\n"
+"PO-Revision-Date: 2026-03-05 15:00+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\conf\settings.py:45
+msgid "English"
+msgstr "Английский"
+
+#: .\conf\settings.py:46
+msgid "German"
+msgstr "Немецкий"
+
+#: .\conf\settings.py:47
+msgid "Dutch"
+msgstr "Нидерландский"
+
+#: .\conf\settings.py:48
+msgid "Russian"
+msgstr "Русский"
+
+#: .\conf\settings.py:49
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#: .\iprovider\admin.py:37 .\iprovider\admin.py:53 .\iprovider\admin.py:88
+#: .\iprovider\admin.py:102 .\iprovider\models.py:1013
+msgid "Name"
+msgstr "Название"
+
+#: .\iprovider\admin.py:40 .\iprovider\admin.py:76 .\iprovider\admin.py:386
+msgid "Additional"
+msgstr "Дополнительно"
+
+#: .\iprovider\admin.py:56 .\iprovider\admin.py:108 .\iprovider\admin.py:437
+#: .\iprovider\admin.py:483 .\iprovider\admin.py:529
+msgid "Location"
+msgstr "Местоположение"
+
+#: .\iprovider\admin.py:63 .\iprovider\admin.py:453 .\iprovider\admin.py:499
+#: .\iprovider\admin.py:545 .\iprovider\models.py:50 .\iprovider\models.py:62
+#: .\iprovider\models.py:72 .\iprovider\models.py:126 .\iprovider\models.py:376
+#: .\iprovider\models.py:495 .\iprovider\models.py:614
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:62
+#: .\iprovider\templates\iprovider\profile\deposit.html:28
+#: .\iprovider\templates\iprovider\services.html:14
+#: .\iprovider\templates\iprovider\tariffs.html:14
+#: .\iprovider\templates\iprovider\vacancy.html:14
+msgid "Country"
+msgstr "Страна"
+
+#: .\iprovider\admin.py:73 .\iprovider\models.py:649 .\iprovider\models.py:687
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\iprovider\admin.py:105 .\iprovider\admin.py:712 .\iprovider\models.py:751
+#: .\iprovider\templates\iprovider\edit_profile.html:62
+#: .\iprovider\templates\iprovider\profile.html:36
+#: .\iprovider\templates\iprovider\support.html:48
+msgid "Address"
+msgstr "Адрес"
+
+#: .\iprovider\admin.py:127 .\iprovider\admin.py:163 .\iprovider\admin.py:199
+#: .\iprovider\admin.py:238 .\iprovider\admin.py:299 .\iprovider\admin.py:343
+#: .\iprovider\admin.py:434 .\iprovider\admin.py:480 .\iprovider\admin.py:526
+msgid "Main information"
+msgstr "Основная информация"
+
+#: .\iprovider\admin.py:130 .\iprovider\admin.py:166 .\iprovider\admin.py:202
+#: .\iprovider\models.py:194 .\iprovider\models.py:292
+#: .\iprovider\models.py:414 .\iprovider\models.py:533
+#: .\iprovider\models.py:654 .\iprovider\models.py:692
+msgid "Description"
+msgstr "Описание"
+
+#: .\iprovider\admin.py:133 .\iprovider\admin.py:169 .\iprovider\admin.py:205
+#: .\iprovider\models.py:266 .\iprovider\models.py:366
+#: .\iprovider\models.py:485 .\iprovider\models.py:604
+msgid "Features"
+msgstr "Особенности"
+
+#: .\iprovider\admin.py:135 .\iprovider\admin.py:171 .\iprovider\admin.py:207
+msgid "Each feature on a new line."
+msgstr "Каждая особенность с новой строки."
+
+#: .\iprovider\admin.py:137 .\iprovider\admin.py:173 .\iprovider\admin.py:209
+#: .\iprovider\admin.py:249 .\iprovider\admin.py:306 .\iprovider\admin.py:350
+msgid "Statistics (read-only)"
+msgstr "Статистика (только чтение)"
+
+#: .\iprovider\admin.py:241
+msgid "Description (simple)"
+msgstr "Простое описание"
+
+#: .\iprovider\admin.py:243
+msgid "Used if HTML description is empty. Each feature on a new line."
+msgstr ""
+"Используется, если HTML-описание пусто. Каждая особенность с новой строки."
+
+#: .\iprovider\admin.py:245
+msgid "Description (HTML)"
+msgstr "HTML-описание"
+
+#: .\iprovider\admin.py:247
+msgid "Full HTML description. Overrides simple description if filled."
+msgstr "Полное HTML-описание. Переопределяет простое описание, если заполнено."
+
+#: .\iprovider\admin.py:258
+msgid "Has HTML"
+msgstr "Содержит HTML"
+
+#: .\iprovider\admin.py:263
+msgid "No image"
+msgstr "Нет изображения"
+
+#: .\iprovider\admin.py:264
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: .\iprovider\admin.py:276
+msgid "No address"
+msgstr "Нет адреса"
+
+#: .\iprovider\admin.py:277
+msgid "office(s)"
+msgstr "офис(ы)"
+
+#: .\iprovider\admin.py:278 .\iprovider\models.py:164
+msgid "Offices"
+msgstr "Офисы"
+
+#: .\iprovider\admin.py:283 .\iprovider\admin.py:315 .\iprovider\admin.py:359
+#: .\iprovider\models.py:63 .\iprovider\models.py:190 .\iprovider\models.py:643
+#: .\iprovider\models.py:681
+msgid "Countries"
+msgstr "Страны"
+
+#: .\iprovider\admin.py:302 .\iprovider\admin.py:346
+msgid "Content"
+msgstr "Содержание"
+
+#: .\iprovider\admin.py:320 .\iprovider\admin.py:364 .\iprovider\models.py:79
+#: .\iprovider\models.py:645 .\iprovider\models.py:683
+msgid "Cities"
+msgstr "Города"
+
+#: .\iprovider\admin.py:326
+msgid "Cities added for selected news"
+msgstr "Города добавлены для выбранных новостей"
+
+#: .\iprovider\admin.py:327 .\iprovider\admin.py:371
+msgid "Add all cities from selected countries"
+msgstr "Добавить все города из выбранных стран"
+
+#: .\iprovider\admin.py:370
+msgid "Cities added for selected stocks"
+msgstr "Города добавлены для выбранных акций"
+
+#: .\iprovider\admin.py:380 .\iprovider\models.py:982
+msgid "Question"
+msgstr "Вопрос"
+
+#: .\iprovider\admin.py:383 .\iprovider\models.py:987
+msgid "Answer"
+msgstr "Ответ"
+
+#: .\iprovider\admin.py:399 .\iprovider\admin.py:634 .\iprovider\models.py:719
+#: .\iprovider\models.py:1012
+msgid "User"
+msgstr "Пользователь"
+
+#: .\iprovider\admin.py:402 .\iprovider\forms.py:108 .\iprovider\models.py:1016
+msgid "Subject"
+msgstr "Тема"
+
+#: .\iprovider\admin.py:405 .\iprovider\models.py:1021
+msgid "Message"
+msgstr "Сообщение"
+
+#: .\iprovider\admin.py:408 .\iprovider\templates\iprovider\profile.html:138
+#: .\iprovider\templates\iprovider\profile.html:198
+#: .\iprovider\templates\iprovider\support.html:69
+msgid "Status"
+msgstr "Статус"
+
+#: .\iprovider\admin.py:439 .\iprovider\admin.py:485 .\iprovider\admin.py:531
+msgid "Specify either a country or a city. Do not fill both."
+msgstr "Укажите либо страну, либо город. Не заполняйте оба поля."
+
+#: .\iprovider\admin.py:441 .\iprovider\admin.py:487 .\iprovider\admin.py:533
+msgid "Dates (read-only)"
+msgstr "Даты (только чтение)"
+
+#: .\iprovider\admin.py:459 .\iprovider\admin.py:505 .\iprovider\admin.py:551
+#: .\iprovider\models.py:67 .\iprovider\models.py:78 .\iprovider\models.py:127
+#: .\iprovider\models.py:377 .\iprovider\models.py:496
+#: .\iprovider\models.py:615 .\iprovider\models.py:752
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:75
+#: .\iprovider\templates\iprovider\services.html:27
+#: .\iprovider\templates\iprovider\tariffs.html:27
+#: .\iprovider\templates\iprovider\vacancy.html:27
+msgid "City"
+msgstr "Город"
+
+#: .\iprovider\admin.py:463 .\iprovider\admin.py:509 .\iprovider\admin.py:555
+#: .\iprovider\models.py:97 .\iprovider\models.py:202 .\iprovider\models.py:297
+#: .\iprovider\models.py:419 .\iprovider\models.py:538
+#: .\iprovider\models.py:664 .\iprovider\models.py:702
+msgid "Category"
+msgstr "Категория"
+
+#: .\iprovider\admin.py:571 .\iprovider\models.py:726 .\iprovider\models.py:735
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: .\iprovider\admin.py:574
+msgid "Rated object"
+msgstr "Оцениваемый объект"
+
+#: .\iprovider\admin.py:576
+msgid "Select one of the objects to rate."
+msgstr "Выберите один из объектов для оценки."
+
+#: .\iprovider\admin.py:578
+msgid "Creation date (read-only)"
+msgstr "Дата создания (только чтение)"
+
+#: .\iprovider\admin.py:607 .\iprovider\templates\iprovider\services.html:119
+#: .\iprovider\templates\iprovider\services.html:197
+#: .\iprovider\templates\iprovider\tariffs.html:117
+#: .\iprovider\templates\iprovider\tariffs.html:190
+msgid "Request"
+msgstr "Заявка"
+
+#: .\iprovider\admin.py:610 .\iprovider\admin.py:642
+#: .\iprovider\templates\iprovider\profile.html:196
+msgid "Item"
+msgstr "Элемент"
+
+#: .\iprovider\admin.py:613
+msgid "Contact Information"
+msgstr "Контактная информация"
+
+#: .\iprovider\admin.py:616
+msgid "Full Contact Info"
+msgstr "Полная контактная информация"
+
+#: .\iprovider\admin.py:620 .\iprovider\admin.py:725
+msgid "Dates"
+msgstr "Даты"
+
+#: .\iprovider\admin.py:624
+msgid "Manager Notes"
+msgstr "Заметки менеджера"
+
+#: .\iprovider\admin.py:651
+msgid "Contact"
+msgstr "Контакт"
+
+#: .\iprovider\admin.py:657 .\iprovider\admin.py:722 .\iprovider\models.py:974
+msgid "Subscription"
+msgstr "Подписка"
+
+#: .\iprovider\admin.py:661
+msgid "Anonymous user"
+msgstr "Анонимный пользователь"
+
+#: .\iprovider\admin.py:675
+msgid "Full Contact Information"
+msgstr "Полная контактная информация"
+
+#: .\iprovider\admin.py:684
+msgid "Approve selected requests"
+msgstr "Одобрить выбранные заявки"
+
+#: .\iprovider\admin.py:693
+msgid "Reject selected requests"
+msgstr "Отклонить выбранные заявки"
+
+#: .\iprovider\admin.py:697 .\iprovider\templates\iprovider\profile.html:197
+msgid "Type"
+msgstr "Тип"
+
+#: .\iprovider\admin.py:702 .\iprovider\models.py:1014
+#: .\iprovider\templates\iprovider\edit_profile.html:37
+#: .\iprovider\templates\iprovider\profile.html:30
+#: .\iprovider\templates\iprovider\support.html:44
+#: .\templates\account\email.html:74 .\templates\account\password_reset.html:35
+#: .\templates\account\password_reset.html:36
+#: .\templates\account\signup.html:52
+msgid "Email"
+msgstr "Email"
+
+#: .\iprovider\admin.py:706 .\iprovider\templates\iprovider\profile.html:33
+#: .\iprovider\templates\iprovider\support.html:24
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\iprovider\forms.py:36
+msgid "This username is already taken."
+msgstr "Это имя пользователя уже занято."
+
+#: .\iprovider\forms.py:43
+msgid "Phone number must contain 5 to 15 digits."
+msgstr "Номер телефона должен содержать от 5 до 15 цифр."
+
+#: .\iprovider\forms.py:45
+msgid "Invalid phone number format."
+msgstr "Неверный формат номера телефона."
+
+#: .\iprovider\forms.py:52 .\iprovider\templates\iprovider\edit_profile.html:22
+#: .\iprovider\templates\iprovider\profile.html:27
+#: .\templates\account\signup.html:42
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: .\iprovider\forms.py:65 .\iprovider\models.py:758
+msgid "Preferred contact methods"
+msgstr "Предпочтительные способы связи"
+
+#: .\iprovider\forms.py:98 .\iprovider\models.py:750 .\iprovider\models.py:917
+#: .\iprovider\models.py:927
+#: .\iprovider\templates\iprovider\edit_profile.html:49
+#: .\templates\account\phone_list.html:74
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: .\iprovider\forms.py:106
+msgid "Your name"
+msgstr "Ваше имя"
+
+#: .\iprovider\forms.py:107
+msgid "Your email"
+msgstr "Ваш email"
+
+#: .\iprovider\forms.py:109
+msgid "Your message"
+msgstr "Ваше сообщение"
+
+#: .\iprovider\forms_custom.py:19 .\templates\account\login.html:53
+#: .\templates\account\login.html:54 .\templates\account\signup.html:62
+#: .\templates\account\signup.html:63
+msgid "Password"
+msgstr "Пароль"
+
+#: .\iprovider\forms_custom.py:24 .\templates\account\signup.html:78
+msgid "Password (again)"
+msgstr "Пароль (ещё раз)"
+
+#: .\iprovider\forms_custom.py:37
+msgid "Passwords don't match."
+msgstr "Пароли не совпадают."
+
+#: .\iprovider\models.py:55
+msgid "Country code"
+msgstr "Код страны"
+
+#: .\iprovider\models.py:56
+msgid "Currency code"
+msgstr "Код валюты"
+
+#: .\iprovider\models.py:84
+msgid "Category name"
+msgstr "Название категории"
+
+#: .\iprovider\models.py:91
+msgid "Parent category"
+msgstr "Родительская категория"
+
+#: .\iprovider\models.py:98
+msgid "Categories"
+msgstr "Категории"
+
+#: .\iprovider\models.py:102 .\iprovider\models.py:111
+msgid "Language"
+msgstr "Язык"
+
+#: .\iprovider\models.py:112
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:7
+msgid "Languages"
+msgstr "Языки"
+
+#: .\iprovider\models.py:116
+msgid "Place name"
+msgstr "Название места"
+
+#: .\iprovider\models.py:121
+msgid "Full address"
+msgstr "Полный адрес"
+
+#: .\iprovider\models.py:163 .\iprovider\models.py:171
+msgid "Office"
+msgstr "Офис"
+
+#: .\iprovider\models.py:169 .\iprovider\models.py:278
+msgid "Vacancy"
+msgstr "Вакансия"
+
+#: .\iprovider\models.py:172
+msgid "Required languages"
+msgstr "Требуемые языки"
+
+#: .\iprovider\models.py:175
+msgid "Vacancy office"
+msgstr "Офис вакансии"
+
+#: .\iprovider\models.py:176
+msgid "Vacancy offices"
+msgstr "Офисы вакансии"
+
+#: .\iprovider\models.py:184
+msgid "Vacancy title"
+msgstr "Название вакансии"
+
+#: .\iprovider\models.py:189 .\iprovider\models.py:288
+#: .\iprovider\models.py:410 .\iprovider\models.py:529
+msgid "Base price ($)"
+msgstr "Базовая цена ($)"
+
+#: .\iprovider\models.py:191 .\iprovider\models.py:289
+#: .\iprovider\models.py:379 .\iprovider\models.py:411
+#: .\iprovider\models.py:498 .\iprovider\models.py:530
+#: .\iprovider\models.py:617 .\iprovider\models.py:659
+#: .\iprovider\models.py:697
+msgid "Created at"
+msgstr "Создано"
+
+#: .\iprovider\models.py:192 .\iprovider\models.py:380
+#: .\iprovider\models.py:499 .\iprovider\models.py:618
+#: .\iprovider\models.py:660 .\iprovider\models.py:698
+msgid "Updated at"
+msgstr "Обновлено"
+
+#: .\iprovider\models.py:200 .\iprovider\models.py:290
+#: .\iprovider\models.py:412 .\iprovider\models.py:531
+#: .\iprovider\models.py:662 .\iprovider\models.py:700
+msgid "Views"
+msgstr "Просмотры"
+
+#: .\iprovider\models.py:201 .\iprovider\models.py:663
+#: .\iprovider\models.py:701
+msgid "Published"
+msgstr "Опубликовано"
+
+#: .\iprovider\models.py:209 .\iprovider\models.py:304
+#: .\iprovider\models.py:426 .\iprovider\models.py:545
+msgid "Features (text)"
+msgstr "Особенности (текст)"
+
+#: .\iprovider\models.py:210 .\iprovider\models.py:305
+#: .\iprovider\models.py:427 .\iprovider\models.py:546
+msgid "Each feature on a new line. Will be displayed as a list."
+msgstr "Каждая особенность с новой строки. Будет отображаться в виде списка."
+
+#: .\iprovider\models.py:218
+msgid "Detailed description(HTML)"
+msgstr "Детальное описание (HTML)"
+
+#: .\iprovider\models.py:219
+msgid "Use HTML tags for formatting (e.g., <ul>, <li>, <strong>.)"
+msgstr ""
+"Используйте HTML-теги для форматирования (например, <ul>, <li>, <strong>)."
+
+#: .\iprovider\models.py:251 .\iprovider\models.py:351
+#: .\iprovider\models.py:471 .\iprovider\models.py:590
+msgid "No features"
+msgstr "Нет особенностей"
+
+#: .\iprovider\models.py:279
+#: .\iprovider\templates\iprovider\includes\footer.html:70
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:114
+#: .\iprovider\templates\iprovider\vacancy.html:53
+msgid "Vacancies"
+msgstr "Вакансии"
+
+#: .\iprovider\models.py:283
+msgid "Tariff name"
+msgstr "Название тарифа"
+
+#: .\iprovider\models.py:300 .\iprovider\models.py:422
+#: .\iprovider\models.py:541
+msgid "Display order"
+msgstr "Порядок отображения"
+
+#: .\iprovider\models.py:369 .\iprovider\models.py:967
+msgid "Tariff"
+msgstr "Тариф"
+
+#: .\iprovider\models.py:370
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:102
+#: .\iprovider\templates\iprovider\tariffs.html:53
+msgid "Tariffs"
+msgstr "Тарифы"
+
+#: .\iprovider\models.py:378 .\iprovider\models.py:497
+#: .\iprovider\models.py:616
+msgid "Price ($)"
+msgstr "Цена ($)"
+
+#: .\iprovider\models.py:383
+msgid "Tariff price"
+msgstr "Цена тарифа"
+
+#: .\iprovider\models.py:384
+msgid "Tariff prices"
+msgstr "Цены тарифов"
+
+#: .\iprovider\models.py:392 .\iprovider\models.py:511
+#: .\iprovider\models.py:630
+msgid "You must specify either a country or a city."
+msgstr "Вы должны указать либо страну, либо город."
+
+#: .\iprovider\models.py:394 .\iprovider\models.py:513
+#: .\iprovider\models.py:632
+msgid "Please indicate only the country OR only the city."
+msgstr "Укажите только страну ИЛИ только город."
+
+#: .\iprovider\models.py:405
+msgid "Separate service name"
+msgstr "Название отдельной услуги"
+
+#: .\iprovider\models.py:488
+msgid "Separate service"
+msgstr "Отдельная услуга"
+
+#: .\iprovider\models.py:489
+msgid "Separate services"
+msgstr "Отдельные услуги"
+
+#: .\iprovider\models.py:502
+msgid "Separate service price"
+msgstr "Цена отдельной услуги"
+
+#: .\iprovider\models.py:503
+msgid "Separate service prices"
+msgstr "Цены отдельных услуг"
+
+#: .\iprovider\models.py:524
+msgid "Packet name"
+msgstr "Название пакета"
+
+#: .\iprovider\models.py:607
+msgid "Packet"
+msgstr "Пакет"
+
+#: .\iprovider\models.py:608
+msgid "Packets"
+msgstr "Пакеты"
+
+#: .\iprovider\models.py:621
+msgid "Packet price"
+msgstr "Цена пакета"
+
+#: .\iprovider\models.py:622
+msgid "Packet prices"
+msgstr "Цены пакетов"
+
+#: .\iprovider\models.py:644
+msgid "News will be shown in all selected countries"
+msgstr "Новости будут показаны во всех выбранных странах"
+
+#: .\iprovider\models.py:647
+msgid "News will be shown only in these cities (even if country is selected)"
+msgstr ""
+"Новости будут показаны только в этих городах (даже если выбрана страна)"
+
+#: .\iprovider\models.py:675 .\iprovider\models.py:676
+#: .\iprovider\templates\iprovider\includes\footer.html:76
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:117
+#: .\iprovider\templates\iprovider\news_detail.html:11
+msgid "News"
+msgstr "Новости"
+
+#: .\iprovider\models.py:682
+msgid "Stock will be shown in all selected countries"
+msgstr "Акции будут показаны во всех выбранных странах"
+
+#: .\iprovider\models.py:685
+msgid "Stock will be shown only in these cities (even if country is selected)"
+msgstr "Акции будут показаны только в этих городах (даже если выбрана страна)"
+
+#: .\iprovider\models.py:713
+msgid "Stock"
+msgstr "Акция"
+
+#: .\iprovider\models.py:714
+#: .\iprovider\templates\iprovider\includes\footer.html:73
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:108
+#: .\iprovider\templates\iprovider\stocks.html:6
+#: .\iprovider\templates\iprovider\stocks_detail.html:10
+msgid "Stocks"
+msgstr "Акции"
+
+#: .\iprovider\models.py:736
+msgid "Ratings"
+msgstr "Рейтинги"
+
+#: .\iprovider\models.py:754 .\iprovider\templates\iprovider\profile.html:39
+msgid "Balance"
+msgstr "Баланс"
+
+#: .\iprovider\models.py:755 .\templates\account\email.html:40
+#: .\templates\account\phone_list.html:37
+msgid "Verified"
+msgstr "Подтверждено"
+
+#: .\iprovider\models.py:771 .\iprovider\templates\iprovider\profile.html:20
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\iprovider\models.py:772
+msgid "Profiles"
+msgstr "Профили"
+
+#: .\iprovider\models.py:779 .\iprovider\templates\iprovider\profile.html:163
+#: .\iprovider\templates\iprovider\profile.html:216
+msgid "Pending"
+msgstr "В ожидании"
+
+#: .\iprovider\models.py:780
+msgid "Succeeded"
+msgstr "Успешно"
+
+#: .\iprovider\models.py:781 .\iprovider\templates\iprovider\profile.html:165
+msgid "Failed"
+msgstr "Ошибка"
+
+#: .\iprovider\models.py:782
+msgid "Refunded"
+msgstr "Возвращено"
+
+#: .\iprovider\models.py:792
+msgid "Deposit"
+msgstr "Депозит"
+
+#: .\iprovider\models.py:793 .\iprovider\models.py:809
+msgid "Payment"
+msgstr "Платёж"
+
+#: .\iprovider\models.py:794
+msgid "Refund"
+msgstr "Возврат"
+
+#: .\iprovider\models.py:798 .\iprovider\templates\iprovider\profile.html:137
+#: .\iprovider\templates\iprovider\profile\deposit.html:44
+msgid "Amount"
+msgstr "Сумма"
+
+#: .\iprovider\models.py:799
+#: .\iprovider\templates\iprovider\profile\deposit.html:54
+msgid "Currency"
+msgstr "Валюта"
+
+#: .\iprovider\models.py:802
+msgid "Transaction ID"
+msgstr "ID транзакции"
+
+#: .\iprovider\models.py:804
+msgid "Payment data"
+msgstr "Данные платежа"
+
+#: .\iprovider\models.py:810
+msgid "Payments"
+msgstr "Платежи"
+
+#: .\iprovider\models.py:876
+msgid "Connection Request"
+msgstr "Заявка на подключение"
+
+#: .\iprovider\models.py:877
+msgid "Connection Requests"
+msgstr "Заявки на подключение"
+
+#: .\iprovider\models.py:928
+msgid "Phone numbers"
+msgstr "Номера телефонов"
+
+#: .\iprovider\models.py:968
+msgid "Start date"
+msgstr "Дата начала"
+
+#: .\iprovider\models.py:969
+msgid "End date"
+msgstr "Дата окончания"
+
+#: .\iprovider\models.py:970 .\iprovider\models.py:993
+#: .\iprovider\templates\iprovider\profile.html:97
+msgid "Active"
+msgstr "Активен"
+
+#: .\iprovider\models.py:971
+msgid "Auto renew"
+msgstr "Автопродление"
+
+#: .\iprovider\models.py:975
+msgid "Subscriptions"
+msgstr "Подписки"
+
+#: .\iprovider\models.py:992
+msgid "Order"
+msgstr "Заказ"
+
+#: .\iprovider\models.py:997
+msgid "FAQ"
+msgstr "ЧаВо"
+
+#: .\iprovider\models.py:998
+msgid "FAQs"
+msgstr "Часто задаваемые вопросы"
+
+#: .\iprovider\models.py:1006
+msgid "New"
+msgstr "Новый"
+
+#: .\iprovider\models.py:1007
+msgid "In progress"
+msgstr "В обработке"
+
+#: .\iprovider\models.py:1008
+msgid "Resolved"
+msgstr "Решён"
+
+#: .\iprovider\models.py:1009
+msgid "Closed"
+msgstr "Закрыт"
+
+#: .\iprovider\models.py:1032
+msgid "Support ticket"
+msgstr "Тикет поддержки"
+
+#: .\iprovider\models.py:1033
+msgid "Support tickets"
+msgstr "Тикеты поддержки"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:10
+msgid "Edit Profile"
+msgstr "Редактировать профиль"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:41
+#: .\templates\account\change_username.html:46
+msgid "Change"
+msgstr "Изменить"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:54
+msgid "Manage"
+msgstr "Управление"
+
+#: .\iprovider\templates\iprovider\edit_profile.html:104
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: .\iprovider\templates\iprovider\home.html:7
+msgid "About our company"
+msgstr "О нашей компании"
+
+#: .\iprovider\templates\iprovider\home.html:8
+msgid "Year of foundation:"
+msgstr "Год основания:"
+
+#: .\iprovider\templates\iprovider\home.html:9
+msgid "Founder:"
+msgstr "Основатель:"
+
+#: .\iprovider\templates\iprovider\home.html:15
+msgid "Our achievements"
+msgstr "Наши достижения"
+
+#: .\iprovider\templates\iprovider\home.html:26
+msgid "Latest News"
+msgstr "Последние новости"
+
+#: .\iprovider\templates\iprovider\home.html:28
+msgid "View All News"
+msgstr "Все новости"
+
+#: .\iprovider\templates\iprovider\home.html:48
+msgid "Read More"
+msgstr "Читать далее"
+
+#: .\iprovider\templates\iprovider\home.html:54
+msgid "No news available. Please check back later!"
+msgstr "Новостей нет. Пожалуйста, зайдите позже!"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:9
+msgid "Contact us:"
+msgstr "Свяжитесь с нами:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:19
+msgid "Write a message"
+msgstr "Написать сообщение"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:25
+msgid "Tariffs:"
+msgstr "Тарифы:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:36
+msgid "Services:"
+msgstr "Услуги:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:41
+msgid "Assistant"
+msgstr "Помощник"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:44
+msgid "Parental control"
+msgstr "Родительский контроль"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:47
+msgid "Video intercom with an app"
+msgstr "Видеодомофон с приложением"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:50
+msgid "Video surveillance"
+msgstr "Видеонаблюдение"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:53
+msgid "All services"
+msgstr "Все услуги"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:61
+#: .\iprovider\templates\iprovider\includes\navbar.html:29
+msgid "Cabinet"
+msgstr "Кабинет"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:64
+#: .\iprovider\templates\iprovider\includes\navbar.html:18
+#: .\iprovider\templates\iprovider\news_detail.html:10
+#: .\iprovider\templates\iprovider\stocks_detail.html:9
+msgid "Home"
+msgstr "Главная"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:67
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:111
+#: .\iprovider\templates\iprovider\support.html:14
+#: .\iprovider\templates\iprovider\support.html:52
+msgid "Support"
+msgstr "Поддержка"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:82
+msgid "Internet service provider «AstraWilly»"
+msgstr "Интернет-провайдер «AstraWilly»"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:83
+msgid "Documents:"
+msgstr "Документы:"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:85
+msgid "User Agreement"
+msgstr "Пользовательское соглашение"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:88
+msgid "Privacy Policy"
+msgstr "Политика конфиденциальности"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:91
+msgid "Terms of Service"
+msgstr "Условия предоставления услуг"
+
+#: .\iprovider\templates\iprovider\includes\footer.html:94
+msgid "License Agreement"
+msgstr "Лицензионное соглашение"
+
+#: .\iprovider\templates\iprovider\includes\navbar.html:32
+#: .\iprovider\templates\iprovider\profile.html:257
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\iprovider\templates\iprovider\includes\navbar.html:36
+msgid "Login"
+msgstr "Войти"
+
+#: .\iprovider\templates\iprovider\includes\navbar.html:39
+msgid "Register"
+msgstr "Регистрация"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:46
+#: .\iprovider\templates\iprovider\services.html:59
+#: .\iprovider\templates\iprovider\tariffs.html:59
+#: .\iprovider\templates\iprovider\vacancy.html:58
+msgid "Current location:"
+msgstr "Текущее местоположение:"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:64
+#: .\iprovider\templates\iprovider\profile\deposit.html:32
+#: .\iprovider\templates\iprovider\services.html:16
+#: .\iprovider\templates\iprovider\tariffs.html:16
+#: .\iprovider\templates\iprovider\vacancy.html:16
+msgid "Select a country"
+msgstr "Выберите страну"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:77
+msgid "Select City (Optional)"
+msgstr "Выберите город (необязательно)"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:81
+msgid "Apply Location"
+msgstr "Применить местоположение"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:84
+msgid "Clear Location"
+msgstr "Очистить местоположение"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:93
+msgid "Detect My Location"
+msgstr "Определить моё местоположение"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:95
+msgid "We'll use your location to show local prices"
+msgstr "Мы используем ваше местоположение для отображения местных цен"
+
+#: .\iprovider\templates\iprovider\includes\navbar_items.html:105
+#: .\iprovider\templates\iprovider\services.html:53
+msgid "Services"
+msgstr "Услуги"
+
+#: .\iprovider\templates\iprovider\news_detail.html:21
+#: .\iprovider\templates\iprovider\stocks_detail.html:20
+msgid "Published:"
+msgstr "Опубликовано:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:23
+#: .\iprovider\templates\iprovider\news_list.html:59
+#: .\iprovider\templates\iprovider\stocks.html:59
+#: .\iprovider\templates\iprovider\stocks_detail.html:22
+msgid "Updated:"
+msgstr "Обновлено:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:25
+#: .\iprovider\templates\iprovider\stocks_detail.html:24
+msgid "Views:"
+msgstr "Просмотры:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:27
+#: .\iprovider\templates\iprovider\stocks_detail.html:26
+msgid "Category:"
+msgstr "Категория:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:51
+msgid "Previous:"
+msgstr "Предыдущая:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:58
+#: .\iprovider\templates\iprovider\stocks_detail.html:54
+msgid "Next:"
+msgstr "Следующая:"
+
+#: .\iprovider\templates\iprovider\news_detail.html:68
+msgid "Back to All News"
+msgstr "Назад ко всем новостям"
+
+#: .\iprovider\templates\iprovider\news_list.html:6
+msgid "News Archive"
+msgstr "Архив новостей"
+
+#: .\iprovider\templates\iprovider\news_list.html:7
+msgid "Total news:"
+msgstr "Всего новостей:"
+
+#: .\iprovider\templates\iprovider\news_list.html:17
+#: .\iprovider\templates\iprovider\stocks.html:17
+msgid "views"
+msgstr "просмотров"
+
+#: .\iprovider\templates\iprovider\news_list.html:52
+#: .\iprovider\templates\iprovider\stocks.html:52
+msgid "Read Full Story"
+msgstr "Читать полностью"
+
+#: .\iprovider\templates\iprovider\profile.html:10
+msgid "My Cabinet"
+msgstr "Мой кабинет"
+
+#: .\iprovider\templates\iprovider\profile.html:22
+msgid "Edit"
+msgstr "Редактировать"
+
+#: .\iprovider\templates\iprovider\profile.html:41
+#: .\iprovider\templates\iprovider\profile\deposit.html:89
+msgid "Top up"
+msgstr "Пополнить"
+
+#: .\iprovider\templates\iprovider\profile.html:45
+msgid "Preferred contact:"
+msgstr "Предпочтительный способ связи:"
+
+#: .\iprovider\templates\iprovider\profile.html:60
+msgid "Active Subscriptions"
+msgstr "Активные подписки"
+
+#: .\iprovider\templates\iprovider\profile.html:69
+msgid "Service"
+msgstr "Услуга"
+
+#: .\iprovider\templates\iprovider\profile.html:70
+msgid "Start"
+msgstr "Начало"
+
+#: .\iprovider\templates\iprovider\profile.html:71
+msgid "End"
+msgstr "Окончание"
+
+#: .\iprovider\templates\iprovider\profile.html:72
+#: .\iprovider\templates\iprovider\profile.html:200
+msgid "Action"
+msgstr "Действие"
+
+#: .\iprovider\templates\iprovider\profile.html:99
+msgid "Inactive"
+msgstr "Неактивен"
+
+#: .\iprovider\templates\iprovider\profile.html:109
+msgid "No active subscriptions"
+msgstr "Нет активных подписок"
+
+#: .\iprovider\templates\iprovider\profile.html:115
+msgid "View My Requests"
+msgstr "Посмотреть мои заявки"
+
+#: .\iprovider\templates\iprovider\profile.html:127
+msgid "Recent Payments"
+msgstr "Последние платежи"
+
+#: .\iprovider\templates\iprovider\profile.html:136
+#: .\iprovider\templates\iprovider\profile.html:199
+msgid "Date"
+msgstr "Дата"
+
+#: .\iprovider\templates\iprovider\profile.html:161
+msgid "Success"
+msgstr "Успешно"
+
+#: .\iprovider\templates\iprovider\profile.html:177
+msgid "No payments yet"
+msgstr "Платежей пока нет"
+
+#: .\iprovider\templates\iprovider\profile.html:188
+msgid "My Requests"
+msgstr "Мои заявки"
+
+#: .\iprovider\templates\iprovider\profile.html:218
+msgid "In Progress"
+msgstr "В обработке"
+
+#: .\iprovider\templates\iprovider\profile.html:220
+msgid "Approved"
+msgstr "Одобрено"
+
+#: .\iprovider\templates\iprovider\profile.html:222
+msgid "Converted"
+msgstr "Преобразовано"
+
+#: .\iprovider\templates\iprovider\profile.html:224
+msgid "Rejected"
+msgstr "Отклонено"
+
+#: .\iprovider\templates\iprovider\profile.html:235
+msgid "Cancel"
+msgstr "Отмена"
+
+#: .\iprovider\templates\iprovider\profile.html:249
+msgid "You have no requests."
+msgstr "У вас нет заявок."
+
+#: .\iprovider\templates\iprovider\profile.html:264
+#: .\templates\account\password_change.html:77
+#: .\templates\account\password_reset_from_key.html:12
+msgid "Change Password"
+msgstr "Сменить пароль"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:14
+msgid "Top up balance"
+msgstr "Пополнить баланс"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:37
+msgid "Currency will be set automatically based on country"
+msgstr "Валюта будет установлена автоматически на основе страны"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:68
+msgid "Card number"
+msgstr "Номер карты"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:79
+msgid "Expiry (MM/YY)"
+msgstr "Срок действия (ММ/ГГ)"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:83
+msgid "CVV"
+msgstr "CVV"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:97
+msgid "Verification required"
+msgstr "Требуется верификация"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:98
+msgid "A verification code has been sent to your console (Django terminal)."
+msgstr "Код подтверждения отправлен в вашу консоль (терминал Django)."
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:102
+msgid "Verification code"
+msgstr "Код подтверждения"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:106
+msgid "In test mode, enter the code shown in the Django console."
+msgstr "В тестовом режиме введите код, показанный в консоли Django."
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:109
+msgid "Confirm payment"
+msgstr "Подтвердить платёж"
+
+#: .\iprovider\templates\iprovider\profile\deposit.html:112
+msgid "Change card"
+msgstr "Сменить карту"
+
+#: .\iprovider\templates\iprovider\services.html:30
+#: .\iprovider\templates\iprovider\tariffs.html:30
+#: .\iprovider\templates\iprovider\vacancy.html:30
+msgid "Select a city"
+msgstr "Выберите город"
+
+#: .\iprovider\templates\iprovider\services.html:32
+#: .\iprovider\templates\iprovider\tariffs.html:32
+#: .\iprovider\templates\iprovider\vacancy.html:32
+msgid "Please select your country first"
+msgstr "Сначала выберите вашу страну"
+
+#: .\iprovider\templates\iprovider\services.html:44
+#: .\iprovider\templates\iprovider\tariffs.html:44
+#: .\iprovider\templates\iprovider\vacancy.html:44
+msgid "Apply"
+msgstr "Применить"
+
+#: .\iprovider\templates\iprovider\services.html:54
+msgid "Separately"
+msgstr "Отдельно"
+
+#: .\iprovider\templates\iprovider\services.html:82
+#: .\iprovider\templates\iprovider\services.html:160
+#: .\iprovider\templates\iprovider\tariffs.html:83
+#: .\iprovider\templates\iprovider\tariffs.html:156
+msgid "ratings"
+msgstr "оценок"
+
+#: .\iprovider\templates\iprovider\services.html:113
+#: .\iprovider\templates\iprovider\services.html:191
+#: .\iprovider\templates\iprovider\tariffs.html:111
+#: .\iprovider\templates\iprovider\tariffs.html:184
+#: .\iprovider\templates\iprovider\vacancy.html:144
+msgid "Request sent"
+msgstr "Заявка отправлена"
+
+#: .\iprovider\templates\iprovider\services.html:125
+#: .\iprovider\templates\iprovider\services.html:203
+#: .\iprovider\templates\iprovider\tariffs.html:123
+#: .\iprovider\templates\iprovider\tariffs.html:196
+msgid "Login to request"
+msgstr "Войдите, чтобы отправить заявку"
+
+#: .\iprovider\templates\iprovider\services.html:135
+msgid "No separate services available"
+msgstr "Нет доступных отдельных услуг"
+
+#: .\iprovider\templates\iprovider\services.html:144
+msgid "Packages"
+msgstr "Пакеты"
+
+#: .\iprovider\templates\iprovider\services.html:213
+msgid "No packages available"
+msgstr "Нет доступных пакетов"
+
+#: .\iprovider\templates\iprovider\stocks.html:7
+msgid "Total stocks:"
+msgstr "Всего акций:"
+
+#: .\iprovider\templates\iprovider\stocks.html:70
+msgid "No Stocks Available"
+msgstr "Нет доступных акций"
+
+#: .\iprovider\templates\iprovider\stocks.html:71
+msgid "Stay tuned for updates! Fresh stock will be coming soon!"
+msgstr "Следите за обновлениями! Скоро появятся новые акции!"
+
+#: .\iprovider\templates\iprovider\stocks_detail.html:47
+msgid "Previous: "
+msgstr "Предыдущая: "
+
+#: .\iprovider\templates\iprovider\stocks_detail.html:64
+msgid "Back to All Stocks"
+msgstr "Назад ко всем акциям"
+
+#: .\iprovider\templates\iprovider\support.html:28
+msgid "Number"
+msgstr "Номер"
+
+#: .\iprovider\templates\iprovider\support.html:31
+msgid "Hours"
+msgstr "Часы работы"
+
+#: .\iprovider\templates\iprovider\support.html:32
+msgid "Mon-Fri, 9:00-18:00"
+msgstr "Пн-Пт, 9:00-18:00"
+
+#: .\iprovider\templates\iprovider\support.html:65
+msgid "Live Chat"
+msgstr "Онлайн-чат"
+
+#: .\iprovider\templates\iprovider\support.html:70
+msgid "Online now"
+msgstr "Сейчас онлайн"
+
+#: .\iprovider\templates\iprovider\support.html:73
+msgid "Start Chat"
+msgstr "Начать чат"
+
+#: .\iprovider\templates\iprovider\support.html:88
+msgid "Send us a message"
+msgstr "Отправьте нам сообщение"
+
+#: .\iprovider\templates\iprovider\support.html:108
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+#: .\iprovider\templates\iprovider\support.html:122
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: .\iprovider\templates\iprovider\support.html:149
+msgid "No FAQs yet."
+msgstr "Пока нет часто задаваемых вопросов."
+
+#: .\iprovider\templates\iprovider\support.html:165
+msgid "Connect via messengers"
+msgstr "Связаться через мессенджеры"
+
+#: .\iprovider\templates\iprovider\support.html:184
+msgid "Your location:"
+msgstr "Ваше местоположение:"
+
+#: .\iprovider\templates\iprovider\tariffs.html:55
+msgid "Unlimited Wi-Fi, like the light of the night"
+msgstr "Безлимитный Wi-Fi, как свет ночи"
+
+#: .\iprovider\templates\iprovider\tariffs.html:139
+msgid "Mobile Internet, which is always with you, like the sun!"
+msgstr "Мобильный интернет, который всегда с вами, как солнце!"
+
+#: .\iprovider\templates\iprovider\tariffs.html:149
+msgid "Mobile Internet"
+msgstr "Мобильный интернет"
+
+#: .\iprovider\templates\iprovider\vacancy.html:107
+msgid "No language requirements"
+msgstr "Без требований к языку"
+
+#: .\iprovider\templates\iprovider\vacancy.html:113
+msgid "Location not specified"
+msgstr "Местоположение не указано"
+
+#: .\iprovider\templates\iprovider\vacancy.html:137
+msgid "per month"
+msgstr "в месяц"
+
+#: .\iprovider\templates\iprovider\vacancy.html:150
+msgid "Apply Now"
+msgstr "Откликнуться"
+
+#: .\iprovider\templates\iprovider\vacancy.html:156
+msgid "Login to apply"
+msgstr "Войдите, чтобы откликнуться"
+
+#: .\iprovider\templates\iprovider\vacancy.html:168
+msgid " views"
+msgstr " просмотров"
+
+#: .\iprovider\templates\iprovider\vacancy.html:180
+msgid "No vacancies found"
+msgstr "Вакансий не найдено"
+
+#: .\iprovider\templates\iprovider\vacancy.html:181
+msgid ""
+"No vacancies available for your selected location. Check back later or try a "
+"different location."
+msgstr ""
+"Для выбранного местоположения нет доступных вакансий. Зайдите позже или "
+"попробуйте другое местоположение."
+
+#: .\iprovider\views\api.py:33 .\iprovider\views\api.py:86
+msgid "Invalid item type"
+msgstr "Неверный тип элемента"
+
+#: .\iprovider\views\api.py:40
+msgid "Object not found."
+msgstr "Объект не найден."
+
+#: .\iprovider\views\api.py:51
+msgid "You already have an active request for this item."
+msgstr "У вас уже есть активная заявка на этот элемент."
+
+#: .\iprovider\views\api.py:66
+msgid "Request sent! A manager will contact you soon."
+msgstr "Заявка отправлена! Менеджер свяжется с вами в ближайшее время."
+
+#: .\iprovider\views\api.py:70
+msgid "Error creating request. Please try again."
+msgstr "Ошибка при создании заявки. Пожалуйста, попробуйте снова."
+
+#: .\iprovider\views\api.py:99
+msgid "You already have a pending request for this item."
+msgstr "У вас уже есть ожидающая заявка на этот элемент."
+
+#: .\iprovider\views\api.py:108
+msgid "Profile error. Please update your profile."
+msgstr "Ошибка профиля. Пожалуйста, обновите свой профиль."
+
+#: .\iprovider\views\api.py:119
+msgid "Request sent! A manager will contact you via your preferred method."
+msgstr "Заявка отправлена! Менеджер свяжется с вами предпочтительным способом."
+
+#: .\iprovider\views\api.py:122
+msgid "Error creating request."
+msgstr "Ошибка при создании заявки."
+
+#: .\iprovider\views\api.py:134
+msgid "Request cancelled."
+msgstr "Заявка отменена."
+
+#: .\iprovider\views\api.py:136
+msgid "Cannot cancel processed request."
+msgstr "Нельзя отменить обработанную заявку."
+
+#: .\iprovider\views\api.py:152
+msgid "You already have this tariff."
+msgstr "У вас уже есть этот тариф."
+
+#: .\iprovider\views\api.py:180
+msgid "Tariff changed successfully."
+msgstr "Тариф успешно изменён."
+
+#: .\iprovider\views\api.py:183
+msgid "Error processing request."
+msgstr "Ошибка обработки запроса."
+
+#: .\iprovider\views\api.py:185 .\iprovider\views\api.py:220
+#: .\iprovider\views\api.py:255
+msgid "Insufficient balance."
+msgstr "Недостаточно средств."
+
+#: .\iprovider\views\api.py:215 .\iprovider\views\api.py:250
+msgid "Purchase successful."
+msgstr "Покупка успешна."
+
+#: .\iprovider\views\api.py:218 .\iprovider\views\api.py:253
+msgid "Error processing purchase."
+msgstr "Ошибка при обработке покупки."
+
+#: .\iprovider\views\main.py:77
+msgid ""
+"AstraWilly is the largest provider and the undisputed leader of the "
+"telecommunications services market with the largest subscriber base and "
+"technical network coverage. The official website with the details of the "
+"company: www.astrawilly.com . Every year, more than 4 million people become "
+"new customers."
+msgstr ""
+"AstraWilly — крупнейший провайдер и бесспорный лидер на рынке "
+"телекоммуникационных услуг с самой большой абонентской базой и техническим "
+"охватом сети. Официальный сайт с подробной информацией о компании: "
+"www.astrawilly.com. Каждый год более 4 миллионов человек становятся новыми "
+"клиентами."
+
+#: .\iprovider\views\main.py:80
+msgid "More than 50,000 satisfied customers"
+msgstr "Более 50 000 довольных клиентов"
+
+#: .\iprovider\views\main.py:81
+msgid "Internet speed up to 1 Gbit/s"
+msgstr "Скорость интернета до 1 Гбит/с"
+
+#: .\iprovider\views\main.py:82
+msgid "The best provider of the Year 2024"
+msgstr "Лучший провайдер 2024 года"
+
+#: .\iprovider\views\main.py:83
+msgid "24/7 technical support"
+msgstr "Круглосуточная техническая поддержка"
+
+#: .\iprovider\views\news.py:222
+msgid "Stock not available in your location"
+msgstr "Акция недоступна в вашем регионе"
+
+#: .\iprovider\views\payment.py:39
+msgid "Amount must be greater than zero."
+msgstr "Сумма должна быть больше нуля."
+
+#: .\iprovider\views\payment.py:41
+msgid "Invalid amount."
+msgstr "Неверная сумма."
+
+#: .\iprovider\views\payment.py:44
+msgid "Invalid card number."
+msgstr "Неверный номер карты."
+
+#: .\iprovider\views\payment.py:76
+msgid "Payment session expired. Please start over."
+msgstr "Сессия платежа истекла. Пожалуйста, начните заново."
+
+#: .\iprovider\views\payment.py:81 .\iprovider\views\phone.py:59
+msgid "Invalid verification code."
+msgstr "Неверный код подтверждения."
+
+#: .\iprovider\views\phone.py:24
+msgid "This number is already added."
+msgstr "Этот номер уже добавлен."
+
+#: .\iprovider\views\phone.py:35
+msgid "Verification code sent to your phone."
+msgstr "Код подтверждения отправлен на ваш телефон."
+
+#: .\iprovider\views\phone.py:39
+msgid "Please correct the error below."
+msgstr "Пожалуйста, исправьте ошибку ниже."
+
+#: .\iprovider\views\phone.py:49
+msgid "This number is already verified."
+msgstr "Этот номер уже подтверждён."
+
+#: .\iprovider\views\phone.py:56
+msgid "Phone number verified successfully."
+msgstr "Номер телефона успешно подтверждён."
+
+#: .\iprovider\views\phone.py:68
+msgid "Cannot set unverified number as primary."
+msgstr "Нельзя установить неподтверждённый номер как основной."
+
+#: .\iprovider\views\phone.py:78
+msgid "Primary phone number updated."
+msgstr "Основной номер телефона обновлён."
+
+#: .\iprovider\views\phone.py:87
+msgid "Cannot remove primary phone number."
+msgstr "Нельзя удалить основной номер телефона."
+
+#: .\iprovider\views\phone.py:90
+msgid "Phone number removed."
+msgstr "Номер телефона удалён."
+
+#: .\iprovider\views\phone.py:98
+msgid "Verification code resent."
+msgstr "Код подтверждения отправлен повторно."
+
+#: .\iprovider\views\profile.py:76
+msgid "Profile updated successfully."
+msgstr "Профиль успешно обновлён."
+
+#: .\iprovider\views\support.py:49
+msgid "Your message has been sent. We will contact you soon."
+msgstr "Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время."
+
+#: .\templates\account\change_username.html:12
+msgid "Change username"
+msgstr "Сменить имя пользователя"
+
+#: .\templates\account\change_username.html:20
+msgid "Change Username"
+msgstr "Сменить имя пользователя"
+
+#: .\templates\account\change_username.html:35
+msgid "New username"
+msgstr "Новое имя пользователя"
+
+#: .\templates\account\change_username.html:36
+msgid "Enter new username"
+msgstr "Введите новое имя пользователя"
+
+#: .\templates\account\email.html:12
+msgid "Change email address"
+msgstr "Сменить email"
+
+#: .\templates\account\email.html:20
+msgid "Change email"
+msgstr "Сменить email"
+
+#: .\templates\account\email.html:29
+msgid "The following email addresses are associated with your account:"
+msgstr "Следующие email-адреса связаны с вашей учётной записью:"
+
+#: .\templates\account\email.html:42 .\templates\account\phone_list.html:39
+msgid "Unverified"
+msgstr "Не подтверждён"
+
+#: .\templates\account\email.html:45 .\templates\account\phone_list.html:42
+msgid "Primary"
+msgstr "Основной"
+
+#: .\templates\account\email.html:53 .\templates\account\phone_list.html:49
+msgid "Make Primary"
+msgstr "Сделать основным"
+
+#: .\templates\account\email.html:56
+msgid "Re-send Verification"
+msgstr "Отправить подтверждение повторно"
+
+#: .\templates\account\email.html:59 .\templates\account\phone_list.html:55
+msgid "Remove"
+msgstr "Удалить"
+
+#: .\templates\account\email.html:65
+msgid "You currently have no email address setup."
+msgstr "У вас пока не настроен email-адрес."
+
+#: .\templates\account\email.html:69
+msgid "Add Email Address"
+msgstr "Добавить email-адрес"
+
+#: .\templates\account\email.html:76
+msgid "Email address"
+msgstr "Email-адрес"
+
+#: .\templates\account\email.html:82
+msgid "Add Email"
+msgstr "Добавить email"
+
+#: .\templates\account\login.html:12 .\templates\account\login.html:20
+#: .\templates\account\login.html:76
+msgid "Sign In"
+msgstr "Войти"
+
+#: .\templates\account\login.html:29
+#, python-format
+msgid ""
+"If you have not created an account yet, please\n"
+"                                    <a href=\"%(signup_url)s\" class=\"soft-"
+"blue\">sign up</a> first."
+msgstr ""
+"Если у вас ещё нет учётной записи, пожалуйста,\n"
+"                                    сначала <a href=\"%(signup_url)s\" "
+"class=\"soft-blue\">зарегистрируйтесь</a>."
+
+#: .\templates\account\login.html:43
+msgid "Username or Email"
+msgstr "Имя пользователя или email"
+
+#: .\templates\account\login.html:44
+msgid "Username or email"
+msgstr "Имя пользователя или email"
+
+#: .\templates\account\login.html:67
+msgid "Remember Me"
+msgstr "Запомнить меня"
+
+#: .\templates\account\login.html:70
+#: .\templates\account\password_change.html:78
+msgid "Forgot Password?"
+msgstr "Забыли пароль?"
+
+#: .\templates\account\login.html:86
+msgid "Sign in with a passkey"
+msgstr "Войти с помощью ключа доступа"
+
+#: .\templates\account\login.html:91
+msgid "Send me a sign-in code"
+msgstr "Отправить мне код для входа"
+
+#: .\templates\account\logout.html:13 .\templates\account\logout.html:21
+#: .\templates\account\logout.html:38
+msgid "Sign Out"
+msgstr "Выйти"
+
+#: .\templates\account\logout.html:30
+msgid "Are you sure you want to sign out?"
+msgstr "Вы уверены, что хотите выйти?"
+
+#: .\templates\account\password_change.html:12
+#: .\templates\account\password_change.html:20
+msgid "Change password"
+msgstr "Сменить пароль"
+
+#: .\templates\account\password_change.html:35
+#: .\templates\account\password_change.html:36
+msgid "Current Password"
+msgstr "Текущий пароль"
+
+#: .\templates\account\password_change.html:47
+#: .\templates\account\password_change.html:48
+msgid "New Password"
+msgstr "Новый пароль"
+
+#: .\templates\account\password_change.html:58
+#: .\templates\account\signup.html:73
+msgid ""
+"Your password must be at least 8 characters long, cannot be entirely "
+"numeric, and cannot be too simular to your other personal information."
+msgstr ""
+"Ваш пароль должен содержать не менее 8 символов, не может состоять только из "
+"цифр и не должен быть слишком похож на вашу другую личную информацию."
+
+#: .\templates\account\password_change.html:64
+#: .\templates\account\password_change.html:65
+msgid "New Password (again)"
+msgstr "Новый пароль (ещё раз)"
+
+#: .\templates\account\password_reset.html:12
+#: .\templates\account\password_reset.html:20
+#: .\templates\account\password_reset_done.html:12
+#: .\templates\account\password_reset_done.html:20
+msgid "Password reset"
+msgstr "Сброс пароля"
+
+#: .\templates\account\password_reset.html:48
+msgid "Reset My Password"
+msgstr "Сбросить мой пароль"
+
+#: .\templates\account\password_reset_done.html:28
+msgid ""
+"We have sent you an email. If you have not received it please check your "
+"spam folder. Otherwise contact us if you do not receive it in a few minutes."
+msgstr ""
+"Мы отправили вам письмо. Если вы не получили его, пожалуйста, проверьте "
+"папку спам. Если письмо не придёт в течение нескольких минут, свяжитесь с "
+"нами."
+
+#: .\templates\account\password_reset_done.html:31
+msgid "Return to login"
+msgstr "Вернуться ко входу"
+
+#: .\templates\account\password_reset_from_key.html:20
+msgid "Bad Tokens"
+msgstr "Недействительные токены"
+
+#: .\templates\account\password_reset_from_key.html:28
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a\n"
+"                                    <a href=\"%(passwd_reset_url)s\" "
+"class=\"soft-blue\">new password reset</a>."
+msgstr ""
+"Ссылка для сброса пароля недействительна, возможно, потому что она уже была "
+"использована. Пожалуйста, запросите <a href=\"%(passwd_reset_url)s\" "
+"class=\"soft-blue\">новый сброс пароля</a>."
+
+#: .\templates\account\phone_add.html:10 .\templates\account\phone_list.html:70
+msgid "Add Phone Number"
+msgstr "Добавить номер телефона"
+
+#: .\templates\account\phone_add.html:24
+msgid "Send Code"
+msgstr "Отправить код"
+
+#: .\templates\account\phone_list.html:16
+#: .\templates\account\phone_list.html:23
+msgid "Phone Numbers"
+msgstr "Номера телефонов"
+
+#: .\templates\account\phone_list.html:30
+msgid "The following phone numbers are associated with your account:"
+msgstr "Следующие номера телефонов связаны с вашей учётной записью:"
+
+#: .\templates\account\phone_list.html:59
+#: .\templates\account\phone_verify.html:31
+msgid "Verify"
+msgstr "Подтвердить"
+
+#: .\templates\account\phone_list.html:66
+msgid "You currently have no phone numbers set up."
+msgstr "У вас пока нет сохранённых номеров телефонов."
+
+#: .\templates\account\phone_list.html:76
+msgid "Add Phone"
+msgstr "Добавить телефон"
+
+#: .\templates\account\phone_verify.html:9
+#: .\templates\account\phone_verify.html:16
+msgid "Verify Phone Number"
+msgstr "Подтвердить номер телефона"
+
+#: .\templates\account\phone_verify.html:22
+msgid "We have sent a verification code to"
+msgstr "Мы отправили код подтверждения на"
+
+#: .\templates\account\phone_verify.html:28
+msgid "Verification Code"
+msgstr "Код подтверждения"
+
+#: .\templates\account\phone_verify.html:38
+msgid "Resend code"
+msgstr "Отправить код повторно"
+
+#: .\templates\account\signup.html:12 .\templates\account\signup.html:20
+#: .\templates\account\signup.html:92
+msgid "Sign Up"
+msgstr "Регистрация"
+
+#: .\templates\account\signup.html:28
+#, python-format
+msgid ""
+"Already have an account? Then please\n"
+"                                    <a href=\"%(login_url)s\" class=\"soft-"
+"blue\">sign in</a>. "
+msgstr ""
+"Уже есть аккаунт? Тогда пожалуйста\n"
+"                                    <a href=\"%(login_url)s\" class=\"soft-"
+"blue\">войдите</a>."
+
+#: .\templates\account\signup.html:43
+msgid "username"
+msgstr "имя пользователя"
+
+#: .\templates\account\signup.html:53
+msgid "email"
+msgstr "email"
+
+#: .\templates\account\signup.html:79
+msgid "Confirm password"
+msgstr "Подтвердите пароль"

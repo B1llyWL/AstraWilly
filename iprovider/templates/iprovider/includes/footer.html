@@ -1,0 +1,99 @@
+{% load static %}
+{% load i18n %}
+
+<footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Колонка 1: Контакты -->
+                <div class="footer-column">
+                    <p>{% trans "Contact us:" %}</p>
+                    <a class="navbar-brand" href="#!">
+                        <img src="{% static 'iprovider/assets/telegram.png' %}" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                    <a class="navbar-brand" href="#!">
+                        <img src="{% static 'iprovider/assets/whatsapp.png' %}" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'support' %}">
+                        <span>{% trans "Write a message" %}</span>
+                    </a>
+                </div>
+
+                <!-- Колонка 2: Тарифы -->
+                <div class="footer-column">
+                    <p>{% trans "Tariffs:" %}</p>
+                    <a class="navbar-brand" href="{% url 'tariffs' %}">
+                        <span>MoonWilly</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'tariffs' %}">
+                        <span>SunWilly</span>
+                    </a>
+                </div>
+
+                <!-- Колонка 3: Сервисы -->
+                <div class="footer-column">
+                    <p>{% trans "Services:" %}</p>
+                    <a class="navbar-brand" href="{% url 'services' %}">
+                        <span>VPN</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'services' %}">
+                        <span>{% trans "Assistant" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'services' %}">
+                        <span>{% trans "Parental control" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'services' %}">
+                        <span>{% trans "Video intercom with an app" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'services' %}">
+                        <span>{% trans "Video surveillance" %}</span>
+                    </a>
+                     <a class="navbar-brand" href="{% url 'services' %}">
+                        <span>{% trans "All services" %}</span>
+                    </a>
+                </div>
+
+                <!-- Колонка 4: AstraWilly -->
+                <div class="footer-column">
+                    <p>AstraWilly:</p>
+                    <a class="navbar-brand" href="{% url 'profile' %}">
+                        <span>{% trans "Cabinet" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <span>{% trans "Home" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'support' %}">
+                        <span>{% trans "Support" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'vacancy' %}">
+                        <span>{% trans "Vacancies" %}</span>
+                    </a>
+                     <a class="navbar-brand" href="{% url 'stocks' %}">
+                        <span>{% trans "Stocks" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="{% url 'news_list' %}">
+                        <span>{% trans "News" %}</span>
+                    </a>
+                </div>
+
+                <!-- Колонка 5: Documents -->
+                <div class="footer-column">
+                    <p>{% trans "Internet service provider «AstraWilly»" %}</p>
+                    <p>{% trans "Documents:" %}</p>
+                    <a class="navbar-brand" href="#">
+                        <span>{% trans "User Agreement" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <span>{% trans "Privacy Policy" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <span>{% trans "Terms of Service" %}</span>
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <span>{% trans "License Agreement" %}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>

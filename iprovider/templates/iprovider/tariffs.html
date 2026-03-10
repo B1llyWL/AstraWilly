@@ -1,0 +1,197 @@
+{% extends 'iprovider/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <!-- Форма выбора локации -->
+        <div class="location-selector mb-4">
+            <form method="post" action="{% url 'set_location' %}" id="location-form">
+                {% csrf_token %}
+                <div class="row g-3">
+                    <div class="col-md-5">
+                        <label for="country-select" class="form-label">{% trans "Country" %}</label>
+                        <select name="country" id="country-select" class="form-select">
+                            <option value="">{% trans "Select a country" %}</option>
+                            {% for country in countries %}
+                            {% if selected_country and selected_country.id == country.id %}
+                            <option value="{{ country.id }}" selected>{{ country.name }}</option>
+                            {% else %}
+                            <option value="{{ country.id }}">{{ country.name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="city-select" class="form-label">{% trans "City" %}</label>
+                        <select name="city" id="city-select" class="form-select">
+                            {% if selected_country or selected_city %}
+                            <option value="">{% trans "Select a city" %}</option>
+                            {% else %}
+                            <option value="">{% trans "Please select your country first" %}</option>
+                            {% endif %}
+                            {% for city in cities %}
+                            {% if selected_city and selected_city.id == city.id %}
+                            <option value="{{ city.id }}" selected>{{ city.name }}</option>
+                            {% else %}
+                            <option value="{{ city.id }}">{{ city.name }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn apply-btn w-100">{% trans "Apply" %}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- MoonWilly Section -->
+        <div class="page-section">
+            <div class="section-header">
+                <h1>{% trans "Tariffs" %}</h1>
+                <h2 class="lead fw-normal mb-0">MoonWilly</h2>
+                <p>{% trans "Unlimited Wi-Fi, like the light of the night" %}</p>
+
+                {% if selected_country or selected_city %}
+                <div class="alert alert-info">
+                    <strong>{% trans "Current location:" %}</strong>
+                    {% if selected_city %}
+                        {{ selected_city.name }}, {{ selected_city.country.name }}
+                    {% elif selected_country %}
+                        {{ selected_country.name }}
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                {% for tariff in moonwilly_tariffs %}
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-left">
+                                <h5 class="card-title fw-bolder" style="color: #8338ec;">{{ tariff.title }}</h5>
+                                <h6 class="card-subtitle">Wi-Fi</h6>
+
+                                {% if tariff.details_html %}
+                                    <div class="card-text">{{ tariff.details_html|safe }}</div>
+                                {% else %}
+                                    {% with features=tariff.get_features_list %}
+                                        {% if features %}
+                                            <div class="features-list">
+                                                {% for feature in features %}
+                                                    <div class="feature-item">{{ feature }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            <p class="card-text">{{ tariff.description }}</p>
+                                        {% endif %}
+                                    {% endwith %}
+                                {% endif %}
+
+                                <div class="card-price">
+                                    ${{ tariff.current_price|floatformat:2 }}
+                                </div>
+
+                                <!-- Кнопка запроса -->
+                                {% if user.is_authenticated %}
+                                    {% if tariff.id in active_tariff_requests %}
+                                        <div class="alert alert-success py-2 mb-3">
+                                            <small>✅ {% trans "Request sent" %}</small>
+                                        </div>
+                                    {% else %}
+                                        <form method="post" action="{% url 'create_request' 'tariff' tariff.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-outline-dark w-100">
+                                                {% trans "Request" %}
+                                            </button>
+                                        </form>
+                                    {% endif %}
+                                {% else %}
+                                    <a href="{% url 'account_login' %}?next={{ request.path }}" class="btn btn-outline-primary w-100 mt-3">
+                                        {% trans "Login to request" %}
+                                    </a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- SunWilly Section -->
+        <div class="page-section">
+            <div class="section-header">
+                <h2 class="lead fw-normal mb-0">SunWilly</h2>
+                <p>{% trans "Mobile Internet, which is always with you, like the sun!" %}</p>
+            </div>
+
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                {% for tariff in sunwilly_tariffs %}
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-left">
+                                <h5 class="card-title fw-bolder" style="color: #8338ec;">{{ tariff.title }}</h5>
+                                <h6 class="card-subtitle">{% trans "Mobile Internet" %}</h6>
+
+                                {% if tariff.details_html %}
+                                    <div class="card-text">{{ tariff.details_html|safe }}</div>
+                                {% else %}
+                                    {% with features=tariff.get_features_list %}
+                                        {% if features %}
+                                            <div class="features-list">
+                                                {% for feature in features %}
+                                                    <div class="feature-item">{{ feature }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            <p class="card-text">{{ tariff.description }}</p>
+                                        {% endif %}
+                                    {% endwith %}
+                                {% endif %}
+
+                                <div class="card-price">
+                                    ${{ tariff.current_price|floatformat:2 }}
+                                </div>
+
+                                <!-- Кнопка запроса -->
+                                {% if user.is_authenticated %}
+                                    {% if tariff.id in active_tariff_requests %}
+                                        <div class="alert alert-success py-2 mb-3">
+                                            <small>✅ {% trans "Request sent" %}</small>
+                                        </div>
+                                    {% else %}
+                                        <form method="post" action="{% url 'create_request' 'tariff' tariff.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-outline-dark w-100">
+                                                {% trans "Request" %}
+                                            </button>
+                                        </form>
+                                    {% endif %}
+                                {% else %}
+                                    <a href="{% url 'account_login' %}?next={{ request.path }}" class="btn btn-outline-primary w-100 mt-3">
+                                        {% trans "Login to request" %}
+                                    </a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% url 'javascript-catalog' %}"></script>
+<script src="{% static 'iprovider/js/tariffs.js' %}"></script>
+{% endblock %}

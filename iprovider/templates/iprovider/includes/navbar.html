@@ -1,0 +1,46 @@
+{% load static %}
+{% load i18n %}
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'iprovider/assets/favicon.png' %}" alt="Logo" style=" height: 35px; margin-right: 10px;">
+            AstraWilly
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">{% trans "Home" %}</a>
+                </li>
+
+                <!-- Выпадающие меню и ссылки -->
+                {% include 'iprovider/includes/navbar_items.html' %}
+            </ul>
+
+            <form class="d-flex">
+                <ul class="navbar-nav ms auto">
+                    {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark" href="{% url 'profile' %}">{% trans "Cabinet" %}</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="btn btn-outline-danger" href="{% url 'account_logout' %}">{% trans "Logout" %}</a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark" href="{% url 'account_login' %}">{% trans "Login" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="{% url 'account_signup' %}">{% trans "Register" %}</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </form>
+        </div>
+    </div>
+</nav>

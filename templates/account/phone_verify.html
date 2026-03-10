@@ -1,0 +1,48 @@
+{% extends 'iprovider/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'iprovider/css/alert_login.css' %}">
+{% endblock %}
+
+{% block head_title %}{% trans "Verify Phone Number" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <div class="page-section">
+            <div class="section-header">
+                <h1 class="soft-blue">{% trans "Verify Phone Number" %}</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <p>{% trans "We have sent a verification code to" %} <strong>{{ phone.number }}</strong>.</p>
+
+                            <!-- Основная форма для ввода кода -->
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <label for="code" class="form-label" style="color: #8A2BE2;">{% trans "Verification Code" %}</label>
+                                    <input type="text" name="code" id="code" class="form-control bg-dark text-light border-secondary" required>
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark w-100">{% trans "Verify" %}</button>
+                            </form>
+
+                            <!-- Отдельная форма для повторной отправки -->
+                            <div class="mt-3 text-center">
+                                <form method="post" action="{% url 'phone_resend' phone.id %}" style="display: inline;">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-outline-secondary">{% trans "Resend code" %}</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

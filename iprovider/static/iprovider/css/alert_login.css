@@ -1,0 +1,28 @@
+.alert-login-error {
+    background-color: #dc3545 !important;
+    color: #ffffff !important;
+    border: 1px solid #bb2d3b !important;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top: 5px;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.5);
+}
+
+.alert-login-error ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+/* Для отображаемых номеров в списке */
+.phone-display {
+    display: inline-flex;
+    align-items: center;
+}
+
+.phone-display .iti {
+    vertical-align: middle;
+}
+
+.phone-display .iti__flag {
+    box-shadow: 0px 0px 1px 0px #888;
+    background-color: #DBDBDB;
+}

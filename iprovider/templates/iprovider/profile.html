@@ -1,0 +1,270 @@
+{% extends 'iprovider/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <!-- Заголовок -->
+        <div class="page-section">
+            <div class="section-header">
+                <h1>{% trans "My Cabinet" %}</h1>
+            </div>
+
+            <!-- Карточка профиля -->
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-left">
+                                <h2 class="lead fw-normal mb-0" style="color: #8A2BE2;">
+                                    {% trans "Profile" %}
+                                    <a href="{% url 'edit_profile' %}" class="btn btn-outline-primary btn-sm float-end">
+                                        {% trans "Edit" %}
+                                    </a>
+                                </h2>
+                                <hr>
+                                <p>
+                                    <strong style="color: #1E90FF;">{% trans "Username" %}:</strong> {{ user.username }}
+                                </p>
+                                <p>
+                                    <strong style="color: #1E90FF;">{% trans "Email" %}:</strong> {{ user.email }}
+                                </p>
+                                <p>
+                                    <strong style="color: #1E90FF;">{% trans "Phone" %}:</strong> {{ profile.phone|default:"-" }}
+                                </p>
+                                <p>
+                                    <strong style="color: #1E90FF;">{% trans "Address" %}:</strong> {{ profile.address|default:"-" }}
+                                </p>
+                                <p>
+                                    <strong style="color: #1E90FF;">{% trans "Balance" %}:</strong> ${{ profile.balance|floatformat:2 }}
+                                    <a href="{% url 'create_payment' %}" class="btn btn-outline-danger btn-sm ms-2">
+                                        {% trans "Top up" %}
+                                    </a>
+                                </p>
+                                <p>
+                                    <strong style="color: #1E90FF;">{% trans "Preferred contact:" %}</strong>
+                                    {% for method in display_methods %}
+                                        <span class="badge bg-success ">{{ method }}</span>
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка активных подписок -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <h2 class="lead fw-normal mb-0" style="color: #8A2BE2;">
+                                {% trans "Active Subscriptions" %}
+                            </h2>
+                            <hr>
+
+                            {% if active_subscriptions %}
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>{% trans "Service" %}</th>
+                                                <th>{% trans "Start" %}</th>
+                                                <th>{% trans "End" %}</th>
+                                                <th>{% trans "Action" %}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for sub in active_subscriptions %}
+                                            <tr>
+                                                <td>
+                                                    {% if sub.tariff %}
+                                                        <small>{{ sub.tariff.title }}</small>
+                                                    {% endif %}
+                                                </td>
+                                                <td>
+                                                    <small>{{ sub.start_date|date:"d.m.Y" }}</small>
+                                                </td>
+                                                <td>
+                                                    <small>
+                                                        {% if sub.end_date %}
+                                                            {{ sub.end_date|date:"d.m.Y" }}
+                                                        {% else %}
+                                                            —
+                                                        {% endif %}
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    {% if sub.is_active %}
+                                                        <span class="badge bg-success">{% trans "Active" %}</span>
+                                                    {% else %}
+                                                        <span class="badge bg-secondary">{% trans "Inactive" %}</span>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            {% else %}
+                                <div class="alert alert-info py-2">
+                                    <small>{% trans "No active subscriptions" %}</small>
+                                </div>
+                            {% endif %}
+
+                            <div class="mt-3">
+                                <a href="{% url 'profile' %}#requests" class="btn btn-outline-primary btn-sm w-100">
+                                    {% trans "View My Requests" %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка последних платежей -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <h2 class="lead fw-normal mb-0" style="color: #8A2BE2;">
+                                {% trans "Recent Payments" %}
+                            </h2>
+                            <hr>
+
+                            {% if payments %}
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>{% trans "Date" %}</th>
+                                                <th>{% trans "Amount" %}</th>
+                                                <th>{% trans "Status" %}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for p in payments %}
+                                            <tr>
+                                                <td>
+                                                    <small>{{ p.created_at|date:"d.m.Y" }}</small>
+                                                </td>
+                                                <td>
+                                                    <small>
+                                                        {% if p.currency == 'USD' %}$
+                                                        {% elif p.currency == 'EUR' %}€
+                                                        {% elif p.currency == 'RUB' %}₽
+                                                        {% elif p.currency == 'GBP' %}£
+                                                        {% elif p.currency == 'JPY' %}¥
+                                                        {% elif p.currency == 'CNY' %}¥
+                                                        {% else %}{{ p.currency }} {% endif %}
+                                                        {{ p.amount|floatformat:2 }}
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    {% if p.status == 'succeeded' %}
+                                                        <span class="badge bg-success">{% trans "Success" %}</span>
+                                                    {% elif p.status == 'pending' %}
+                                                        <span class="badge bg-warning">{% trans "Pending" %}</span>
+                                                    {% elif p.status == 'failed' %}
+                                                        <span class="badge bg-danger">{% trans "Failed" %}</span>
+                                                    {% else %}
+                                                        <span class="badge bg-secondary">{{ p.get_status_display }}</span>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            {% else %}
+                                <div class="alert alert-info py-2">
+                                    <small>{% trans "No payments yet" %}</small>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Секция: Мои заявки (ConnectionRequests) -->
+            <div class="page-section mt-4" id="requests">
+                <div class="section-header">
+                    <h2 style="color: #8A2BE2;">{% trans "My Requests" %}</h2>
+                </div>
+
+                {% if connection_requests %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>{% trans "Item" %}</th>
+                                    <th>{% trans "Type" %}</th>
+                                    <th>{% trans "Status" %}</th>
+                                    <th>{% trans "Date" %}</th>
+                                    <th>{% trans "Action" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for request in connection_requests %}
+                                <tr>
+                                    <td>
+                                        {% with item=request.get_item %}
+                                            {{ item.title|default:"—" }}
+                                        {% endwith %}
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-info">{{ request.get_item_type|default:"—" }}</span>
+                                    </td>
+                                    <td>
+                                        {% if request.status == 'pending' %}
+                                            <span class="badge bg-warning">{% trans "Pending" %}</span>
+                                        {% elif request.status == 'in_progress' %}
+                                            <span class="badge bg-info">{% trans "In Progress" %}</span>
+                                        {% elif request.status == 'approved' %}
+                                            <span class="badge bg-success">{% trans "Approved" %}</span>
+                                        {% elif request.status == 'converted' %}
+                                            <span class="badge bg-primary">{% trans "Converted" %}</span>
+                                        {% elif request.status == 'rejected' %}
+                                            <span class="badge bg-danger">{% trans "Rejected" %}</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">{{ request.get_status_display }}</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ request.created_at|date:"d.m.Y H:i" }}</td>
+                                    <td>
+                                        {% if request.status == 'pending' %}
+                                            <form method="post" action="{% url 'cancel_request' request.id %}" style="display: inline;">
+                                                {% csrf_token %}
+                                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                    {% trans "Cancel" %}
+                                                </button>
+                                            </form>
+                                        {% else %}
+                                            <span class="text-muted">—</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <div class="alert alert-info">
+                        {% trans "You have no requests." %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Кнопка выхода -->
+            <div class="text-center mt-4">
+                <a href="{% url 'account_logout' %}" class="btn btn-outline-danger">
+                    {% trans "Logout" %}
+                </a>
+            </div>
+
+            <!-- Кнопка сброса пароля -->
+            <div class="text-center mt-3">
+                <a href="{% url 'account_change_password' %}" class="btn btn-outline-secondary">
+                    {% trans "Change Password" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

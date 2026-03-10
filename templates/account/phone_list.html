@@ -1,0 +1,88 @@
+{% extends 'iprovider/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'iprovider/css/alert_login.css' %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+   <!-- Если упал cloudflare
+    <link rel="stylesheet" href="{% static 'iprovider/libs/intl-tel-input-old/intlTelInput.css' %}"/>-->
+   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/css/intlTelInput.css"/>-->
+
+{% endblock %}
+
+{% block head_title %}{% trans "Phone Numbers" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="content p-4">
+        <div class="page-section">
+            <div class="section-header">
+                <h1 class="soft-blue">{% trans "Phone Numbers" %}</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            {% if phone_numbers %}
+                                <p class="auth-message">{% trans "The following phone numbers are associated with your account:" %}</p>
+                                {% for phone in phone_numbers %}
+                                    <div class="mb-3 p-2 border-bottom">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <strong class="phone-display">{{ phone.number }}</strong>
+                                                {% if phone.verified %}
+                                                    <span class="badge bg-success">{% trans "Verified" %}</span>
+                                                {% else %}
+                                                    <span class="badge bg-warning">{% trans "Unverified" %}</span>
+                                                {% endif %}
+                                                {% if phone.primary %}
+                                                    <span class="badge bg-primary">{% trans "Primary" %}</span>
+                                                {% endif %}
+                                            </div>
+                                            <div>
+                                                {% if not phone.primary and phone.verified %}
+                                                    <form method="post" action="{% url 'phone_make_primary' phone.id %}" style="display: inline;">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-sm btn-outline-primary">{% trans "Make Primary" %}</button>
+                                                    </form>
+                                                {% endif %}
+                                                {% if not phone.primary %}
+                                                    <form method="post" action="{% url 'phone_remove' phone.id %}" style="display: inline;">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-sm btn-outline-danger">{% trans "Remove" %}</button>
+                                                    </form>
+                                                {% endif %}
+                                                {% if not phone.verified %}
+                                                    <a href="{% url 'phone_verify' phone.id %}" class="btn btn-sm btn-outline-warning">{% trans "Verify" %}</a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="auth-message">{% trans "You currently have no phone numbers set up." %}</p>
+                            {% endif %}
+
+                            <hr class="my-4">
+                            <h3 class="h5 mb-3" style="color: #8A2BE2;">{% trans "Add Phone Number" %}</h3>
+                            <form method="post" action="{% url 'phone_add' %}">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <input type="text" name="number" id="id_number" class="form-control bg-dark text-light border-secondary" placeholder="{% trans 'Phone number' %}" required>
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark w-100">{% trans "Add Phone" %}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="{% static 'iprovider/js/country_number_phone.js' %}"></script>
+{% endblock %}

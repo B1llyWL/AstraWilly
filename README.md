@@ -21,7 +21,7 @@ A full‑featured multi‑language website for an internet service provider. Use
   </div>
   <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <strong>🔐 User accounts</strong><br>
-    Sign up, sign in, logout, change password, password reset via email
+    Sign up, sign in, logout, change password, password reset via email, etc.
   </div>
   <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <strong>👤 Personal cabinet</strong><br>

@@ -1,3 +1,32 @@
+ISP Website
+A full-featured multi-language website for an internet service provider, built as a pet project with Django. Users can browse tariffs, services, vacancies, and news; submit applications; manage their profile; and choose preferred contact methods. The admin panel provides full control over content and requests.
+
+Features
+1. Multi-language support: German, English, Russian, Dutch, Ukrainian (i18n with locale middleware).
+2. User accounts: Sign up, sign in, logout, change password, password reset via email, etc.
+3. Personal cabinet: View selected tariffs, services, packages; track application history.
+4. Applications:
+-For vacancies
+-For tariffs, individual services, and service packages (selected by user, stored in profile)
+-For support requests
+5. Contact methods: Users can choose preferred communication channel for their applications: Telegram, Email, Phone call, WhatsApp (notifications sent asynchronously).
+6. Currency support: Automatic daily exchange rate updates via external API (Frankfurter.app); rates manageable in admin panel. Tariffs and service prices can be displayed in multiple currencies based on user location or selection.
+7.Location detection: Custom geolocator with manually added countries; determines user's country by IP or manual selection.
+8. Admin panel: Manage tariffs, vacancies, services, news, applications, countries, currency rates, etc.
+9. Background tasks: Celery with Redis for sending notifications and emails (including periodic currency update tasks).
+10. Database: PostgreSQL.
+11. Responsive design (screenshots below).
+
+Tech Stack
+Backend: Python, Django, Django ORM
+Database: PostgreSQL
+Task queue: Celery + Redis (broker & cache)
+Frontend: Django templates, Bootstrap (implied)
+Internationalization: Django i18n
+Geolocation: Custom IP-based detector + manual country list
+Currency rates: Frankfurter.app API (requests library)
+Notifications: Email, Telegram bot, WhatsApp API (via third-party services)
+
 📺 Watch Video:
 [https://youtu.be/nhNkSwzJSXE?si=1bGr3bhyiNNM_1ij](https://youtu.be/-UHFMVFRRRc)
 

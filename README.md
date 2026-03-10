@@ -1,4 +1,5 @@
-<h1>ISP Website</h1>
+<h1>AstraWilly</h1>
+<h2>ISP Website</h2>
 A full-featured multi-language website for an internet service provider, built as a pet project with Django. Users can browse tariffs, services, vacancies, and news; submit applications; manage their profile; and choose preferred contact methods. The admin panel provides full control over content and requests.
 
 Features

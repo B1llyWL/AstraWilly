@@ -74,16 +74,6 @@ A full‑featured multi‑language website for an internet service provider. Use
 | **Geolocation**| Custom IP‑based detector + manual country list                              |
 | **Currency**  | Frankfurter.app API, `requests` library                                      |
 
-
-📺 Demo Video
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=-UHFMVFRRRc" target="_blank">
-    <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube">
-  </a>
-</p>
-
-
 📸 Screenshots
 <details>
 <summary>🏠 Home Page</summary>

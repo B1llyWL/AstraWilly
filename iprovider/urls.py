@@ -1,7 +1,7 @@
 from django.urls import path, include
 from django.views.i18n import set_language, JavaScriptCatalog
 from .views import  main, news, profile, api, phone, payment, support
-
+from django.views.decorators.csrf import csrf_exempt
 from .views.profile import UsernameChangeView
 
 urlpatterns = [
@@ -17,7 +17,7 @@ urlpatterns = [
     path('stocks/', news.StocksListView.as_view(), name='stocks'),
     path('stocks/<slug:slug>/', news.StocksDetailView.as_view(), name='stocks_detail'),
     path('api/find-location/', main.find_location, name='find_location'),
-    path('i18n/', set_language, name='set_language'),
+    path('i18n/', csrf_exempt(set_language), name='set_language'),
     path('jsi18n/', JavaScriptCatalog.as_view(),name='javascript-catalog'),
     path('profile/', profile.profile_view, name='profile'),
     path('profile/edit/', profile.edit_profile, name='edit_profile'),

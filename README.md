@@ -173,7 +173,7 @@ A full‑featured multi‑language website for an internet service provider. Use
 <details>
 <summary>Payment Methods</summary>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-<img width="48%"  alt="payment" src="https://github.com/user-attachments/assets/ee6a738c-4f18-476d-a62a-95c86598d9b4" />
+<img width="48%"  alt="payment" src="https://github.com/user-attachments/assets/fbad1d2d-9eeb-43de-8ffa-2ac51a9270b8" />
 <img width="48%"  alt="stripe" src="https://github.com/user-attachments/assets/14d085bb-18b0-4f09-aa90-3719a3bd1c83" />
 </div>
 </details>

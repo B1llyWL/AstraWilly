@@ -173,14 +173,8 @@ A full‑featured multi‑language website for an internet service provider. Use
 <details>
 <summary>Payment Methods</summary>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-  <img width="48%" src="https://github.com/user-attachments/assets/a803f2c3-7b93-440d-b324-8da3d3927f02" alt="discover">
-  <img width="48%" src="https://github.com/user-attachments/assets/05765ee7-a949-402e-9c84-4ffb10de0d32" alt="diners">
-  <img width="48%" src="https://github.com/user-attachments/assets/f964aad7-0110-42b2-8add-1a41bfef2b1a" alt="Amex">
-  <img width="48%" src="https://github.com/user-attachments/assets/6863d073-d1fb-47ec-b3e3-b50fc26a2e56" alt="visa">
-  <img width="48%" src="https://github.com/user-attachments/assets/65989789-f89e-4c55-a53c-42ecbd9ed2a8" alt="jcb">
-  <img width="48%" src="https://github.com/user-attachments/assets/2b7bcad3-49e4-43ce-9f41-5c703c1de440" alt="Top_up_mastercard">
-  <img width="48%" src="https://github.com/user-attachments/assets/2f717f4b-bc2e-4663-b7d7-f5db9fa77a87" alt="Top_up_union_pay">
-  <img width="48%" src="https://github.com/user-attachments/assets/20e30dea-9e54-4f8a-9f7a-3e375c714bfb" alt="Topupmir">
+<img width="48%"  alt="payment" src="https://github.com/user-attachments/assets/ee6a738c-4f18-476d-a62a-95c86598d9b4" />
+<img width="48%"  alt="stripe" src="https://github.com/user-attachments/assets/14d085bb-18b0-4f09-aa90-3719a3bd1c83" />
 </div>
 </details>
 

@@ -18,8 +18,7 @@
                     <div class="card">
                         <div class="card-body p-4">
                             <!-- Шаг 1: данные карты -->
-                            <div id="step1">
-                                <form id="payment-form-step1">
+                                <form id="payment-form">
                                     {% csrf_token %}
 
                                     <!-- Выбор страны -->
@@ -62,57 +61,19 @@
                                         </div>
                                     </div>
 
-                                    <!-- Номер карты -->
-                                    <div class="row mb-3">
-                                        <label for="card-number" class="col-sm-4 col-form-label" style="color: #8A2BE2;">
-                                            {% trans "Card number" %}
-                                        </label>
-                                        <div class="col-sm-6 card-input-wrapper">
-                                            <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required autocomplete="off" inputmode="numeric">
-                                            <div class="card-type-icon" id="card-type-icon"></div>
-                                        </div>
+                                   <!--Предупреждение об AdBlock, uBlock-->
+                                    <div class="alert alert-warning mt-3" role="alert">
+                                        <i class="fas fa-shield-alt"></i>
+                                            {% trans "For a smooth payment experience, please disable your ad blocker (AdBlock, uBlock,etc.) before clicking 'Pay with Stripe'." %}
                                     </div>
-
-                                    <!-- Срок действия и CVV -->
-                                    <div class="card-row mb-3">
-                                        <div class="form-group">
-                                            <label for="card-expiry" class="form-label" style="color: #8A2BE2;">{% trans "Expiry (MM/YY)" %}</label>
-                                            <input type="text" class="form-control" id="card-expiry" placeholder="MM/YY" required autocomplete="off">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="card-cvv" class="form-label" style="color: #8A2BE2;">{% trans "CVV" %}</label>
-                                            <input type="text" class="form-control" id="card-cvv" placeholder="123" required autocomplete="off" inputmode="numeric" maxlength="4">
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-outline-dark w-100" id="initiate-payment">
-                                        {% trans "Top up" %}
+                                    <!-- Кнопка оплаты через Stripe -->
+                                    <button type ="submit" class="btn btn-outline-dark w-100" id="pay-btn">
+                                        {% trans "Pay with Stripe" %}
                                     </button>
                                 </form>
-                            </div>
 
-                            <!-- Подтверждение кода (скрыт по умолчанию) -->
-                            <div id="step2" class="hidden">
-                                <div class="otp-section">
-                                    <h5 class="text-center">{% trans "Verification required" %}</h5>
-                                    <p class="text-muted text-center">{% trans "A verification code has been sent to your console (Django terminal)." %}</p>
-                                    <form id="payment-form-step2">
-                                        {% csrf_token %}
-                                        <div class="mb-3 text-center">
-                                            <label for="otp-code" class="form-label" style="color: #8A2BE2;">{% trans "Verification code" %}</label>
-                                            <input type="text" class="form-control mx-auto" id="otp-code" placeholder="123456" maxlength="6" inputmode="numeric" required>
-                                        </div>
-                                        <div class="alert alert-secondary text-center mx-auto" style="max-width: 300px;">
-                                            <small>{% trans "In test mode, enter the code shown in the Django console." %}</small>
-                                        </div>
-                                        <button type="submit" class="btn btn-outline-dark w-100" id="confirm-payment" style="max-width: 300px; margin: 0 auto; display: block;">
-                                            {% trans "Confirm payment" %}
-                                        </button>
-                                        <button type="button" class="btn btn-link w-100 mt-2" id="back-to-step1">
-                                            {% trans "Change card" %}
-                                        </button>
-                                    </form>
-                                </div>
+                                <!--Контейнер для сообщений об ошибках -->
+                                <div id="payment-messages" class="mt-3"></div>
                             </div>
                         </div>
                     </div>
@@ -124,10 +85,12 @@
 {% endblock %}
 
 {% block extra_js %}
-<script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+<!--Подключаем Stripe JS -->
+<script src="https://js.stripe.com/v3/"></script>
 <script>
-    const createPaymentUrl = "{% url 'create_payment' %}";
-    window.gettext = window.gettext || function(msg) { return msg; };
+    window.stripePublicKey = "{{ STRIPE_PUBLISHABLE_KEY }}";
+    window.createCheckoutUrl = "{% url 'create_checkout_session' %}";
+    window.csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
 </script>
 <script src="{% static 'iprovider/js/payment.js' %}"></script>
 {% endblock %}

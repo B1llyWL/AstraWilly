@@ -1,7 +1,11 @@
 from decouple import config
-from django.conf.global_settings import SESSION_ENGINE, SESSION_CACHE_ALIAS
 from django.utils.translation import gettext_lazy as _
 from pathlib import Path
+import stripe
+
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
+stripe.api_key = STRIPE_SECRET_KEY
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

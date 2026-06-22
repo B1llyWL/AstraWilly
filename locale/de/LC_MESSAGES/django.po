@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-07 06:41+0300\n"
+"POT-Creation-Date: 2026-06-22 17:59+0300\n"
 "PO-Revision-Date: 2026-02-24 18:00+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: German <de@li.org>\n"
@@ -17,203 +17,202 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\conf\settings.py:45
+#: .\conf\settings.py:50
 msgid "English"
 msgstr "Englisch"
 
-#: .\conf\settings.py:46
+#: .\conf\settings.py:51
 msgid "German"
 msgstr "Deutsch"
 
-#: .\conf\settings.py:47
+#: .\conf\settings.py:52
 msgid "Dutch"
 msgstr "Niederländisch"
 
-#: .\conf\settings.py:48
+#: .\conf\settings.py:53
 msgid "Russian"
 msgstr "Russisch"
 
-#: .\conf\settings.py:49
+#: .\conf\settings.py:54
 msgid "Ukrainian"
 msgstr "Ukrainisch"
 
-#: .\iprovider\admin.py:37 .\iprovider\admin.py:53 .\iprovider\admin.py:88
-#: .\iprovider\admin.py:102 .\iprovider\models.py:1013
+#: .\iprovider\admin.py:29 .\iprovider\admin.py:45 .\iprovider\admin.py:80
+#: .\iprovider\admin.py:96 .\iprovider\models.py:1012
 msgid "Name"
 msgstr "Name"
 
-#: .\iprovider\admin.py:40 .\iprovider\admin.py:76 .\iprovider\admin.py:386
+#: .\iprovider\admin.py:32 .\iprovider\admin.py:68 .\iprovider\admin.py:414
 msgid "Additional"
 msgstr "Standort"
 
-#: .\iprovider\admin.py:56 .\iprovider\admin.py:108 .\iprovider\admin.py:437
-#: .\iprovider\admin.py:483 .\iprovider\admin.py:529
+#: .\iprovider\admin.py:48 .\iprovider\admin.py:102 .\iprovider\admin.py:463
+#: .\iprovider\admin.py:509 .\iprovider\admin.py:555
 msgid "Location"
 msgstr "Standort"
 
-#: .\iprovider\admin.py:63 .\iprovider\admin.py:453 .\iprovider\admin.py:499
-#: .\iprovider\admin.py:545 .\iprovider\models.py:50 .\iprovider\models.py:62
-#: .\iprovider\models.py:72 .\iprovider\models.py:126 .\iprovider\models.py:376
-#: .\iprovider\models.py:495 .\iprovider\models.py:614
+#: .\iprovider\admin.py:55 .\iprovider\admin.py:479 .\iprovider\admin.py:525
+#: .\iprovider\admin.py:571 .\iprovider\models.py:37 .\iprovider\models.py:51
+#: .\iprovider\models.py:66 .\iprovider\models.py:133 .\iprovider\models.py:413
+#: .\iprovider\models.py:537 .\iprovider\models.py:661
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:62
-#: .\iprovider\templates\iprovider\profile\deposit.html:28
+#: .\iprovider\templates\iprovider\profile\deposit.html:27
 #: .\iprovider\templates\iprovider\services.html:14
 #: .\iprovider\templates\iprovider\tariffs.html:14
 #: .\iprovider\templates\iprovider\vacancy.html:14
 msgid "Country"
 msgstr "Land"
 
-#: .\iprovider\admin.py:73 .\iprovider\models.py:649 .\iprovider\models.py:687
+#: .\iprovider\admin.py:65 .\iprovider\models.py:696 .\iprovider\models.py:738
 msgid "Title"
 msgstr "Titel"
 
-#: .\iprovider\admin.py:105 .\iprovider\admin.py:712 .\iprovider\models.py:751
+#: .\iprovider\admin.py:99 .\iprovider\admin.py:719 .\iprovider\models.py:776
 #: .\iprovider\templates\iprovider\edit_profile.html:62
 #: .\iprovider\templates\iprovider\profile.html:36
 #: .\iprovider\templates\iprovider\support.html:48
 msgid "Address"
 msgstr "Adresse"
 
-#: .\iprovider\admin.py:127 .\iprovider\admin.py:163 .\iprovider\admin.py:199
-#: .\iprovider\admin.py:238 .\iprovider\admin.py:299 .\iprovider\admin.py:343
-#: .\iprovider\admin.py:434 .\iprovider\admin.py:480 .\iprovider\admin.py:526
+#: .\iprovider\admin.py:123 .\iprovider\admin.py:164 .\iprovider\admin.py:205
+#: .\iprovider\admin.py:250 .\iprovider\admin.py:319 .\iprovider\admin.py:368
+#: .\iprovider\admin.py:460 .\iprovider\admin.py:506 .\iprovider\admin.py:552
 msgid "Main information"
 msgstr "Hauptinformationen"
 
-#: .\iprovider\admin.py:130 .\iprovider\admin.py:166 .\iprovider\admin.py:202
-#: .\iprovider\models.py:194 .\iprovider\models.py:292
-#: .\iprovider\models.py:414 .\iprovider\models.py:533
-#: .\iprovider\models.py:654 .\iprovider\models.py:692
+#: .\iprovider\admin.py:127 .\iprovider\admin.py:168 .\iprovider\admin.py:209
+#: .\iprovider\models.py:209 .\iprovider\models.py:326
+#: .\iprovider\models.py:452 .\iprovider\models.py:576
+#: .\iprovider\models.py:703 .\iprovider\models.py:745
 msgid "Description"
 msgstr "Beschreibung"
 
-#: .\iprovider\admin.py:133 .\iprovider\admin.py:169 .\iprovider\admin.py:205
-#: .\iprovider\models.py:266 .\iprovider\models.py:366
-#: .\iprovider\models.py:485 .\iprovider\models.py:604
+#: .\iprovider\admin.py:131 .\iprovider\admin.py:172 .\iprovider\admin.py:213
+#: .\iprovider\models.py:287 .\iprovider\models.py:404
+#: .\iprovider\models.py:527 .\iprovider\models.py:651
 msgid "Features"
 msgstr "Merkmale"
 
-#: .\iprovider\admin.py:135 .\iprovider\admin.py:171 .\iprovider\admin.py:207
+#: .\iprovider\admin.py:134 .\iprovider\admin.py:175 .\iprovider\admin.py:216
 msgid "Each feature on a new line."
 msgstr "Jedes Merkmal in einer neuen Zeile."
 
-#: .\iprovider\admin.py:137 .\iprovider\admin.py:173 .\iprovider\admin.py:209
-#: .\iprovider\admin.py:249 .\iprovider\admin.py:306 .\iprovider\admin.py:350
+#: .\iprovider\admin.py:136 .\iprovider\admin.py:177 .\iprovider\admin.py:218
+#: .\iprovider\admin.py:266 .\iprovider\admin.py:328 .\iprovider\admin.py:377
 msgid "Statistics (read-only)"
 msgstr "Statistiken (schreibgeschützt)"
 
-#: .\iprovider\admin.py:241
+#: .\iprovider\admin.py:254
 msgid "Description (simple)"
 msgstr "Beschreibung (einfach)"
 
-#: .\iprovider\admin.py:243
+#: .\iprovider\admin.py:259
 msgid "Used if HTML description is empty. Each feature on a new line."
 msgstr ""
 "Wird verwendet, wenn die HTML-Beschreibung leer ist. Jedes Merkmal in einer "
 "neuen Zeile."
 
-#: .\iprovider\admin.py:245
+#: .\iprovider\admin.py:261
 msgid "Description (HTML)"
 msgstr "Beschreibung (HTML)"
 
-#: .\iprovider\admin.py:247
+#: .\iprovider\admin.py:264
 msgid "Full HTML description. Overrides simple description if filled."
 msgstr ""
 "Vollständige HTML-Beschreibung. Überschreibt die einfache Beschreibung, "
 "falls vorhanden."
 
-#: .\iprovider\admin.py:258
+#: .\iprovider\admin.py:275
 msgid "Has HTML"
 msgstr "Enthält HTML"
 
-#: .\iprovider\admin.py:263
+#: .\iprovider\admin.py:280
 msgid "No image"
 msgstr "Kein Bild"
 
-#: .\iprovider\admin.py:264
+#: .\iprovider\admin.py:281
 msgid "Preview"
 msgstr "Vorschau"
 
-#: .\iprovider\admin.py:276
+#: .\iprovider\admin.py:293
 msgid "No address"
 msgstr "Keine Adresse"
 
-#: .\iprovider\admin.py:277
+#: .\iprovider\admin.py:294
 msgid "office(s)"
 msgstr "Büro(s)"
 
-#: .\iprovider\admin.py:278 .\iprovider\models.py:164
+#: .\iprovider\admin.py:295 .\iprovider\models.py:171
 msgid "Offices"
 msgstr "Büros"
 
-#: .\iprovider\admin.py:283 .\iprovider\admin.py:315 .\iprovider\admin.py:359
-#: .\iprovider\models.py:63 .\iprovider\models.py:190 .\iprovider\models.py:643
-#: .\iprovider\models.py:681
+#: .\iprovider\admin.py:300 .\iprovider\admin.py:337 .\iprovider\admin.py:386
+#: .\iprovider\models.py:52 .\iprovider\models.py:205 .\iprovider\models.py:690
+#: .\iprovider\models.py:732
 msgid "Countries"
 msgstr "Länder"
 
-#: .\iprovider\admin.py:302 .\iprovider\admin.py:346
+#: .\iprovider\admin.py:323 .\iprovider\admin.py:372
 msgid "Content"
 msgstr "Inhalt"
 
-#: .\iprovider\admin.py:320 .\iprovider\admin.py:364 .\iprovider\models.py:79
-#: .\iprovider\models.py:645 .\iprovider\models.py:683
+#: .\iprovider\admin.py:342 .\iprovider\admin.py:391 .\iprovider\models.py:73
+#: .\iprovider\models.py:692 .\iprovider\models.py:734
 msgid "Cities"
 msgstr "Städte"
 
-#: .\iprovider\admin.py:326
+#: .\iprovider\admin.py:348
 msgid "Cities added for selected news"
 msgstr "Städte zu ausgewählten Nachrichten hinzugefügt"
 
-#: .\iprovider\admin.py:327 .\iprovider\admin.py:371
+#: .\iprovider\admin.py:349 .\iprovider\admin.py:398
 msgid "Add all cities from selected countries"
 msgstr "Alle Städte aus den ausgewählten Ländern hinzufügen"
 
-#: .\iprovider\admin.py:370
+#: .\iprovider\admin.py:397
 msgid "Cities added for selected stocks"
 msgstr "Städte zu ausgewählten Aktionen hinzugefügt"
 
-#: .\iprovider\admin.py:380 .\iprovider\models.py:982
+#: .\iprovider\admin.py:408 .\iprovider\models.py:975
 msgid "Question"
 msgstr "Frage"
 
-#: .\iprovider\admin.py:383 .\iprovider\models.py:987
+#: .\iprovider\admin.py:411 .\iprovider\models.py:983
 msgid "Answer"
 msgstr "Antwort"
 
-#: .\iprovider\admin.py:399 .\iprovider\admin.py:634 .\iprovider\models.py:719
-#: .\iprovider\models.py:1012
+#: .\iprovider\admin.py:429 .\iprovider\admin.py:641 .\iprovider\models.py:1011
 msgid "User"
 msgstr "Benutzer"
 
-#: .\iprovider\admin.py:402 .\iprovider\forms.py:108 .\iprovider\models.py:1016
+#: .\iprovider\admin.py:432 .\iprovider\forms.py:100 .\iprovider\models.py:1015
 msgid "Subject"
 msgstr "Betreff"
 
-#: .\iprovider\admin.py:405 .\iprovider\models.py:1021
+#: .\iprovider\admin.py:435 .\iprovider\models.py:1022
 msgid "Message"
 msgstr "Nachricht"
 
-#: .\iprovider\admin.py:408 .\iprovider\templates\iprovider\profile.html:138
+#: .\iprovider\admin.py:438 .\iprovider\templates\iprovider\profile.html:138
 #: .\iprovider\templates\iprovider\profile.html:198
 #: .\iprovider\templates\iprovider\support.html:69
 msgid "Status"
 msgstr "Status"
 
-#: .\iprovider\admin.py:439 .\iprovider\admin.py:485 .\iprovider\admin.py:531
+#: .\iprovider\admin.py:465 .\iprovider\admin.py:511 .\iprovider\admin.py:557
 msgid "Specify either a country or a city. Do not fill both."
 msgstr ""
 "Geben Sie entweder ein Land oder eine Stadt an. Füllen Sie nicht beide "
 "Felder."
 
-#: .\iprovider\admin.py:441 .\iprovider\admin.py:487 .\iprovider\admin.py:533
+#: .\iprovider\admin.py:467 .\iprovider\admin.py:513 .\iprovider\admin.py:559
 msgid "Dates (read-only)"
 msgstr "Daten (schreibgeschützt)"
 
-#: .\iprovider\admin.py:459 .\iprovider\admin.py:505 .\iprovider\admin.py:551
-#: .\iprovider\models.py:67 .\iprovider\models.py:78 .\iprovider\models.py:127
-#: .\iprovider\models.py:377 .\iprovider\models.py:496
-#: .\iprovider\models.py:615 .\iprovider\models.py:752
+#: .\iprovider\admin.py:485 .\iprovider\admin.py:531 .\iprovider\admin.py:577
+#: .\iprovider\models.py:59 .\iprovider\models.py:72 .\iprovider\models.py:134
+#: .\iprovider\models.py:414 .\iprovider\models.py:538
+#: .\iprovider\models.py:662 .\iprovider\models.py:777
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:75
 #: .\iprovider\templates\iprovider\services.html:27
 #: .\iprovider\templates\iprovider\tariffs.html:27
@@ -221,176 +220,160 @@ msgstr "Daten (schreibgeschützt)"
 msgid "City"
 msgstr "Stadt"
 
-#: .\iprovider\admin.py:463 .\iprovider\admin.py:509 .\iprovider\admin.py:555
-#: .\iprovider\models.py:97 .\iprovider\models.py:202 .\iprovider\models.py:297
-#: .\iprovider\models.py:419 .\iprovider\models.py:538
-#: .\iprovider\models.py:664 .\iprovider\models.py:702
+#: .\iprovider\admin.py:489 .\iprovider\admin.py:535 .\iprovider\admin.py:581
+#: .\iprovider\models.py:96 .\iprovider\models.py:219 .\iprovider\models.py:333
+#: .\iprovider\models.py:459 .\iprovider\models.py:583
+#: .\iprovider\models.py:715 .\iprovider\models.py:757
 msgid "Category"
 msgstr "Kategorie"
 
-#: .\iprovider\admin.py:571 .\iprovider\models.py:726 .\iprovider\models.py:735
-msgid "Rating"
-msgstr "Bewertung"
-
-#: .\iprovider\admin.py:574
-msgid "Rated object"
-msgstr "Bewertetes Objekt"
-
-#: .\iprovider\admin.py:576
-msgid "Select one of the objects to rate."
-msgstr "Wählen Sie eines der zu bewertenden Objekte aus."
-
-#: .\iprovider\admin.py:578
-msgid "Creation date (read-only)"
-msgstr "Erstellungsdatum (schreibgeschützt)"
-
-#: .\iprovider\admin.py:607 .\iprovider\templates\iprovider\services.html:119
-#: .\iprovider\templates\iprovider\services.html:197
-#: .\iprovider\templates\iprovider\tariffs.html:117
-#: .\iprovider\templates\iprovider\tariffs.html:190
+#: .\iprovider\admin.py:614 .\iprovider\templates\iprovider\services.html:111
+#: .\iprovider\templates\iprovider\services.html:181
+#: .\iprovider\templates\iprovider\tariffs.html:108
+#: .\iprovider\templates\iprovider\tariffs.html:172
 msgid "Request"
 msgstr "Anfrage"
 
-#: .\iprovider\admin.py:610 .\iprovider\admin.py:642
+#: .\iprovider\admin.py:617 .\iprovider\admin.py:649
 #: .\iprovider\templates\iprovider\profile.html:196
 msgid "Item"
 msgstr "Artikel"
 
-#: .\iprovider\admin.py:613
+#: .\iprovider\admin.py:620
 msgid "Contact Information"
 msgstr "Kontaktinformationen"
 
-#: .\iprovider\admin.py:616
+#: .\iprovider\admin.py:623
 msgid "Full Contact Info"
 msgstr "Vollständige Kontaktinformationen"
 
-#: .\iprovider\admin.py:620 .\iprovider\admin.py:725
+#: .\iprovider\admin.py:627 .\iprovider\admin.py:732
 msgid "Dates"
 msgstr "Daten"
 
-#: .\iprovider\admin.py:624
+#: .\iprovider\admin.py:631
 msgid "Manager Notes"
 msgstr "Manager-Notizen"
 
-#: .\iprovider\admin.py:651
+#: .\iprovider\admin.py:658
 msgid "Contact"
 msgstr "Kontakt"
 
-#: .\iprovider\admin.py:657 .\iprovider\admin.py:722 .\iprovider\models.py:974
+#: .\iprovider\admin.py:664 .\iprovider\admin.py:729 .\iprovider\models.py:968
 msgid "Subscription"
 msgstr "Abonnement"
 
-#: .\iprovider\admin.py:661
+#: .\iprovider\admin.py:668
 msgid "Anonymous user"
 msgstr "Anonymer Benutzer"
 
-#: .\iprovider\admin.py:675
+#: .\iprovider\admin.py:682
 msgid "Full Contact Information"
 msgstr "Vollständige Kontaktinformationen"
 
-#: .\iprovider\admin.py:684
+#: .\iprovider\admin.py:691
 msgid "Approve selected requests"
 msgstr "Ausgewählte Anfragen genehmigen"
 
-#: .\iprovider\admin.py:693
+#: .\iprovider\admin.py:700
 msgid "Reject selected requests"
 msgstr "Ausgewählte Anfragen ablehnen"
 
-#: .\iprovider\admin.py:697 .\iprovider\templates\iprovider\profile.html:197
+#: .\iprovider\admin.py:704 .\iprovider\templates\iprovider\profile.html:197
 msgid "Type"
 msgstr "Typ"
 
-#: .\iprovider\admin.py:702 .\iprovider\models.py:1014
+#: .\iprovider\admin.py:709 .\iprovider\models.py:1013
 #: .\iprovider\templates\iprovider\edit_profile.html:37
 #: .\iprovider\templates\iprovider\profile.html:30
 #: .\iprovider\templates\iprovider\support.html:44
-#: .\templates\account\email.html:74 .\templates\account\password_reset.html:35
-#: .\templates\account\password_reset.html:36
+#: .\templates\account\email.html:74 .\templates\account\password_reset.html:34
+#: .\templates\account\password_reset.html:35
 #: .\templates\account\signup.html:52
 msgid "Email"
 msgstr "E-Mail"
 
-#: .\iprovider\admin.py:706 .\iprovider\templates\iprovider\profile.html:33
+#: .\iprovider\admin.py:713 .\iprovider\templates\iprovider\profile.html:33
 #: .\iprovider\templates\iprovider\support.html:24
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\iprovider\forms.py:36
+#: .\iprovider\forms.py:32
 msgid "This username is already taken."
 msgstr "Dieser Benutzername ist bereits vergeben."
 
-#: .\iprovider\forms.py:43
+#: .\iprovider\forms.py:38
 msgid "Phone number must contain 5 to 15 digits."
 msgstr "Die Telefonnummer muss 5 bis 15 Ziffern enthalten."
 
-#: .\iprovider\forms.py:45
+#: .\iprovider\forms.py:40
 msgid "Invalid phone number format."
 msgstr "Ungültiges Telefonnummernformat."
 
-#: .\iprovider\forms.py:52 .\iprovider\templates\iprovider\edit_profile.html:22
+#: .\iprovider\forms.py:46 .\iprovider\templates\iprovider\edit_profile.html:22
 #: .\iprovider\templates\iprovider\profile.html:27
 #: .\templates\account\signup.html:42
 msgid "Username"
 msgstr "Benutzername"
 
-#: .\iprovider\forms.py:65 .\iprovider\models.py:758
+#: .\iprovider\forms.py:59 .\iprovider\models.py:783
 msgid "Preferred contact methods"
 msgstr "Bevorzugte Kontaktmethoden"
 
-#: .\iprovider\forms.py:98 .\iprovider\models.py:750 .\iprovider\models.py:917
-#: .\iprovider\models.py:927
+#: .\iprovider\forms.py:91 .\iprovider\models.py:775 .\iprovider\models.py:937
+#: .\iprovider\models.py:947
 #: .\iprovider\templates\iprovider\edit_profile.html:49
-#: .\templates\account\phone_list.html:74
+#: .\templates\account\phone_list.html:73
 msgid "Phone number"
 msgstr "Telefonnummer"
 
-#: .\iprovider\forms.py:106
+#: .\iprovider\forms.py:98
 msgid "Your name"
 msgstr "Ihr Name"
 
-#: .\iprovider\forms.py:107
+#: .\iprovider\forms.py:99
 msgid "Your email"
 msgstr "Ihre E-Mail"
 
-#: .\iprovider\forms.py:109
+#: .\iprovider\forms.py:101
 msgid "Your message"
 msgstr "Ihre Nachricht"
 
-#: .\iprovider\forms_custom.py:19 .\templates\account\login.html:53
+#: .\iprovider\forms_custom.py:18 .\templates\account\login.html:53
 #: .\templates\account\login.html:54 .\templates\account\signup.html:62
 #: .\templates\account\signup.html:63
 msgid "Password"
 msgstr "Passwort"
 
-#: .\iprovider\forms_custom.py:24 .\templates\account\signup.html:78
+#: .\iprovider\forms_custom.py:23 .\templates\account\signup.html:78
 msgid "Password (again)"
 msgstr "Passwort (Wiederholung)"
 
-#: .\iprovider\forms_custom.py:37
+#: .\iprovider\forms_custom.py:36
 msgid "Passwords don't match."
 msgstr "Passwörter stimmen nicht überein."
 
-#: .\iprovider\models.py:55
+#: .\iprovider\models.py:44
 msgid "Country code"
 msgstr "Ländercode"
 
-#: .\iprovider\models.py:56
+#: .\iprovider\models.py:45
 msgid "Currency code"
 msgstr "Währungscode"
 
-#: .\iprovider\models.py:84
+#: .\iprovider\models.py:81
 msgid "Category name"
 msgstr "Kategoriename"
 
-#: .\iprovider\models.py:91
+#: .\iprovider\models.py:90
 msgid "Parent category"
 msgstr "Übergeordnete Kategorie"
 
-#: .\iprovider\models.py:98
+#: .\iprovider\models.py:97
 msgid "Categories"
 msgstr "Kategorien"
 
-#: .\iprovider\models.py:102 .\iprovider\models.py:111
+#: .\iprovider\models.py:100 .\iprovider\models.py:111
 msgid "Language"
 msgstr "Sprache"
 
@@ -399,212 +382,212 @@ msgstr "Sprache"
 msgid "Languages"
 msgstr "Sprachen"
 
-#: .\iprovider\models.py:116
+#: .\iprovider\models.py:119
 msgid "Place name"
 msgstr "Ortsname"
 
-#: .\iprovider\models.py:121
+#: .\iprovider\models.py:126
 msgid "Full address"
 msgstr "Vollständige Adresse"
 
-#: .\iprovider\models.py:163 .\iprovider\models.py:171
+#: .\iprovider\models.py:170 .\iprovider\models.py:185
 msgid "Office"
 msgstr "Büro"
 
-#: .\iprovider\models.py:169 .\iprovider\models.py:278
+#: .\iprovider\models.py:183 .\iprovider\models.py:299
 msgid "Vacancy"
 msgstr "Stellenangebot"
 
-#: .\iprovider\models.py:172
+#: .\iprovider\models.py:186
 msgid "Required languages"
 msgstr "Erforderliche Sprachen"
 
-#: .\iprovider\models.py:175
+#: .\iprovider\models.py:189
 msgid "Vacancy office"
 msgstr "Büro der Stelle"
 
-#: .\iprovider\models.py:176
+#: .\iprovider\models.py:190
 msgid "Vacancy offices"
 msgstr "Büros der Stelle"
 
-#: .\iprovider\models.py:184
+#: .\iprovider\models.py:197
 msgid "Vacancy title"
 msgstr "Stellenbezeichnung"
 
-#: .\iprovider\models.py:189 .\iprovider\models.py:288
-#: .\iprovider\models.py:410 .\iprovider\models.py:529
+#: .\iprovider\models.py:204 .\iprovider\models.py:322
+#: .\iprovider\models.py:448 .\iprovider\models.py:572
 msgid "Base price ($)"
 msgstr "Grundpreis ($)"
 
-#: .\iprovider\models.py:191 .\iprovider\models.py:289
-#: .\iprovider\models.py:379 .\iprovider\models.py:411
-#: .\iprovider\models.py:498 .\iprovider\models.py:530
-#: .\iprovider\models.py:617 .\iprovider\models.py:659
-#: .\iprovider\models.py:697
+#: .\iprovider\models.py:206 .\iprovider\models.py:323
+#: .\iprovider\models.py:416 .\iprovider\models.py:449
+#: .\iprovider\models.py:540 .\iprovider\models.py:573
+#: .\iprovider\models.py:664 .\iprovider\models.py:710
+#: .\iprovider\models.py:752
 msgid "Created at"
 msgstr "Erstellt am"
 
-#: .\iprovider\models.py:192 .\iprovider\models.py:380
-#: .\iprovider\models.py:499 .\iprovider\models.py:618
-#: .\iprovider\models.py:660 .\iprovider\models.py:698
+#: .\iprovider\models.py:207 .\iprovider\models.py:417
+#: .\iprovider\models.py:541 .\iprovider\models.py:665
+#: .\iprovider\models.py:711 .\iprovider\models.py:753
 msgid "Updated at"
 msgstr "Aktualisiert am"
 
-#: .\iprovider\models.py:200 .\iprovider\models.py:290
-#: .\iprovider\models.py:412 .\iprovider\models.py:531
-#: .\iprovider\models.py:662 .\iprovider\models.py:700
+#: .\iprovider\models.py:217 .\iprovider\models.py:324
+#: .\iprovider\models.py:450 .\iprovider\models.py:574
+#: .\iprovider\models.py:713 .\iprovider\models.py:755
 msgid "Views"
 msgstr "Aufrufe"
 
-#: .\iprovider\models.py:201 .\iprovider\models.py:663
-#: .\iprovider\models.py:701
+#: .\iprovider\models.py:218 .\iprovider\models.py:714
+#: .\iprovider\models.py:756
 msgid "Published"
 msgstr "Veröffentlicht"
 
-#: .\iprovider\models.py:209 .\iprovider\models.py:304
-#: .\iprovider\models.py:426 .\iprovider\models.py:545
+#: .\iprovider\models.py:226 .\iprovider\models.py:340
+#: .\iprovider\models.py:466 .\iprovider\models.py:590
 msgid "Features (text)"
 msgstr "Merkmale (Text)"
 
-#: .\iprovider\models.py:210 .\iprovider\models.py:305
-#: .\iprovider\models.py:427 .\iprovider\models.py:546
+#: .\iprovider\models.py:227 .\iprovider\models.py:341
+#: .\iprovider\models.py:467 .\iprovider\models.py:591
 msgid "Each feature on a new line. Will be displayed as a list."
 msgstr "Jedes Merkmal in einer neuen Zeile. Wird als Liste angezeigt."
 
-#: .\iprovider\models.py:218
+#: .\iprovider\models.py:237
 msgid "Detailed description(HTML)"
 msgstr "Detaillierte Beschreibung (HTML)"
 
-#: .\iprovider\models.py:219
+#: .\iprovider\models.py:238
 msgid "Use HTML tags for formatting (e.g., <ul>, <li>, <strong>.)"
 msgstr "Verwenden Sie HTML-Tags zur Formatierung (z. B. <ul>, <li>, <strong>)."
 
-#: .\iprovider\models.py:251 .\iprovider\models.py:351
-#: .\iprovider\models.py:471 .\iprovider\models.py:590
+#: .\iprovider\models.py:272 .\iprovider\models.py:389
+#: .\iprovider\models.py:513 .\iprovider\models.py:637
 msgid "No features"
 msgstr "Keine Merkmale"
 
-#: .\iprovider\models.py:279
+#: .\iprovider\models.py:300
 #: .\iprovider\templates\iprovider\includes\footer.html:70
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:114
 #: .\iprovider\templates\iprovider\vacancy.html:53
 msgid "Vacancies"
 msgstr "Stellenangebote"
 
-#: .\iprovider\models.py:283
+#: .\iprovider\models.py:315
 msgid "Tariff name"
 msgstr "Tarifbezeichnung"
 
-#: .\iprovider\models.py:300 .\iprovider\models.py:422
-#: .\iprovider\models.py:541
+#: .\iprovider\models.py:336 .\iprovider\models.py:462
+#: .\iprovider\models.py:586
 msgid "Display order"
 msgstr "Reihenfolge"
 
-#: .\iprovider\models.py:369 .\iprovider\models.py:967
+#: .\iprovider\models.py:407 .\iprovider\models.py:961
 msgid "Tariff"
 msgstr "Tarif"
 
-#: .\iprovider\models.py:370
+#: .\iprovider\models.py:408
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:102
 #: .\iprovider\templates\iprovider\tariffs.html:53
 msgid "Tariffs"
 msgstr "Tarife"
 
-#: .\iprovider\models.py:378 .\iprovider\models.py:497
-#: .\iprovider\models.py:616
+#: .\iprovider\models.py:415 .\iprovider\models.py:539
+#: .\iprovider\models.py:663
 msgid "Price ($)"
 msgstr "Preis ($)"
 
-#: .\iprovider\models.py:383
+#: .\iprovider\models.py:420
 msgid "Tariff price"
 msgstr "Tarifpreis"
 
-#: .\iprovider\models.py:384
+#: .\iprovider\models.py:421
 msgid "Tariff prices"
 msgstr "Tarifpreise"
 
-#: .\iprovider\models.py:392 .\iprovider\models.py:511
-#: .\iprovider\models.py:630
+#: .\iprovider\models.py:429 .\iprovider\models.py:553
+#: .\iprovider\models.py:677
 msgid "You must specify either a country or a city."
 msgstr "Sie müssen entweder ein Land oder eine Stadt angeben."
 
-#: .\iprovider\models.py:394 .\iprovider\models.py:513
-#: .\iprovider\models.py:632
+#: .\iprovider\models.py:431 .\iprovider\models.py:555
+#: .\iprovider\models.py:679
 msgid "Please indicate only the country OR only the city."
 msgstr "Bitte geben Sie entweder nur das Land ODER nur die Stadt an."
 
-#: .\iprovider\models.py:405
+#: .\iprovider\models.py:441
 msgid "Separate service name"
 msgstr "Name des Einzeldienstes"
 
-#: .\iprovider\models.py:488
+#: .\iprovider\models.py:530
 msgid "Separate service"
 msgstr "Einzeldienst"
 
-#: .\iprovider\models.py:489
+#: .\iprovider\models.py:531
 msgid "Separate services"
 msgstr "Einzeldienste"
 
-#: .\iprovider\models.py:502
+#: .\iprovider\models.py:544
 msgid "Separate service price"
 msgstr "Preis des Einzeldienstes"
 
-#: .\iprovider\models.py:503
+#: .\iprovider\models.py:545
 msgid "Separate service prices"
 msgstr "Preise der Einzeldienste"
 
-#: .\iprovider\models.py:524
+#: .\iprovider\models.py:565
 msgid "Packet name"
 msgstr "Paketname"
 
-#: .\iprovider\models.py:607
+#: .\iprovider\models.py:654
 msgid "Packet"
 msgstr "Paket"
 
-#: .\iprovider\models.py:608
+#: .\iprovider\models.py:655
 msgid "Packets"
 msgstr "Pakete"
 
-#: .\iprovider\models.py:621
+#: .\iprovider\models.py:668
 msgid "Packet price"
 msgstr "Paketpreis"
 
-#: .\iprovider\models.py:622
+#: .\iprovider\models.py:669
 msgid "Packet prices"
 msgstr "Paketpreise"
 
-#: .\iprovider\models.py:644
+#: .\iprovider\models.py:691
 msgid "News will be shown in all selected countries"
 msgstr "Nachrichten werden in allen ausgewählten Ländern angezeigt"
 
-#: .\iprovider\models.py:647
+#: .\iprovider\models.py:694
 msgid "News will be shown only in these cities (even if country is selected)"
 msgstr ""
 "Nachrichten werden nur in diesen Städten angezeigt (auch wenn ein Land "
 "ausgewählt ist)."
 
-#: .\iprovider\models.py:675 .\iprovider\models.py:676
+#: .\iprovider\models.py:726 .\iprovider\models.py:727
 #: .\iprovider\templates\iprovider\includes\footer.html:76
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:117
 #: .\iprovider\templates\iprovider\news_detail.html:11
 msgid "News"
 msgstr "Nachrichten"
 
-#: .\iprovider\models.py:682
+#: .\iprovider\models.py:733
 msgid "Stock will be shown in all selected countries"
 msgstr "Aktionen werden in allen ausgewählten Ländern angezeigt"
 
-#: .\iprovider\models.py:685
+#: .\iprovider\models.py:736
 msgid "Stock will be shown only in these cities (even if country is selected)"
 msgstr ""
 "Aktionen werden nur in diesen Städten angezeigt (auch wenn ein Land "
 "ausgewählt ist)."
 
-#: .\iprovider\models.py:713
+#: .\iprovider\models.py:768
 msgid "Stock"
 msgstr "Aktion"
 
-#: .\iprovider\models.py:714
+#: .\iprovider\models.py:769
 #: .\iprovider\templates\iprovider\includes\footer.html:73
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:108
 #: .\iprovider\templates\iprovider\stocks.html:6
@@ -612,144 +595,140 @@ msgstr "Aktion"
 msgid "Stocks"
 msgstr "Aktionen"
 
-#: .\iprovider\models.py:736
-msgid "Ratings"
-msgstr "Bewertungen"
-
-#: .\iprovider\models.py:754 .\iprovider\templates\iprovider\profile.html:39
+#: .\iprovider\models.py:779 .\iprovider\templates\iprovider\profile.html:39
 msgid "Balance"
 msgstr "Kontostand"
 
-#: .\iprovider\models.py:755 .\templates\account\email.html:40
-#: .\templates\account\phone_list.html:37
+#: .\iprovider\models.py:780 .\templates\account\email.html:40
+#: .\templates\account\phone_list.html:36
 msgid "Verified"
 msgstr "Verifiziert"
 
-#: .\iprovider\models.py:771 .\iprovider\templates\iprovider\profile.html:20
+#: .\iprovider\models.py:796 .\iprovider\templates\iprovider\profile.html:20
 msgid "Profile"
 msgstr "Profil"
 
-#: .\iprovider\models.py:772
+#: .\iprovider\models.py:797
 msgid "Profiles"
 msgstr "Profile"
 
-#: .\iprovider\models.py:779 .\iprovider\templates\iprovider\profile.html:163
+#: .\iprovider\models.py:803 .\iprovider\templates\iprovider\profile.html:163
 #: .\iprovider\templates\iprovider\profile.html:216
 msgid "Pending"
 msgstr "Ausstehend"
 
-#: .\iprovider\models.py:780
+#: .\iprovider\models.py:804
 msgid "Succeeded"
 msgstr "Erfolgreich"
 
-#: .\iprovider\models.py:781 .\iprovider\templates\iprovider\profile.html:165
+#: .\iprovider\models.py:805 .\iprovider\templates\iprovider\profile.html:165
 msgid "Failed"
 msgstr "Fehlgeschlagen"
 
-#: .\iprovider\models.py:782
+#: .\iprovider\models.py:806
 msgid "Refunded"
 msgstr "Erstattet"
 
-#: .\iprovider\models.py:792
+#: .\iprovider\models.py:816
 msgid "Deposit"
 msgstr "Einzahlung"
 
-#: .\iprovider\models.py:793 .\iprovider\models.py:809
+#: .\iprovider\models.py:817 .\iprovider\models.py:832
 msgid "Payment"
 msgstr "Zahlung"
 
-#: .\iprovider\models.py:794
+#: .\iprovider\models.py:818
 msgid "Refund"
 msgstr "Erstattung"
 
-#: .\iprovider\models.py:798 .\iprovider\templates\iprovider\profile.html:137
-#: .\iprovider\templates\iprovider\profile\deposit.html:44
+#: .\iprovider\models.py:821 .\iprovider\templates\iprovider\profile.html:137
+#: .\iprovider\templates\iprovider\profile\deposit.html:43
 msgid "Amount"
 msgstr "Betrag"
 
-#: .\iprovider\models.py:799
-#: .\iprovider\templates\iprovider\profile\deposit.html:54
+#: .\iprovider\models.py:822
+#: .\iprovider\templates\iprovider\profile\deposit.html:53
 msgid "Currency"
 msgstr "Währung"
 
-#: .\iprovider\models.py:802
+#: .\iprovider\models.py:825
 msgid "Transaction ID"
 msgstr "Transaktions-ID"
 
-#: .\iprovider\models.py:804
+#: .\iprovider\models.py:827
 msgid "Payment data"
 msgstr "Zahlungsdaten"
 
-#: .\iprovider\models.py:810
+#: .\iprovider\models.py:833
 msgid "Payments"
 msgstr "Zahlungen"
 
-#: .\iprovider\models.py:876
+#: .\iprovider\models.py:897
 msgid "Connection Request"
 msgstr "Verbindungsanfrage"
 
-#: .\iprovider\models.py:877
+#: .\iprovider\models.py:898
 msgid "Connection Requests"
 msgstr "Verbindungsanfragen"
 
-#: .\iprovider\models.py:928
+#: .\iprovider\models.py:948
 msgid "Phone numbers"
 msgstr "Telefonnummern"
 
-#: .\iprovider\models.py:968
+#: .\iprovider\models.py:962
 msgid "Start date"
 msgstr "Startdatum"
 
-#: .\iprovider\models.py:969
+#: .\iprovider\models.py:963
 msgid "End date"
 msgstr "Enddatum"
 
-#: .\iprovider\models.py:970 .\iprovider\models.py:993
+#: .\iprovider\models.py:964 .\iprovider\models.py:992
 #: .\iprovider\templates\iprovider\profile.html:97
 msgid "Active"
 msgstr "Aktiv"
 
-#: .\iprovider\models.py:971
+#: .\iprovider\models.py:965
 msgid "Auto renew"
 msgstr "Automatische Verlängerung"
 
-#: .\iprovider\models.py:975
+#: .\iprovider\models.py:969
 msgid "Subscriptions"
 msgstr "Abonnements"
 
-#: .\iprovider\models.py:992
+#: .\iprovider\models.py:991
 msgid "Order"
 msgstr "Bestellung"
 
-#: .\iprovider\models.py:997
+#: .\iprovider\models.py:996
 msgid "FAQ"
 msgstr "FAQ"
 
-#: .\iprovider\models.py:998
+#: .\iprovider\models.py:997
 msgid "FAQs"
 msgstr "FAQs"
 
-#: .\iprovider\models.py:1006
+#: .\iprovider\models.py:1005
 msgid "New"
 msgstr "Neu"
 
-#: .\iprovider\models.py:1007
+#: .\iprovider\models.py:1006
 msgid "In progress"
 msgstr "In Bearbeitung"
 
-#: .\iprovider\models.py:1008
+#: .\iprovider\models.py:1007
 msgid "Resolved"
 msgstr "Gelöst"
 
-#: .\iprovider\models.py:1009
+#: .\iprovider\models.py:1008
 msgid "Closed"
 msgstr "Geschlossen"
 
-#: .\iprovider\models.py:1032
+#: .\iprovider\models.py:1035
 msgid "Support ticket"
 msgstr "Support-Ticket"
 
-#: .\iprovider\models.py:1033
+#: .\iprovider\models.py:1036
 msgid "Support tickets"
 msgstr "Support-Tickets"
 
@@ -902,7 +881,7 @@ msgid "Current location:"
 msgstr "Aktueller Standort:"
 
 #: .\iprovider\templates\iprovider\includes\navbar_items.html:64
-#: .\iprovider\templates\iprovider\profile\deposit.html:32
+#: .\iprovider\templates\iprovider\profile\deposit.html:31
 #: .\iprovider\templates\iprovider\services.html:16
 #: .\iprovider\templates\iprovider\tariffs.html:16
 #: .\iprovider\templates\iprovider\vacancy.html:16
@@ -996,7 +975,6 @@ msgid "Edit"
 msgstr "Bearbeiten"
 
 #: .\iprovider\templates\iprovider\profile.html:41
-#: .\iprovider\templates\iprovider\profile\deposit.html:89
 msgid "Top up"
 msgstr "Aufladen"
 
@@ -1084,7 +1062,7 @@ msgstr "Sie haben keine Anfragen."
 
 #: .\iprovider\templates\iprovider\profile.html:264
 #: .\templates\account\password_change.html:77
-#: .\templates\account\password_reset_from_key.html:12
+#: .\templates\account\password_reset_from_key.html:11
 msgid "Change Password"
 msgstr "Passwort ändern"
 
@@ -1092,47 +1070,21 @@ msgstr "Passwort ändern"
 msgid "Top up balance"
 msgstr "Guthaben aufladen"
 
-#: .\iprovider\templates\iprovider\profile\deposit.html:37
+#: .\iprovider\templates\iprovider\profile\deposit.html:36
 msgid "Currency will be set automatically based on country"
 msgstr "Währung wird automatisch basierend auf dem Land festgelegt"
 
-#: .\iprovider\templates\iprovider\profile\deposit.html:68
-msgid "Card number"
-msgstr "Kartennummer"
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:79
-msgid "Expiry (MM/YY)"
-msgstr "Ablauf (MM/JJ)"
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:83
-msgid "CVV"
-msgstr "CVV"
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:97
-msgid "Verification required"
-msgstr "Verifizierung erforderlich"
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:98
-msgid "A verification code has been sent to your console (Django terminal)."
-msgstr "Ein Bestätigungscode wurde an Ihre Konsole (Django-Terminal) gesendet."
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:102
-msgid "Verification code"
-msgstr "Bestätigungscode"
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:106
-msgid "In test mode, enter the code shown in the Django console."
+#: .\iprovider\templates\iprovider\profile\deposit.html:67
+msgid ""
+"For a smooth payment experience, please disable your ad blocker (AdBlock, "
+"uBlock,etc.) before clicking 'Pay with Stripe'."
 msgstr ""
-"Im Testmodus geben Sie den Code ein, der in der Django-Konsole angezeigt "
-"wird."
+"Deaktivieren Sie Ihren Werbeblocker (AdBlock, uBlock usw.), bevor Sie auf "
+"'Mit Stripe bezahlen' klicken, für ein reibungsloses Zahlungserlebnis."
 
-#: .\iprovider\templates\iprovider\profile\deposit.html:109
-msgid "Confirm payment"
-msgstr "Zahlung bestätigen"
-
-#: .\iprovider\templates\iprovider\profile\deposit.html:112
-msgid "Change card"
-msgstr "Karte wechseln"
+#: .\iprovider\templates\iprovider\profile\deposit.html:71
+msgid "Pay with Stripe"
+msgstr "Mit Stripe bezahlen"
 
 #: .\iprovider\templates\iprovider\services.html:30
 #: .\iprovider\templates\iprovider\tariffs.html:30
@@ -1156,37 +1108,30 @@ msgstr "Anwenden"
 msgid "Separately"
 msgstr "Einzeln"
 
-#: .\iprovider\templates\iprovider\services.html:82
-#: .\iprovider\templates\iprovider\services.html:160
-#: .\iprovider\templates\iprovider\tariffs.html:83
-#: .\iprovider\templates\iprovider\tariffs.html:156
-msgid "ratings"
-msgstr "Bewertungen"
-
-#: .\iprovider\templates\iprovider\services.html:113
-#: .\iprovider\templates\iprovider\services.html:191
-#: .\iprovider\templates\iprovider\tariffs.html:111
-#: .\iprovider\templates\iprovider\tariffs.html:184
+#: .\iprovider\templates\iprovider\services.html:105
+#: .\iprovider\templates\iprovider\services.html:175
+#: .\iprovider\templates\iprovider\tariffs.html:102
+#: .\iprovider\templates\iprovider\tariffs.html:166
 #: .\iprovider\templates\iprovider\vacancy.html:144
 msgid "Request sent"
 msgstr "Anfrage gesendet"
 
-#: .\iprovider\templates\iprovider\services.html:125
-#: .\iprovider\templates\iprovider\services.html:203
-#: .\iprovider\templates\iprovider\tariffs.html:123
-#: .\iprovider\templates\iprovider\tariffs.html:196
+#: .\iprovider\templates\iprovider\services.html:117
+#: .\iprovider\templates\iprovider\services.html:187
+#: .\iprovider\templates\iprovider\tariffs.html:114
+#: .\iprovider\templates\iprovider\tariffs.html:178
 msgid "Login to request"
 msgstr "Anmelden, um anzufragen"
 
-#: .\iprovider\templates\iprovider\services.html:135
+#: .\iprovider\templates\iprovider\services.html:127
 msgid "No separate services available"
 msgstr "Keine Einzeldienste verfügbar"
 
-#: .\iprovider\templates\iprovider\services.html:144
+#: .\iprovider\templates\iprovider\services.html:136
 msgid "Packages"
 msgstr "Pakete"
 
-#: .\iprovider\templates\iprovider\services.html:213
+#: .\iprovider\templates\iprovider\services.html:197
 msgid "No packages available"
 msgstr "Keine Pakete verfügbar"
 
@@ -1262,11 +1207,11 @@ msgstr "Ihr Standort:"
 msgid "Unlimited Wi-Fi, like the light of the night"
 msgstr "Unbegrenztes WLAN, wie das Licht der Nacht"
 
-#: .\iprovider\templates\iprovider\tariffs.html:139
+#: .\iprovider\templates\iprovider\tariffs.html:130
 msgid "Mobile Internet, which is always with you, like the sun!"
 msgstr "Mobiles Internet, das immer bei Ihnen ist, wie die Sonne!"
 
-#: .\iprovider\templates\iprovider\tariffs.html:149
+#: .\iprovider\templates\iprovider\tariffs.html:140
 msgid "Mobile Internet"
 msgstr "Mobiles Internet"
 
@@ -1306,7 +1251,7 @@ msgstr ""
 "Für Ihren ausgewählten Standort sind keine Stellen verfügbar. Versuchen Sie "
 "es später noch einmal oder wählen Sie einen anderen Standort."
 
-#: .\iprovider\views\api.py:33 .\iprovider\views\api.py:86
+#: .\iprovider\views\api.py:33 .\iprovider\views\api.py:85
 msgid "Invalid item type"
 msgstr "Ungültiger Elementtyp"
 
@@ -1326,58 +1271,58 @@ msgstr "Anfrage gesendet! Ein Manager wird Sie bald kontaktieren."
 msgid "Error creating request. Please try again."
 msgstr "Fehler beim Erstellen der Anfrage. Bitte versuchen Sie es erneut."
 
-#: .\iprovider\views\api.py:99
+#: .\iprovider\views\api.py:98
 msgid "You already have a pending request for this item."
 msgstr "Sie haben bereits eine ausstehende Anfrage für dieses Element."
 
-#: .\iprovider\views\api.py:108
+#: .\iprovider\views\api.py:107
 msgid "Profile error. Please update your profile."
 msgstr "Profilfehler. Bitte aktualisieren Sie Ihr Profil."
 
-#: .\iprovider\views\api.py:119
+#: .\iprovider\views\api.py:118
 msgid "Request sent! A manager will contact you via your preferred method."
 msgstr ""
 "Anfrage gesendet! Ein Manager wird Sie über Ihre bevorzugte Methode "
 "kontaktieren."
 
-#: .\iprovider\views\api.py:122
+#: .\iprovider\views\api.py:121
 msgid "Error creating request."
 msgstr "Fehler beim Erstellen der Anfrage."
 
-#: .\iprovider\views\api.py:134
+#: .\iprovider\views\api.py:133
 msgid "Request cancelled."
 msgstr "Anfrage storniert."
 
-#: .\iprovider\views\api.py:136
+#: .\iprovider\views\api.py:135
 msgid "Cannot cancel processed request."
 msgstr "Verarbeitete Anfrage kann nicht storniert werden."
 
-#: .\iprovider\views\api.py:152
+#: .\iprovider\views\api.py:151
 msgid "You already have this tariff."
 msgstr "Sie haben diesen Tarif bereits."
 
-#: .\iprovider\views\api.py:180
+#: .\iprovider\views\api.py:179
 msgid "Tariff changed successfully."
 msgstr "Tarif erfolgreich geändert."
 
-#: .\iprovider\views\api.py:183
+#: .\iprovider\views\api.py:182
 msgid "Error processing request."
 msgstr "Fehler bei der Verarbeitung der Anfrage."
 
-#: .\iprovider\views\api.py:185 .\iprovider\views\api.py:220
-#: .\iprovider\views\api.py:255
+#: .\iprovider\views\api.py:184 .\iprovider\views\api.py:219
+#: .\iprovider\views\api.py:254
 msgid "Insufficient balance."
 msgstr "Nicht ausreichendes Guthaben."
 
-#: .\iprovider\views\api.py:215 .\iprovider\views\api.py:250
+#: .\iprovider\views\api.py:214 .\iprovider\views\api.py:249
 msgid "Purchase successful."
 msgstr "Kauf erfolgreich."
 
-#: .\iprovider\views\api.py:218 .\iprovider\views\api.py:253
+#: .\iprovider\views\api.py:217 .\iprovider\views\api.py:252
 msgid "Error processing purchase."
 msgstr "Fehler bei der Verarbeitung des Kaufs."
 
-#: .\iprovider\views\main.py:77
+#: .\iprovider\views\main.py:78
 msgid ""
 "AstraWilly is the largest provider and the undisputed leader of the "
 "telecommunications services market with the largest subscriber base and "
@@ -1391,83 +1336,77 @@ msgstr ""
 "Unternehmens: www.astrawilly.com. Jedes Jahr werden mehr als 4 Millionen "
 "Menschen zu neuen Kunden."
 
-#: .\iprovider\views\main.py:80
+#: .\iprovider\views\main.py:81
 msgid "More than 50,000 satisfied customers"
 msgstr "Mehr als 50.000 zufriedene Kunden"
 
-#: .\iprovider\views\main.py:81
+#: .\iprovider\views\main.py:82
 msgid "Internet speed up to 1 Gbit/s"
 msgstr "Internetgeschwindigkeit bis zu 1 Gbit/s"
 
-#: .\iprovider\views\main.py:82
+#: .\iprovider\views\main.py:83
 msgid "The best provider of the Year 2024"
 msgstr "Bester Anbieter des Jahres 2024"
 
-#: .\iprovider\views\main.py:83
+#: .\iprovider\views\main.py:84
 msgid "24/7 technical support"
 msgstr "24/7 technischer Support"
 
-#: .\iprovider\views\news.py:222
+#: .\iprovider\views\news.py:221
 msgid "Stock not available in your location"
 msgstr "Aktion an Ihrem Standort nicht verfügbar"
 
-#: .\iprovider\views\payment.py:39
-msgid "Amount must be greater than zero."
-msgstr "Betrag muss größer als Null sein."
-
-#: .\iprovider\views\payment.py:41
-msgid "Invalid amount."
-msgstr "Ungültiger Betrag."
-
-#: .\iprovider\views\payment.py:44
-msgid "Invalid card number."
-msgstr "Ungültige Kartennummer."
-
-#: .\iprovider\views\payment.py:76
-msgid "Payment session expired. Please start over."
+#: .\iprovider\views\payment.py:98
+#, fuzzy
+#| msgid "Payment session expired. Please start over."
+msgid "Payment session expired. Please try again."
 msgstr "Zahlungssitzung abgelaufen. Bitte beginnen Sie von vorne."
 
-#: .\iprovider\views\payment.py:81 .\iprovider\views\phone.py:59
-msgid "Invalid verification code."
-msgstr "Ungültiger Bestätigungscode."
+#: .\iprovider\views\payment.py:144
+msgid "Payment cancelled. You can try again."
+msgstr ""
 
-#: .\iprovider\views\phone.py:24
+#: .\iprovider\views\phone.py:23
 msgid "This number is already added."
 msgstr "Diese Nummer wurde bereits hinzugefügt."
 
-#: .\iprovider\views\phone.py:35
+#: .\iprovider\views\phone.py:34
 msgid "Verification code sent to your phone."
 msgstr "Bestätigungscode an Ihr Telefon gesendet."
 
-#: .\iprovider\views\phone.py:39
+#: .\iprovider\views\phone.py:38
 msgid "Please correct the error below."
 msgstr "Bitte korrigieren Sie den Fehler unten."
 
-#: .\iprovider\views\phone.py:49
+#: .\iprovider\views\phone.py:48
 msgid "This number is already verified."
 msgstr "Diese Nummer ist bereits verifiziert."
 
-#: .\iprovider\views\phone.py:56
+#: .\iprovider\views\phone.py:55
 msgid "Phone number verified successfully."
 msgstr "Telefonnummer erfolgreich verifiziert."
 
-#: .\iprovider\views\phone.py:68
+#: .\iprovider\views\phone.py:58
+msgid "Invalid verification code."
+msgstr "Ungültiger Bestätigungscode."
+
+#: .\iprovider\views\phone.py:67
 msgid "Cannot set unverified number as primary."
 msgstr "Nicht verifizierte Nummer kann nicht als primär festgelegt werden."
 
-#: .\iprovider\views\phone.py:78
+#: .\iprovider\views\phone.py:77
 msgid "Primary phone number updated."
 msgstr "Primäre Telefonnummer aktualisiert."
 
-#: .\iprovider\views\phone.py:87
+#: .\iprovider\views\phone.py:86
 msgid "Cannot remove primary phone number."
 msgstr "Primäre Telefonnummer kann nicht entfernt werden."
 
-#: .\iprovider\views\phone.py:90
+#: .\iprovider\views\phone.py:89
 msgid "Phone number removed."
 msgstr "Telefonnummer entfernt."
 
-#: .\iprovider\views\phone.py:98
+#: .\iprovider\views\phone.py:97
 msgid "Verification code resent."
 msgstr "Bestätigungscode erneut gesendet."
 
@@ -1475,7 +1414,7 @@ msgstr "Bestätigungscode erneut gesendet."
 msgid "Profile updated successfully."
 msgstr "Profil erfolgreich aktualisiert."
 
-#: .\iprovider\views\support.py:49
+#: .\iprovider\views\support.py:47
 msgid "Your message has been sent. We will contact you soon."
 msgstr "Ihre Nachricht wurde gesendet. Wir werden Sie bald kontaktieren."
 
@@ -1507,15 +1446,15 @@ msgstr "E-Mail ändern"
 msgid "The following email addresses are associated with your account:"
 msgstr "Die folgenden E-Mail-Adressen sind mit Ihrem Konto verknüpft:"
 
-#: .\templates\account\email.html:42 .\templates\account\phone_list.html:39
+#: .\templates\account\email.html:42 .\templates\account\phone_list.html:38
 msgid "Unverified"
 msgstr "Nicht verifiziert"
 
-#: .\templates\account\email.html:45 .\templates\account\phone_list.html:42
+#: .\templates\account\email.html:45 .\templates\account\phone_list.html:41
 msgid "Primary"
 msgstr "Primär"
 
-#: .\templates\account\email.html:53 .\templates\account\phone_list.html:49
+#: .\templates\account\email.html:53 .\templates\account\phone_list.html:48
 msgid "Make Primary"
 msgstr "Als primär festlegen"
 
@@ -1523,7 +1462,7 @@ msgstr "Als primär festlegen"
 msgid "Re-send Verification"
 msgstr "Verifizierung erneut senden"
 
-#: .\templates\account\email.html:59 .\templates\account\phone_list.html:55
+#: .\templates\account\email.html:59 .\templates\account\phone_list.html:54
 msgid "Remove"
 msgstr "Entfernen"
 
@@ -1622,18 +1561,18 @@ msgstr ""
 msgid "New Password (again)"
 msgstr "Neues Passwort (Wiederholung)"
 
-#: .\templates\account\password_reset.html:12
-#: .\templates\account\password_reset.html:20
-#: .\templates\account\password_reset_done.html:12
-#: .\templates\account\password_reset_done.html:20
+#: .\templates\account\password_reset.html:11
+#: .\templates\account\password_reset.html:19
+#: .\templates\account\password_reset_done.html:11
+#: .\templates\account\password_reset_done.html:19
 msgid "Password reset"
 msgstr "Passwort zurücksetzen"
 
-#: .\templates\account\password_reset.html:48
+#: .\templates\account\password_reset.html:46
 msgid "Reset My Password"
 msgstr "Mein Passwort zurücksetzen"
 
-#: .\templates\account\password_reset_done.html:28
+#: .\templates\account\password_reset_done.html:27
 msgid ""
 "We have sent you an email. If you have not received it please check your "
 "spam folder. Otherwise contact us if you do not receive it in a few minutes."
@@ -1642,15 +1581,15 @@ msgstr ""
 "überprüfen Sie bitte Ihren Spam-Ordner. Andernfalls kontaktieren Sie uns, "
 "wenn Sie sie in wenigen Minuten nicht erhalten."
 
-#: .\templates\account\password_reset_done.html:31
+#: .\templates\account\password_reset_done.html:30
 msgid "Return to login"
 msgstr "Zurück zum Login"
 
-#: .\templates\account\password_reset_from_key.html:20
+#: .\templates\account\password_reset_from_key.html:19
 msgid "Bad Tokens"
 msgstr "Ungültige Token"
 
-#: .\templates\account\password_reset_from_key.html:28
+#: .\templates\account\password_reset_from_key.html:27
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -1663,7 +1602,7 @@ msgstr ""
 "href=\"%(passwd_reset_url)s\" class=\"soft-blue\">neuen Link zum "
 "Zurücksetzen des Passworts</a> an."
 
-#: .\templates\account\phone_add.html:10 .\templates\account\phone_list.html:70
+#: .\templates\account\phone_add.html:10 .\templates\account\phone_list.html:69
 msgid "Add Phone Number"
 msgstr "Telefonnummer hinzufügen"
 
@@ -1671,25 +1610,25 @@ msgstr "Telefonnummer hinzufügen"
 msgid "Send Code"
 msgstr "Code senden"
 
-#: .\templates\account\phone_list.html:16
-#: .\templates\account\phone_list.html:23
+#: .\templates\account\phone_list.html:15
+#: .\templates\account\phone_list.html:22
 msgid "Phone Numbers"
 msgstr "Telefonnummern"
 
-#: .\templates\account\phone_list.html:30
+#: .\templates\account\phone_list.html:29
 msgid "The following phone numbers are associated with your account:"
 msgstr "Die folgenden Telefonnummern sind mit Ihrem Konto verknüpft:"
 
-#: .\templates\account\phone_list.html:59
+#: .\templates\account\phone_list.html:58
 #: .\templates\account\phone_verify.html:31
 msgid "Verify"
 msgstr "Verifizieren"
 
-#: .\templates\account\phone_list.html:66
+#: .\templates\account\phone_list.html:65
 msgid "You currently have no phone numbers set up."
 msgstr "Sie haben derzeit keine Telefonnummern eingerichtet."
 
-#: .\templates\account\phone_list.html:76
+#: .\templates\account\phone_list.html:75
 msgid "Add Phone"
 msgstr "Telefon hinzufügen"
 
@@ -1711,7 +1650,7 @@ msgid "Resend code"
 msgstr "Code erneut senden"
 
 #: .\templates\account\signup.html:12 .\templates\account\signup.html:20
-#: .\templates\account\signup.html:92
+#: .\templates\account\signup.html:90
 msgid "Sign Up"
 msgstr "Registrieren"
 
@@ -1736,3 +1675,60 @@ msgstr "E-Mail"
 #: .\templates\account\signup.html:79
 msgid "Confirm password"
 msgstr "Passwort bestätigen"
+
+#~ msgid "Rating"
+#~ msgstr "Bewertung"
+
+#~ msgid "Rated object"
+#~ msgstr "Bewertetes Objekt"
+
+#~ msgid "Select one of the objects to rate."
+#~ msgstr "Wählen Sie eines der zu bewertenden Objekte aus."
+
+#~ msgid "Creation date (read-only)"
+#~ msgstr "Erstellungsdatum (schreibgeschützt)"
+
+#~ msgid "Ratings"
+#~ msgstr "Bewertungen"
+
+#~ msgid "Card number"
+#~ msgstr "Kartennummer"
+
+#~ msgid "Expiry (MM/YY)"
+#~ msgstr "Ablauf (MM/JJ)"
+
+#~ msgid "CVV"
+#~ msgstr "CVV"
+
+#~ msgid "Verification required"
+#~ msgstr "Verifizierung erforderlich"
+
+#~ msgid "A verification code has been sent to your console (Django terminal)."
+#~ msgstr ""
+#~ "Ein Bestätigungscode wurde an Ihre Konsole (Django-Terminal) gesendet."
+
+#~ msgid "Verification code"
+#~ msgstr "Bestätigungscode"
+
+#~ msgid "In test mode, enter the code shown in the Django console."
+#~ msgstr ""
+#~ "Im Testmodus geben Sie den Code ein, der in der Django-Konsole angezeigt "
+#~ "wird."
+
+#~ msgid "Confirm payment"
+#~ msgstr "Zahlung bestätigen"
+
+#~ msgid "Change card"
+#~ msgstr "Karte wechseln"
+
+#~ msgid "ratings"
+#~ msgstr "Bewertungen"
+
+#~ msgid "Amount must be greater than zero."
+#~ msgstr "Betrag muss größer als Null sein."
+
+#~ msgid "Invalid amount."
+#~ msgstr "Ungültiger Betrag."
+
+#~ msgid "Invalid card number."
+#~ msgstr "Ungültige Kartennummer."

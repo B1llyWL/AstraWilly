@@ -4,6 +4,10 @@ from  django.contrib import messages
 from  django.utils.translation import  gettext as _
 from  ..models import PhoneNumber
 from  ..forms import PhoneNumberForm
+from django.conf import settings
+from django.core.mail import send_mail
+from django.utils import timezone
+from datetime import timedelta
 
 @login_required
 def phone_list(request):
@@ -29,16 +33,24 @@ def phone_add(request):
                 primary = False,
             )
             phone.generate_code()
-            # Отправка SMS
-            print(f"Verification code for {number}: {phone.verification_code}")
-            messages.success(request, _('Verification code sent to your phone.'))
+            subject = "Phone number verification — AstraWilly"
+            message = f"Hello, {request.user.username}! Your code: {phone.verification_code} from astrawilly.pythonanywhere.com. If it wasn't you, then ignore this message."
+            from_email = settings.DEFAULT_FROM_EMAIL
+            recipient_list = [request.user.email]
+            # Отправка email
+            send_mail(
+                subject,
+                message,
+                from_email,
+                recipient_list)
+            messages.success(request, _('Verification code sent to your email.'))
             return  redirect('phone_verify', phone_id=phone.id)
         else:
             print("Form errors:", form.errors)
             messages.error(request, _('Please correct the error below.'))
     else:
         form = PhoneNumberForm()
-    return render(request, ' account/phone_add.html', {'form': form})
+    return render(request, 'account/phone_add.html', {'form': form})
 
 @login_required
 def phone_verify(request, phone_id):
@@ -48,6 +60,10 @@ def phone_verify(request, phone_id):
         messages.info(request, _('This number is already verified.'))
         return redirect('phone_list')
     if request.method == 'POST':
+        if phone.code_sent_at and (timezone.now() - phone.code_sent_at)> timedelta(minutes=10):
+            messages.error(request, _('The code has expired. Please request a new one'))
+            return redirect('phone_resend', phone_id =phone.id)
+
         code = request.POST.get('code')
         if code == phone.verification_code:
             phone.verified =True
@@ -75,7 +91,7 @@ def phone_make_primary(request, phone_id):
             profile.phone = str(phone.number)
             profile.save()
             messages.success(request, _('Primary phone number updated.'))
-    return redirect('phone_list')
+            return redirect('phone_list')
 
 @login_required
 def phone_remove(request, phone_id):
@@ -93,6 +109,15 @@ def phone_remove(request, phone_id):
 def phone_resend(request, phone_id):
     phone = get_object_or_404(PhoneNumber, id=phone_id, user=request.user)
     phone.generate_code()  # генерирует новый код и сохраняет
-    print(f"New verification code for {phone.number}: {phone.verification_code}")
+    subject = "Phone number verification — AstraWilly"
+    message = f"Hello, {request.user.username}! Your new code: {phone.verification_code} from astrawilly.pythonanywhere.com. If it wasn't you, then ignore this message."
+    from_email = settings.DEFAULT_FROM_EMAIL
+    recipient_list = [request.user.email]
+    send_mail(
+        subject,
+        message,
+        from_email,
+        recipient_list
+    )
     messages.success(request, _('Verification code resent.'))
     return redirect('phone_verify', phone_id=phone.id)

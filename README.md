@@ -154,7 +154,7 @@ A full‑featured multi‑language website for an internet service provider. Use
 <details>
 <summary>Support</summary>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-  <img width="48%" src="https://github.com/user-attachments/assets/695b4f21-c251-48c5-bb91-c7e5cd421481" alt="Support">
+ <img width="48%" alt="Support" src="https://github.com/user-attachments/assets/843ca769-68fe-4bf7-a7c2-1659a8ab7edf" />
   <img width="48%" src="https://github.com/user-attachments/assets/ffcae780-b527-4697-9ff5-6ee284c3a6fd" alt="Support_2">
   <img width="48%" src="https://github.com/user-attachments/assets/bd0e6bae-8e41-4b80-b2a4-5a6fae0832a8" alt="Support_3">
 </div>

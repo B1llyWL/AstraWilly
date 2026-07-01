@@ -4,7 +4,10 @@ from django.contrib.auth import get_user_model
 from django.utils.translation import gettext as _
 import re
 from django.core.exceptions import ValidationError
+from django_recaptcha.fields import ReCaptchaField
+from django_recaptcha.widgets import ReCaptchaV2Checkbox
 from phonenumber_field.formfields import PhoneNumberField
+
 
 User = get_user_model()
 
@@ -89,6 +92,7 @@ class UserProfileForm(forms.ModelForm):
 class PhoneNumberForm(forms.Form):
     """Форма для добавления номера телефона"""
     number = PhoneNumberField(label=_('Phone number'), widget=forms.TextInput(attrs={'class': 'form-control'}))
+    captcha = ReCaptchaField(widget=ReCaptchaV2Checkbox)
 
 class SupportTicketForm(forms.ModelForm):
     class Meta:

@@ -8,7 +8,6 @@
     <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
     <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" alt="Celery">
     <a href="https://astrawilly.pythonanywhere.com/" target="_blank">
-      <img src="https://img.shields.io/badge/Live_Demo-✅-green?style=for-the-badge" alt="Live Demo">
     </a>
   </p>
 </div>

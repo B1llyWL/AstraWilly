@@ -807,15 +807,9 @@ class Payment(models.Model):
 
     class PaymentMethod(models.TextChoices):
         STRIPE = 'stripe', 'Stripe'
-        YOOKASSA = 'yookassa', 'ЮKassa'
-        ROBOKASSA = 'robokassa', 'Robokassa'
-        PAYPAL = 'paypal', 'PayPal'
-        MOCK = 'mock', 'Mock (development)'
 
     class TransactionType(models.TextChoices):
         DEPOSIT = 'deposit', _('Deposit')
-        PAYMENT = 'payment', _('Payment')
-        REFUND = 'refund', _('Refund')
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='payments')
     amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=_('Amount'))
@@ -823,7 +817,7 @@ class Payment(models.Model):
     status = models.CharField(max_length=20, choices=Status.choices, default=Status.PENDING)
     payment_method = models.CharField(max_length=20, choices=PaymentMethod.choices)
     transaction_id = models.CharField(max_length=255, unique=True, db_index=True, verbose_name=_('Transaction ID'))
-    transaction_type = models.CharField(max_length=10, choices=TransactionType.choices, default=TransactionType.PAYMENT)
+    transaction_type = models.CharField(max_length=10, choices=TransactionType.choices, default=TransactionType.DEPOSIT)
     payment_data = models.JSONField(default=dict, verbose_name=_('Payment data'))
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -976,7 +970,6 @@ class FAQ(TranslationMixin):
     question_en = models.CharField(max_length=255, blank=True, verbose_name="Question (EN)")
     question_de = models.CharField(max_length=255, blank=True, verbose_name="Question (DE)")
     question_nl = models.CharField(max_length=255, blank=True, verbose_name="Question (NL)")
-    # ADDED FOR UKRAINIAN AND RUSSIAN
     question_ru = models.CharField(max_length=255, blank=True, verbose_name="Question (RU)")
     question_uk = models.CharField(max_length=255, blank=True, verbose_name="Question (UK)")
 
@@ -984,7 +977,6 @@ class FAQ(TranslationMixin):
     answer_en = models.TextField(blank=True, default='', verbose_name="Answer (EN)")
     answer_de = models.TextField(blank=True, default='', verbose_name="Answer (DE)")
     answer_nl = models.TextField(blank=True, default='', verbose_name="Answer (NL)")
-    # ADDED FOR UKRAINIAN AND RUSSIAN
     answer_ru = models.TextField(blank=True, default='', verbose_name="Answer (RU)")
     answer_uk = models.TextField(blank=True, default='', verbose_name="Answer (UK)")
 

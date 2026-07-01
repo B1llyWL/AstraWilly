@@ -3,15 +3,25 @@
   <h3>This pet project simulates a real ISP website built with Django, mirroring the scale and functionality of a major telecom operator.</h3>
   <p>
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-    <a href="https://www.youtube.com/watch?v=-UHFMVFRRRc" target="_blank">
-      <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube">
+    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+    <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+    <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
+    <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" alt="Celery">
+    <a href="https://astrawilly.pythonanywhere.com/" target="_blank">
+      <img src="https://img.shields.io/badge/Live_Demo-✅-green?style=for-the-badge" alt="Live Demo">
     </a>
   </p>
 </div>
 
+---
+
 ## Overview
 
 A full‑featured multi‑language website for an internet service provider. Users can explore tariffs, services, vacancies, and news; submit applications; manage their profile; and choose how they want to be contacted. The admin panel gives full control over all content and requests.
+
+🔗 **Live demo:** [astrawilly.pythonanywhere.com](https://astrawilly.pythonanywhere.com/)
+
+---
 
 ## Features
 
@@ -22,7 +32,19 @@ A full‑featured multi‑language website for an internet service provider. Use
   </div>
   <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <strong>🔐 User accounts</strong><br>
-    Sign up, sign in, logout, change password, password reset via email, etc.
+    Sign up, sign in, logout, change password, password reset via email
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>📱 Phone verification</strong><br>
+    Confirm phone number via email (code sent to user's email with expiry)
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>🤖 reCAPTCHA protection</strong><br>
+    Google reCAPTCHA v2 on sensitive forms (e.g., adding a phone number)
+  </div>
+  <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <strong>💳 Stripe payments</strong><br>
+    Top up balance using Stripe Checkout (test mode supported)
   </div>
   <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <strong>👤 Personal cabinet</strong><br>
@@ -62,17 +84,23 @@ A full‑featured multi‑language website for an internet service provider. Use
   </div>
 </div>
 
+---
+
 ## Tech Stack
 
 | Area          | Technologies                                                                 |
 |---------------|------------------------------------------------------------------------------|
-| **Backend**   | Python, Django, Django ORM                                                   |
-| **Database**  | PostgreSQL                                                                   |
+| **Backend**   | Python, Django, Django ORM, Django REST Framework (optional)                 |
+| **Database**  | PostgreSQL (production), SQLite (development)                                |
 | **Task Queue**| Celery, Redis (broker & cache)                                               |
-| **Frontend**  | Django templates, Bootstrap                                                  |
+| **Frontend**  | Django templates, Bootstrap 5, custom CSS                                    |
 | **i18n**      | Django internationalization (locale middleware)                              |
+| **Payments**  | Stripe Checkout (test mode)                                                  |
 | **Geolocation**| Custom IP‑based detector + manual country list                              |
-| **Currency**  | Frankfurter.app API, `requests` library                                      |
+| **Currency**  | Frankfurter.app API, `requests` library                                     |
+| **Captcha**   | Google reCAPTCHA v2                                                         |
+
+---
 
 ## Screenshots
 
@@ -178,9 +206,11 @@ A full‑featured multi‑language website for an internet service provider. Use
 </div>
 </details>
 
+---
+
 ## Installation
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/astrawilly.git
-cd astrawilly
+git clone https://github.com/B1llyWL/AstraWilly.git
+cd AstraWilly

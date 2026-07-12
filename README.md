@@ -116,7 +116,7 @@ A full‑featured multi‑language website for an internet service provider. Use
 <summary>Languages & Location</summary>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
   <img width="48%" src="https://github.com/user-attachments/assets/ca5b1438-fe93-4dbb-9d4f-83a45c3b4f38" alt="Languages">
-  <img width="48%" src="https://github.com/user-attachments/assets/80db1122-2bfd-4669-bd44-5a10e5f1ee81" alt="Countries">
+  <img width="48%" src="https://github.com/user-attachments/assets/f3297e0d-6455-4bce-8867-3431c1df5070" alt="Countries">
 </div>
 </details>
 
